@@ -1,0 +1,105 @@
+[
+  {
+    "id": "egp-daily",
+    "name": "e-GP (daily RSS)",
+    "type": "rss",
+    "url": "https://www.eprocure.gov.bd/RSS/DailyTender.xml",
+    "kind": "public",
+    "enabled": true,
+    "note": "Official feed linked from eprocure.gov.bd/SubscribeToRSS.jsp. Covers government tenders, so agency websites are not collected separately."
+  },
+  {
+    "id": "egp-weekly",
+    "name": "e-GP (weekly RSS)",
+    "type": "rss",
+    "url": "https://www.eprocure.gov.bd/RSS/WeeklyTender.xml",
+    "kind": "public",
+    "enabled": true,
+    "note": "Same feed, wider window. Duplicates are merged by tender ID."
+  },
+  {
+    "id": "worldbank-bd",
+    "name": "World Bank (Bangladesh)",
+    "type": "worldbank",
+    "kind": "development",
+    "enabled": true,
+    "rows": 100,
+    "note": "Public API. Bids, EOIs and prequalification for World Bank funded projects. Contract awards skipped. Free, no key."
+  },
+  {
+    "id": "brac-tender",
+    "name": "BRAC e-Tender",
+    "type": "ai_page",
+    "kind": "private",
+    "enabled": true,
+    "url": "https://tender.brac.net/",
+    "note": "Live tenders list. If the first-run log says the page has almost no text, the list is loaded by JavaScript and this source cannot be read automatically."
+  },
+  {
+    "id": "ibbl",
+    "name": "Islami Bank Bangladesh",
+    "type": "ai_page",
+    "kind": "private",
+    "enabled": true,
+    "url": "https://www.islamibankbd.com/tender-notice",
+    "note": "Table of tender notices with last dates and PDF links. Runtime robots.txt check applies."
+  },
+  {
+    "id": "meghna-bank",
+    "name": "Meghna Bank",
+    "type": "ai_page",
+    "kind": "private",
+    "enabled": true,
+    "url_template": "https://www.meghnabank.com.bd/notice-board?page={page}",
+    "pages": [
+      1,
+      2
+    ],
+    "note": "General notice board; most items are tenders/RFPs. Pages 1-2 cover the newest notices."
+  },
+  {
+    "id": "uttara-bank",
+    "name": "Uttara Bank",
+    "type": "ai_page",
+    "kind": "private",
+    "enabled": true,
+    "url": "https://www.uttarabank-bd.com/home/tender",
+    "note": "Tender page linked from the bank's Media Room menu; layout not verified."
+  },
+  {
+    "id": "daily-star",
+    "name": "The Daily Star (e-paper)",
+    "type": "epaper_pages",
+    "kind": "newspaper",
+    "enabled": false,
+    "homepage": "https://epaper.thedailystar.net/",
+    "url_template": "",
+    "pages": [],
+    "note": "Tender ads are inside e-paper pages. Open the homepage, find the direct image/PDF URL of a tender page, replace the date and page number in it with {yyyy} {mm} {dd} {page}, list the page numbers that carry tenders in 'pages', then enable. Or paste page URLs into inbox.txt."
+  },
+  {
+    "id": "observer",
+    "name": "The Daily Observer (e-paper)",
+    "type": "epaper_pages",
+    "kind": "newspaper",
+    "enabled": false,
+    "homepage": "https://epaper.observerbd.com/",
+    "url_template": "",
+    "pages": [],
+    "note": "Same steps as the Daily Star entry."
+  },
+  {
+    "id": "paper-template",
+    "name": "Newspaper name (e-paper)",
+    "type": "epaper_pages",
+    "kind": "newspaper",
+    "enabled": false,
+    "url_template": "https://example.com/epaper/{yyyy}-{mm}-{dd}/page-{page}.jpg",
+    "pages": [
+      1,
+      2,
+      3
+    ],
+    "note": "Copy this block for each newspaper (Prothom Alo, Bangladesh Pratidin, Ittefaq, Jugantor, Samakal, Financial Express, New Age, Dhaka Tribune, Sangbad and so on). Dates use Bangladesh time."
+  }
+]

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SYNTHETIC sample for tests only. The real e-GP feed layout was not reachable
+     while building this, so the parser is written against standard RSS 2.0. -->
+<rss version="2.0">
+  <channel>
+    <title>Sample tender feed</title>
+    <link>https://example.org/</link>
+    <description>Synthetic</description>
+    <item>
+      <title>Construction of Upazila Health Complex Road, Package RHD-12</title>
+      <link>https://www.eprocure.gov.bd/resources/common/ViewTender.jsp?id=900001&amp;h=t</link>
+      <description>&lt;b&gt;Organization:&lt;/b&gt; Roads and Highways Department; Published 20-Oct-2026; Closing Date: 05-Nov-2026</description>
+      <pubDate>Tue, 20 Oct 2026 09:00:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Supply of Office Furniture (Desk, Chair, Almirah) for District Office</title>
+      <link>https://www.eprocure.gov.bd/resources/common/ViewTender.jsp?id=900002&amp;h=t</link>
+      <description>Organization: Ministry of Public Administration | Last date of submission 2026-11-02</description>
+      <pubDate>Wed, 21 Oct 2026 10:30:00 +0600</pubDate>
+    </item>
+    <item>
+      <title>Procurement of Laptop and Network Equipment</title>
+      <link>https://www.eprocure.gov.bd/resources/common/ViewTender.jsp?id=900003&amp;h=t</link>
+      <description>Published on 22/10/2026, closes 12/11/2026</description>
+    </item>
+    <item>
+      <title>সড়ক মেরামত ও সংস্কার কাজের দরপত্র বিজ্ঞপ্তি</title>
+      <link>https://www.eprocure.gov.bd/resources/common/ViewTender.jsp?id=900004&amp;h=t</link>
+      <description>সর্বশেষ জমার তারিখ ১০/১১/২০২৬</description>
+    </item>
+  </channel>
+</rss>

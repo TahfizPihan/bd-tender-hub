@@ -1,0 +1,6 @@
+# Quick lane for newspaper tender pages.
+# Add one line per page:  <direct URL of the page image or PDF> | <newspaper name>
+# The URL must open the image or PDF itself, not an HTML viewer page.
+# Each page is read once by the AI; only the extracted facts and a link back are kept.
+# Example (remove the # to use):
+# https://example.com/epaper/2026-10-25/page-12.jpg | Prothom Alo

@@ -1,0 +1,16 @@
+{"rows": "3", "os": "0", "page": "1", "total": "3", "procnotices": [
+ {"id": "OP00999001", "notice_type": "Invitation for Bids", "noticedate": "19-Oct-2026",
+  "project_ctry_name": "Bangladesh", "project_name": "Chattogram Water Supply Improvement Project",
+  "bid_reference_no": "CWSIP/W1-LOT 1", "bid_description": "Design, construction and commissioning of water supply system improvement, Lot 1",
+  "procurement_method_name": "Request for Bids", "submission_date": "2026-10-19T00:00:00Z",
+  "notice_text": "<p>Bids must be delivered to the address below on or before 24 November 2026 at 11:00 hours.</p>"},
+ {"id": "OP00999002", "notice_type": "Request for Expression of Interest", "noticedate": "20-Oct-2026",
+  "project_ctry_name": "Bangladesh", "project_name": "Digital Health Project",
+  "bid_reference_no": "DHP/C-12", "bid_description": "Consulting services for hospital information system design",
+  "procurement_method_name": "Quality and Cost-based Selection", "submission_date": "2026-10-20T00:00:00Z",
+  "notice_text": "<p>Expressions of interest should be submitted by 05-Nov-2026.</p>"},
+ {"id": "OP00999003", "notice_type": "Invitation for Bids", "noticedate": "21-Oct-2026",
+  "project_ctry_name": "Bangladesh", "project_name": "Rural Roads Project",
+  "bid_description": "Supply of road maintenance equipment", "submission_date": "2026-10-21T00:00:00Z",
+  "notice_text": ""}
+]}
