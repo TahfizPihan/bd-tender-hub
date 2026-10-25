@@ -1,548 +1,640 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BD Tender Hub</title>
-<meta name="description" content="Bangladesh tenders from e-GP, development partners, banks, NGOs and newspapers in one table.">
-<style>
-:root{
-  --bg:#eef2ef; --panel:#ffffff; --ink:#18221d; --muted:#5b6a62; --line:#d9e0db; --head:#e6eee9;
-  --brand:#0b5d44; --brand-ink:#ffffff; --brand-soft:#dcefe6;
-  --open:#0b7a4f; --open-bg:#dff3e8; --soon:#9a5200; --soon-bg:#fdecd2;
-  --closed:#a02727; --closed-bg:#fbe0e0; --none:#5b6a62; --none-bg:#e8ece9;
-  --new:#1e5bd6; --new-bg:#e0eafc; --zebra:#f7faf8; --shadow:0 1px 2px rgba(0,0,0,.06);
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --bg:#0f1512; --panel:#161d19; --ink:#e6ede9; --muted:#93a39a; --line:#27332c; --head:#1d2822;
-    --brand:#3fbf92; --brand-ink:#062217; --brand-soft:#1b3328;
-    --open:#58d4a0; --open-bg:#173226; --soon:#f0b45c; --soon-bg:#3a2a12;
-    --closed:#f08a8a; --closed-bg:#3b1a1a; --none:#93a39a; --none-bg:#222c26;
-    --new:#7fa8ff; --new-bg:#1a2744; --zebra:#19211d; --shadow:none;
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#0f1512; --panel:#161d19; --ink:#e6ede9; --muted:#93a39a; --line:#27332c; --head:#1d2822;
-  --brand:#3fbf92; --brand-ink:#062217; --brand-soft:#1b3328;
-  --open:#58d4a0; --open-bg:#173226; --soon:#f0b45c; --soon-bg:#3a2a12;
-  --closed:#f08a8a; --closed-bg:#3b1a1a; --none:#93a39a; --none-bg:#222c26;
-  --new:#7fa8ff; --new-bg:#1a2744; --zebra:#19211d; --shadow:none;
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:15px/1.45 system-ui,-apple-system,"Segoe UI","Noto Sans Bengali","Kalpurush",sans-serif}
-a{color:var(--brand)}
-.wrap{max-width:1280px;margin:0 auto;padding:0 16px}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BD Tender Hub</title>
+  <style>
+    :root {
+      --bg: #edf3f0;
+      --panel: #ffffff;
+      --ink: #14231d;
+      --muted: #5e6d66;
+      --line: #dfe9e3;
+      --brand: #0d6a4a;
+      --brand-ink: #ffffff;
+      --brand-soft: #e7f6ee;
+      --open: #067a4b;
+      --open-bg: #dff8eb;
+      --soon: #9a5a00;
+      --soon-bg: #fff0d9;
+      --closed: #9b2d2d;
+      --closed-bg: #fde3e3;
+      --chip: #eef5f2;
+      --shadow: 0 1px 2px rgba(0,0,0,.05);
+    }
+    * { box-sizing: border-box; }
+    html { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--ink); }
+    body { margin: 0; background: var(--bg); }
+    a { color: var(--brand); }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 16px 48px; }
 
-/* top bar */
-.top{background:var(--brand);color:var(--brand-ink)}
-.top .wrap{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px}
-.top h1{margin:0;font-size:1.35rem;letter-spacing:.2px}
-.top .meta{font-size:.85rem;opacity:.92}
-.top button{background:transparent;color:inherit;border:1px solid currentColor;border-radius:8px;padding:5px 10px;cursor:pointer;font:inherit;font-size:.82rem;opacity:.9}
+    .topbar {
+      background: var(--brand);
+      color: var(--brand-ink);
+    }
+    .topbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+    .topbar h1 { margin: 0; font-size: 1.5rem; }
+    .meta { font-size: 0.82rem; opacity: 0.96; }
 
-/* stat cards */
-.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:16px 0 12px}
-@media(min-width:820px){.stats{grid-template-columns:repeat(4,1fr)}}
-.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-align:left;
-  cursor:pointer;font:inherit;color:inherit;box-shadow:var(--shadow)}
-.stat:hover{border-color:var(--brand)}
-.stat:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
-.stat b{display:block;font-size:1.6rem;line-height:1.1}
-.stat span{font-size:.82rem;color:var(--muted)}
-.stat.open b{color:var(--open)} .stat.soon b{color:var(--soon)} .stat.new b{color:var(--new)}
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 18px 0 12px;
+    }
+    @media (min-width: 760px) {
+      .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    }
+    .stat {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+      text-align: left;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      color: var(--ink);
+    }
+    .stat strong {
+      display: block;
+      font-size: 1.7rem;
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+    .stat span { color: var(--muted); font-size: 0.8rem; }
+    .stat.open strong { color: var(--open); }
+    .stat.soon strong { color: var(--soon); }
+    .stat.closed strong { color: var(--closed); }
 
-/* tabs */
-.tabs{display:flex;gap:4px;overflow-x:auto;border-bottom:2px solid var(--line);margin-top:6px;scrollbar-width:thin}
-.tab{background:none;border:0;border-bottom:3px solid transparent;margin-bottom:-2px;padding:9px 14px;cursor:pointer;
-  font:inherit;color:var(--muted);white-space:nowrap}
-.tab .n{display:inline-block;background:var(--none-bg);color:var(--muted);border-radius:999px;padding:0 8px;margin-left:6px;font-size:.78rem}
-.tab[aria-selected="true"]{color:var(--brand);border-bottom-color:var(--brand);font-weight:650}
-.tab[aria-selected="true"] .n{background:var(--brand-soft);color:var(--brand)}
+    .filters {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    @media (min-width: 720px) {
+      .filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (min-width: 1100px) {
+      .filters { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+    }
+    .field { display: flex; flex-direction: column; gap: 6px; }
+    .field label {
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    input, select, button {
+      font: inherit;
+      color: var(--ink);
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 9px 10px;
+      min-width: 0;
+    }
+    button { cursor: pointer; }
+    .inline-actions {
+      display: flex;
+      gap: 8px;
+      align-items: end;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      background: var(--brand);
+      color: var(--brand-ink);
+      border-color: var(--brand);
+      font-weight: 700;
+    }
+    .btn-secondary {
+      background: transparent;
+      color: var(--brand);
+      border-color: var(--brand);
+    }
 
-/* filters */
-.filters{background:var(--panel);border:1px solid var(--line);border-top:0;border-radius:0 0 12px 12px;padding:12px;
-  display:grid;gap:10px;grid-template-columns:1fr}
-@media(min-width:640px){.filters{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1000px){.filters{grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr}}
-.field label{display:block;font-size:.74rem;color:var(--muted);margin:0 0 3px;text-transform:uppercase;letter-spacing:.4px}
-input,select,button{font:inherit;color:inherit}
-.field input,.field select{width:100%;min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
-.field input:focus,.field select:focus{outline:2px solid var(--brand);outline-offset:1px}
-.frow{display:flex;gap:8px;grid-column:1/-1;align-items:end;flex-wrap:wrap}
-.frow .field{flex:1 1 140px}
-.btn{background:var(--brand);color:var(--brand-ink);border:0;border-radius:8px;padding:8px 14px;cursor:pointer;font-weight:600}
-.btn.ghost{background:transparent;color:var(--brand);border:1px solid var(--brand)}
+    .toolbar {
+      margin-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
 
-#ftoggle{display:none;width:100%;margin-top:8px}
-/* toolbar */
-.toolbar{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between;margin:14px 0 8px;font-size:.9rem}
-.toolbar .left{color:var(--muted)} .toolbar .left b{color:var(--ink)}
-.toolbar .right{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-.toolbar select{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:5px 8px}
+    .table-wrap {
+      margin-top: 10px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f3f7f4;
+      color: var(--muted);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    tbody tr:hover { background: #f7faf8; }
+    .title a {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .title a:hover { color: var(--brand); text-decoration: underline; }
+    .summary {
+      display: block;
+      color: var(--muted);
+      font-size: 0.82rem;
+      margin-top: 6px;
+      line-height: 1.45;
+    }
+    .pill {
+      display: inline-block;
+      padding: 2px 9px;
+      border-radius: 999px;
+      background: var(--chip);
+      color: var(--ink);
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-right: 6px;
+    }
+    .badge {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 3px 8px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      margin-left: 6px;
+    }
+    .badge.open { background: var(--open-bg); color: var(--open); }
+    .badge.soon { background: var(--soon-bg); color: var(--soon); }
+    .badge.closed { background: var(--closed-bg); color: var(--closed); }
+    .badge.new { background: #e6f0ff; color: #1e5bd6; }
+    .source-name { color: var(--muted); font-size: 0.8rem; display: block; margin-top: 4px; }
+    .empty { padding: 40px 16px; text-align: center; color: var(--muted); }
+    .pager {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding: 12px 14px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+    .pager-buttons { display: flex; gap: 6px; flex-wrap: wrap; }
+    .pager button {
+      background: transparent;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      min-width: 34px;
+      padding: 5px 8px;
+    }
+    .pager button.active {
+      background: var(--brand);
+      color: var(--brand-ink);
+      border-color: var(--brand);
+    }
+    .pager button:disabled { opacity: 0.4; cursor: default; }
+    footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
 
-/* table */
-.tablewrap{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
-.scroll{overflow-x:auto}
-table{width:100%;border-collapse:collapse;min-width:980px}
-thead th{background:var(--head);text-align:left;font-size:.78rem;text-transform:uppercase;letter-spacing:.4px;
-  color:var(--muted);padding:10px 10px;border-bottom:1px solid var(--line);white-space:nowrap;position:sticky;top:0}
-thead th.sort{cursor:pointer;user-select:none}
-thead th.sort:hover{color:var(--ink)}
-thead th[aria-sort="ascending"]::after{content:" ▲";color:var(--brand)}
-thead th[aria-sort="descending"]::after{content:" ▼";color:var(--brand)}
-tbody td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
-tbody tr:nth-child(even){background:var(--zebra)}
-tbody tr:hover{background:var(--brand-soft)}
-td.num{color:var(--muted);width:44px}
-td.idc{font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--muted);font-size:.86rem}
-td.tt{min-width:300px;max-width:460px}
-.tt a.t{color:var(--ink);font-weight:600;text-decoration:none;display:inline}
-.tt a.t:hover{color:var(--brand);text-decoration:underline}
-.sub{color:var(--muted);font-size:.83rem;margin-top:3px}
-.org{max-width:230px}
-.badge{display:inline-block;border-radius:6px;padding:1px 8px;font-size:.76rem;font-weight:600;white-space:nowrap}
-.b-open{background:var(--open-bg);color:var(--open)} .b-soon{background:var(--soon-bg);color:var(--soon)}
-.b-closed{background:var(--closed-bg);color:var(--closed)} .b-none{background:var(--none-bg);color:var(--none)}
-.b-new{background:var(--new-bg);color:var(--new);margin-left:6px;vertical-align:1px}
-.b-ai{background:var(--none-bg);color:var(--muted);margin-left:6px;font-weight:500;vertical-align:1px}
-.chip{display:inline-block;background:var(--brand-soft);color:var(--brand);border-radius:999px;padding:1px 10px;font-size:.78rem;white-space:nowrap}
-.kind{display:block;color:var(--muted);font-size:.78rem;margin-top:3px}
-td.dl{white-space:nowrap}
-td.dl .d{font-variant-numeric:tabular-nums;display:block;margin-bottom:3px}
-td.act{white-space:nowrap}
-td.act a{display:inline-block;border:1px solid var(--brand);color:var(--brand);border-radius:8px;padding:3px 10px;text-decoration:none;font-size:.84rem}
-td.act a:hover{background:var(--brand);color:var(--brand-ink)}
-.empty{padding:44px 16px;text-align:center;color:var(--muted)}
-
-/* pagination */
-.pager{display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:space-between;padding:12px;border-top:1px solid var(--line)}
-.pager .pages{display:flex;gap:4px;flex-wrap:wrap}
-.pager button{background:var(--panel);border:1px solid var(--line);border-radius:8px;min-width:36px;padding:5px 9px;cursor:pointer}
-.pager button:hover:not(:disabled){border-color:var(--brand)}
-.pager button[aria-current="page"]{background:var(--brand);color:var(--brand-ink);border-color:var(--brand);font-weight:700}
-.pager button:disabled{opacity:.4;cursor:default}
-.pager .info{color:var(--muted);font-size:.86rem}
-
-/* detail dialog */
-dialog{border:1px solid var(--line);border-radius:14px;padding:0;max-width:680px;width:calc(100% - 24px);background:var(--panel);color:var(--ink)}
-dialog::backdrop{background:rgba(0,0,0,.45)}
-.dhead{display:flex;justify-content:space-between;gap:12px;padding:16px 18px 8px}
-.dhead h2{margin:0;font-size:1.1rem;line-height:1.35}
-.dclose{background:none;border:0;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--muted)}
-.dbody{padding:4px 18px 18px}
-dl.grid{display:grid;grid-template-columns:130px 1fr;gap:8px 14px;margin:10px 0}
-dl.grid dt{color:var(--muted);font-size:.85rem} dl.grid dd{margin:0;overflow-wrap:anywhere}
-.note{background:var(--soon-bg);color:var(--soon);border-radius:8px;padding:8px 10px;font-size:.84rem;margin:8px 0}
-.dact{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-.dact a{text-decoration:none}
-
-/* source status */
-details.src{margin:18px 0 6px;color:var(--muted);font-size:.86rem}
-details.src summary{cursor:pointer}
-.srcgrid{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-.srcgrid span{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:3px 9px}
-.srcgrid .fail{border-color:var(--closed);color:var(--closed)}
-footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
-
-/* phones: each row becomes a card */
-@media(max-width:760px){
-  #ftoggle{display:block}
-  .filters{border-top:1px solid var(--line);border-radius:12px;margin-top:8px}
-  .filters.collapsed .field:not(.keep),.filters.collapsed .frow{display:none}
-  .tabs{margin-top:10px}
-  .scroll{overflow:visible}
-  table,tbody,tr,td{display:block;min-width:0;width:100%}
-  thead{display:none}
-  tbody tr{border-bottom:8px solid var(--bg);padding:10px 12px;background:var(--panel)!important}
-  tbody td{border:0;padding:3px 0}
-  td.num{display:none}
-  td[data-label]::before{content:attr(data-label)": ";color:var(--muted);font-size:.78rem}
-  td.tt{max-width:none;min-width:0}
-  td.tt::before{content:none!important}
-  td.act{padding-top:8px}
-  td.noid{display:none}
-  td.dl .d{display:inline;margin-right:8px}
-  .org{max-width:none}
-}
-@media(prefers-reduced-motion:no-preference){tbody tr{transition:background .12s}}
-</style>
+    @media (max-width: 760px) {
+      th:nth-child(1), th:nth-child(2), th:nth-child(5), th:nth-child(6), th:nth-child(7) { display: none; }
+      td:nth-child(1), td:nth-child(2), td:nth-child(5), td:nth-child(6), td:nth-child(7) { display: none; }
+    }
+  </style>
 </head>
 <body>
-<div class="top"><div class="wrap">
-  <h1>BD Tender Hub</h1>
-  <div class="meta"><span id="updated">Loading…</span> <button id="theme" type="button" aria-label="Switch light or dark theme">Theme</button></div>
-</div></div>
-
-<div class="wrap">
-  <section class="stats" aria-label="Summary">
-    <button class="stat open" id="s-open" type="button"><b>–</b><span>Open tenders</span></button>
-    <button class="stat soon" id="s-soon" type="button"><b>–</b><span>Closing in 7 days</span></button>
-    <button class="stat new" id="s-new" type="button"><b>–</b><span>New in last 24 hours</span></button>
-    <button class="stat" id="s-all" type="button"><b>–</b><span>Total tracked</span></button>
-  </section>
-
-  <div class="tabs" id="tabs" role="tablist" aria-label="Tender type"></div>
-
-  <button class="btn ghost" id="ftoggle" type="button" aria-expanded="false" aria-controls="filters">Filters</button>
-  <form class="filters collapsed" id="filters" onsubmit="return false" autocomplete="off">
-    <div class="field keep"><label for="q">Search</label>
-      <input id="q" type="search" placeholder="Title, organization, ID… (English or বাংলা)"></div>
-    <div class="field"><label for="status">Status</label>
-      <select id="status">
-        <option value="open">Open (not closed)</option>
-        <option value="soon">Closing in 7 days</option>
-        <option value="nodl">No deadline listed</option>
-        <option value="closed">Closed</option>
-        <option value="all">All</option>
-      </select></div>
-    <div class="field"><label for="category">Category</label><select id="category"><option value="">All categories</option></select></div>
-    <div class="field"><label for="source">Source</label><select id="source"><option value="">All sources</option></select></div>
-    <div class="field"><label for="from">Closes from</label><input id="from" type="date"></div>
-    <div class="field"><label for="to">Closes until</label><input id="to" type="date"></div>
-    <div class="frow">
-      <button class="btn ghost" id="reset" type="button">Reset filters</button>
-      <button class="btn ghost" id="csv" type="button">Download CSV</button>
+  <header class="topbar">
+    <div class="container">
+      <h1>BD Tender Hub</h1>
+      <div class="meta" id="updated">Loading…</div>
     </div>
-  </form>
+  </header>
 
-  <div class="toolbar">
-    <div class="left" id="count" aria-live="polite"></div>
-    <div class="right">
-      <label>Rows <select id="ps"><option>10</option><option selected>25</option><option>50</option><option>100</option></select></label>
+  <main class="container">
+    <section class="stats" aria-label="Tender summary">
+      <button type="button" class="stat open" data-status="open"><strong id="stat-open">0</strong><span>Open</span></button>
+      <button type="button" class="stat soon" data-status="soon"><strong id="stat-soon">0</strong><span>Closing soon</span></button>
+      <button type="button" class="stat closed" data-status="closed"><strong id="stat-closed">0</strong><span>Closed</span></button>
+      <button type="button" class="stat" data-status="all"><strong id="stat-total">0</strong><span>Total</span></button>
+    </section>
+
+    <form class="filters" id="filter-form" autocomplete="off">
+      <div class="field" style="grid-column: span 2;">
+        <label for="q">Search</label>
+        <input id="q" type="search" placeholder="Title, organization, location..." />
+      </div>
+      <div class="field">
+        <label for="status">Status</label>
+        <select id="status">
+          <option value="open">Open</option>
+          <option value="soon">Closing soon</option>
+          <option value="closed">Closed</option>
+          <option value="all">All</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="category">Category</label>
+        <select id="category"><option value="">All categories</option></select>
+      </div>
+      <div class="field">
+        <label for="source">Source</label>
+        <select id="source"><option value="">All sources</option></select>
+      </div>
+      <div class="field">
+        <label for="kind">Type</label>
+        <select id="kind">
+          <option value="">All types</option>
+          <option value="public">Government (e-GP)</option>
+          <option value="development">Development partner</option>
+          <option value="private">Private / NGO</option>
+          <option value="newspaper">Newspaper</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="location">District / location</label>
+        <select id="location"><option value="">All locations</option></select>
+      </div>
+      <div class="field" style="grid-column: 1 / -1;">
+        <div class="inline-actions">
+          <button type="button" class="btn-secondary" id="reset">Reset</button>
+          <button type="button" class="btn-primary" id="download">Download CSV</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="toolbar">
+      <div id="count">0 tenders</div>
+      <div>
+        <label for="sort">Sort</label>
+        <select id="sort">
+          <option value="deadline">Closing soonest</option>
+          <option value="new">Newest</option>
+          <option value="source">Source</option>
+        </select>
+      </div>
     </div>
-  </div>
 
-  <div class="tablewrap">
-    <div class="scroll">
+    <div class="table-wrap">
       <table>
-        <thead><tr>
-          <th>#</th>
-          <th>Tender ID</th>
-          <th class="sort" data-k="title">Title</th>
-          <th class="sort" data-k="org">Organization</th>
-          <th class="sort" data-k="cat">Category</th>
-          <th class="sort" data-k="pub">Published</th>
-          <th class="sort" data-k="dl">Closing</th>
-          <th>Notice</th>
-        </tr></thead>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Type</th>
+            <th>Tender</th>
+            <th>Organization</th>
+            <th>Category</th>
+            <th>Published</th>
+            <th>Deadline</th>
+            <th>Source</th>
+            <th>Action</th>
+          </tr>
+        </thead>
         <tbody id="rows"></tbody>
       </table>
+      <div class="pager" id="pager"></div>
     </div>
-    <div class="pager" id="pager"></div>
-  </div>
 
-  <details class="src"><summary>Source status</summary><div class="srcgrid" id="src"></div></details>
-  <footer>This is an index of public notices. Every row links to the original; confirm the deadline, fees and
-  documents on the official source before bidding. Items marked “AI” were read by an AI model and can contain mistakes.</footer>
-</div>
+    <footer>
+      This is an index of public notices. Confirm the deadline and conditions on the official source before bidding.
+    </footer>
+  </main>
 
-<dialog id="dlg" aria-labelledby="dtitle">
-  <div class="dhead"><h2 id="dtitle"></h2><button class="dclose" id="dclose" type="button" aria-label="Close">×</button></div>
-  <div class="dbody" id="dbody"></div>
-</dialog>
+  <script>
+    (function () {
+      const state = {
+        tenders: [],
+        filters: { sources: [], categories: [], types: [], locations: [] },
+        page: 1,
+        pageSize: 25,
+        activeStatus: 'open'
+      };
 
-<script>
-(function () {
-  "use strict";
-  var DAY = 86400000;
-  var KINDS = [["", "All"], ["public", "Government (e-GP)"], ["development", "Development partners"],
-               ["private", "Private / NGO"], ["newspaper", "Newspaper"]];
-  var KIND_NAME = { "public": "Government (e-GP)", development: "Development partner", "private": "Private / NGO", newspaper: "Newspaper" };
-  var QS_KEYS = ["q", "status", "kind", "category", "source", "from", "to", "sort", "dir", "ps"];
+      const $ = (id) => document.getElementById(id);
+      const kindLabel = {
+        public: 'Government',
+        development: 'Development',
+        private: 'Private / NGO',
+        newspaper: 'Newspaper'
+      };
 
-  var $ = function (id) { return document.getElementById(id); };
-  var S = { all: [], meta: null, kind: "", sort: "pub", dir: -1, page: 1, view: [] };
+      function esc(value) {
+        return String(value ?? '').replace(/[&<>"']/g, (c) => ({
+          '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+        }[c]));
+      }
 
-  function esc(s) {
-    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
-      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
-    });
-  }
-  function safeUrl(u) { return /^https?:\/\//i.test(u || "") ? u : ""; }
-  function pubOf(t) { return t.published || String(t.first_seen || "").slice(0, 10); }
-  function fmt(iso) {
-    if (!iso) return "";
-    var d = new Date(String(iso).slice(0, 10) + "T00:00:00+06:00");
-    if (isNaN(d)) return esc(iso);
-    return d.toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric", timeZone: "Asia/Dhaka" });
-  }
-  function daysLeft(t) {
-    if (!t.deadline) return null;
-    var end = Date.parse(t.deadline + "T23:59:59+06:00");
-    return isNaN(end) ? null : Math.ceil((end - Date.now()) / DAY);
-  }
-  function statusOf(t) {
-    var d = daysLeft(t);
-    if (d === null) return "nodl";
-    return d < 0 ? "closed" : (d <= 7 ? "soon" : "open");
-  }
-  function isNew(t) {
-    var f = Date.parse(t.first_seen || "");
-    return !isNaN(f) && Date.now() - f < DAY;
-  }
-  function idShort(t) {
-    var id = String(t.id || "");
-    if (id.indexOf("egp-") === 0) return id.slice(4);
-    if (id.indexOf("wb-") === 0) return id.slice(3);
-    return "—";
-  }
+      function formatDate(value) {
+        if (!value) return '—';
+        const d = new Date(value + 'T00:00:00+06:00');
+        if (Number.isNaN(d.getTime())) return value;
+        return d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'Asia/Dhaka' });
+      }
 
-  /* ---------- URL <-> controls ---------- */
-  function readQS() {
-    try {
-      var p = new URLSearchParams(location.search);
-      QS_KEYS.forEach(function (k) {
-        var v = p.get(k); if (v == null) return;
-        if (k === "kind") S.kind = v;
-        else if (k === "sort") S.sort = v;
-        else if (k === "dir") S.dir = v === "asc" ? 1 : -1;
-        else if ($(k)) $(k).value = v;
+      function daysLeft(deadline) {
+        if (!deadline) return null;
+        const end = Date.parse(deadline + 'T23:59:59+06:00');
+        return Number.isNaN(end) ? null : Math.ceil((end - Date.now()) / 86400000);
+      }
+
+      function statusOf(tender) {
+        const left = daysLeft(tender.deadline);
+        if (left === null) return 'open';
+        if (left < 0) return 'closed';
+        if (left <= 7) return 'soon';
+        return 'open';
+      }
+
+      function buildQuery() {
+        const params = new URLSearchParams();
+        const q = $('q').value.trim();
+        const status = $('status').value || 'open';
+        const category = $('category').value;
+        const source = $('source').value;
+        const kind = $('kind').value;
+        const location = $('location').value;
+        const sort = $('sort').value;
+        if (q) params.set('q', q);
+        if (status) params.set('status', status);
+        if (category) params.set('category', category);
+        if (source) params.set('source', source);
+        if (kind) params.set('kind', kind);
+        if (location) params.set('location', location);
+        if (sort) params.set('sort', sort);
+        return params.toString();
+      }
+
+      function setFiltersFromQuery(query) {
+        const p = new URLSearchParams(query);
+        $('q').value = p.get('q') || '';
+        $('status').value = p.get('status') || 'open';
+        $('category').value = p.get('category') || '';
+        $('source').value = p.get('source') || '';
+        $('kind').value = p.get('kind') || '';
+        $('location').value = p.get('location') || '';
+        $('sort').value = p.get('sort') || 'deadline';
+      }
+
+      function applyFilters() {
+        const q = $('q').value.trim().toLowerCase();
+        const status = $('status').value;
+        const category = $('category').value;
+        const source = $('source').value;
+        const type = $('kind').value;
+        const location = $('location').value;
+        const sort = $('sort').value;
+
+        let rows = [...state.tenders];
+        if (q) {
+          rows = rows.filter((t) => {
+            const hay = `${t.title || ''} ${t.organization || ''} ${t.summary || ''} ${t.location || ''} ${t.source || ''}`.toLowerCase();
+            return hay.includes(q);
+          });
+        }
+        if (status && status !== 'all') rows = rows.filter((t) => statusOf(t) === status);
+        if (category) rows = rows.filter((t) => (t.category || 'Other') === category);
+        if (source) rows = rows.filter((t) => (t.source || '') === source);
+        if (type) rows = rows.filter((t) => (t.kind || 'public') === type);
+        if (location) rows = rows.filter((t) => (t.location || '') === location);
+
+        if (sort === 'new') {
+          rows.sort((a, b) => (b.first_seen || '').localeCompare(a.first_seen || ''));
+        } else if (sort === 'source') {
+          rows.sort((a, b) => ((a.source || '').localeCompare(b.source || '')) || ((a.title || '').localeCompare(b.title || '')));
+        } else {
+          rows.sort((a, b) => {
+            const da = a.deadline || '9999-12-31';
+            const db = b.deadline || '9999-12-31';
+            return (da > db ? 1 : -1) || (b.first_seen || '').localeCompare(a.first_seen || '');
+          });
+        }
+
+        return rows;
+      }
+
+      function renderPager(totalRows) {
+        const pages = Math.max(1, Math.ceil(totalRows / state.pageSize));
+        if (state.page > pages) state.page = pages;
+        const pageButtons = [];
+        for (let i = 1; i <= pages; i++) {
+          if (i === 1 || i === pages || (i >= state.page - 1 && i <= state.page + 1)) {
+            pageButtons.push(`<button type="button" class="${i === state.page ? 'active' : ''}" data-page="${i}">${i}</button>`);
+          }
+        }
+        $('pager').innerHTML = `
+          <div>${state.page} / ${pages}</div>
+          <div class="pager-buttons">
+            <button type="button" data-page="1" ${state.page === 1 ? 'disabled' : ''}>«</button>
+            <button type="button" data-page="${Math.max(1, state.page - 1)}" ${state.page === 1 ? 'disabled' : ''}>‹</button>
+            ${pageButtons.join('')}
+            <button type="button" data-page="${Math.min(pages, state.page + 1)}" ${state.page === pages ? 'disabled' : ''}>›</button>
+            <button type="button" data-page="${pages}" ${state.page === pages ? 'disabled' : ''}>»</button>
+          </div>
+        `;
+      }
+
+      function renderRows(rows) {
+        const start = (state.page - 1) * state.pageSize;
+        const slice = rows.slice(start, start + state.pageSize);
+        $('count').textContent = `${rows.length} tender${rows.length === 1 ? '' : 's'}`;
+
+        if (!slice.length) {
+          $('rows').innerHTML = '<tr><td colspan="9" class="empty">No tenders match these filters.</td></tr>';
+          renderPager(0);
+          return;
+        }
+
+        $('rows').innerHTML = slice.map((t, idx) => {
+          const left = daysLeft(t.deadline);
+          const status = statusOf(t);
+          const statusClass = status === 'closed' ? 'closed' : status === 'soon' ? 'soon' : 'open';
+          const deadlineText = left === null ? 'Not stated' : left < 0 ? 'Closed' : left === 0 ? 'Closes today' : `${left} day${left === 1 ? '' : 's'} left`;
+          const kind = kindLabel[t.kind] || 'Other';
+          const title = esc(t.title || 'Untitled tender');
+          const org = esc(t.organization || '—');
+          const category = esc(t.category || 'Other');
+          const source = esc(t.source || 'Unknown');
+          const location = esc(t.location || '');
+          const summary = t.summary ? `<span class="summary">${esc(t.summary.slice(0, 140))}${t.summary.length > 140 ? '…' : ''}</span>` : '';
+          const link = t.link ? `<a href="${esc(t.link)}" target="_blank" rel="noopener noreferrer">Open</a>` : '—';
+          const seenNew = (Date.now() - new Date(t.first_seen || Date.now()).getTime()) < 86400000 ? '<span class="badge new">NEW</span>' : '';
+
+          return `
+            <tr>
+              <td>${start + idx + 1}</td>
+              <td><span class="pill">${kind}</span></td>
+              <td class="title">
+                <a href="${esc(t.link || '#')}" target="_blank" rel="noopener noreferrer">${title}</a>
+                ${seenNew}
+                ${summary}
+              </td>
+              <td>${org}${location ? `<span class="source-name">${location}</span>` : ''}</td>
+              <td><span class="pill">${category}</span></td>
+              <td>${formatDate(t.published || t.first_seen)}</td>
+              <td>
+                <span>${formatDate(t.deadline)}</span>
+                <span class="badge ${statusClass}">${deadlineText}</span>
+              </td>
+              <td>${source}</td>
+              <td>${link}</td>
+            </tr>
+          `;
+        }).join('');
+
+        renderPager(rows.length);
+      }
+
+      function renderSummary(rows) {
+        const open = rows.filter((t) => statusOf(t) === 'open').length;
+        const soon = rows.filter((t) => statusOf(t) === 'soon').length;
+        const closed = rows.filter((t) => statusOf(t) === 'closed').length;
+        $('stat-open').textContent = open;
+        $('stat-soon').textContent = soon;
+        $('stat-closed').textContent = closed;
+        $('stat-total').textContent = rows.length;
+      }
+
+      function loadFilters() {
+        const fill = (id, values) => {
+          const el = $(id);
+          const current = el.value;
+          el.innerHTML = id === 'category' ? '<option value="">All categories</option>' : id === 'source' ? '<option value="">All sources</option>' : id === 'location' ? '<option value="">All locations</option>' : '<option value="">All types</option>';
+          values.filter(Boolean).forEach((value) => {
+            const option = document.createElement('option');
+            option.value = value;
+            option.textContent = value;
+            el.appendChild(option);
+          });
+          if (current) el.value = current;
+        };
+
+        fill('category', state.filters.categories);
+        fill('source', state.filters.sources);
+        fill('location', state.filters.locations);
+      }
+
+      function fetchFilters() {
+        fetch('/api/filters', { cache: 'no-store' })
+          .then((r) => r.json())
+          .then((data) => {
+            state.filters = data;
+            loadFilters();
+          })
+          .catch(() => {
+            console.warn('Could not load filters');
+          });
+      }
+
+      function fetchTenders() {
+        const q = buildQuery();
+        const url = '/api/tenders' + (q ? `?${q}` : '');
+        fetch(url, { cache: 'no-store' })
+          .then((r) => r.json())
+          .then((data) => {
+            const rows = Array.isArray(data.tenders) ? data.tenders : [];
+            state.tenders = rows;
+            state.page = 1;
+            const filtered = applyFilters();
+            renderSummary(filtered);
+            renderRows(filtered);
+            const g = new Date();
+            $('updated').textContent = `Updated ${g.toLocaleString('en-GB', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Asia/Dhaka' })}`;
+          })
+          .catch(() => {
+            $('rows').innerHTML = '<tr><td colspan="9" class="empty">Could not load data from the backend.</td></tr>';
+          });
+      }
+
+      function resetFilters() {
+        $('q').value = '';
+        $('status').value = 'open';
+        $('category').value = '';
+        $('source').value = '';
+        $('kind').value = '';
+        $('location').value = '';
+        $('sort').value = 'deadline';
+        fetchTenders();
+      }
+
+      document.querySelectorAll('.stat').forEach((button) => {
+        button.addEventListener('click', () => {
+          const status = button.dataset.status;
+          $('status').value = status;
+          fetchTenders();
+        });
       });
-    } catch (e) {}
-  }
-  function writeQS() {
-    try {
-      var p = new URLSearchParams();
-      if ($("q").value.trim()) p.set("q", $("q").value.trim());
-      if ($("status").value !== "open") p.set("status", $("status").value);
-      if (S.kind) p.set("kind", S.kind);
-      ["category", "source", "from", "to"].forEach(function (k) { if ($(k).value) p.set(k, $(k).value); });
-      if (S.sort !== "pub" || S.dir !== -1) { p.set("sort", S.sort); p.set("dir", S.dir === 1 ? "asc" : "desc"); }
-      if ($("ps").value !== "25") p.set("ps", $("ps").value);
-      var qs = p.toString();
-      history.replaceState(null, "", location.pathname + (qs ? "?" + qs : ""));
-    } catch (e) {}
-  }
 
-  /* ---------- load ---------- */
-  function load() {
-    fetch("tenders.json?t=" + Date.now(), { cache: "no-store" })
-      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(function (data) {
-        S.meta = data; S.all = data.tenders || [];
-        fillSelect("category", uniq("category"));
-        fillSelect("source", uniq("source"));
-        readQS();
-        var g = data.generated_at ? new Date(data.generated_at) : null;
-        $("updated").textContent = g ? "Updated " + g.toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short", timeZone: "Asia/Dhaka" }) + " (BST)" : "No data yet";
-        renderSources();
-        render();
-      })
-      .catch(function () {
-        $("updated").textContent = "Could not load tenders.json";
-        $("rows").innerHTML = '<tr><td colspan="8" class="empty">Could not load the data file. If you opened this page by double-clicking the file, start a local server instead ' +
-          '(<code>python -m http.server -d docs 8000</code>) or use the hosted site.</td></tr>';
+      ['q', 'status', 'category', 'source', 'kind', 'location', 'sort'].forEach((id) => {
+        $(id).addEventListener('input', () => fetchTenders());
+        $(id).addEventListener('change', () => fetchTenders());
       });
-  }
-  function uniq(key) {
-    var seen = {}, out = [];
-    S.all.forEach(function (t) { var v = t[key]; if (v && !seen[v]) { seen[v] = 1; out.push(v); } });
-    return out.sort(function (a, b) { return a.localeCompare(b); });
-  }
-  function fillSelect(id, vals) {
-    var el = $(id), cur = el.value;
-    el.insertAdjacentHTML("beforeend", vals.map(function (v) { return "<option>" + esc(v) + "</option>"; }).join(""));
-    el.value = cur;
-  }
 
-  /* ---------- filtering & sorting ---------- */
-  function matches(t, o) {
-    var q = $("q").value.trim().toLowerCase(), st = $("status").value;
-    if (!o.skipKind && S.kind && t.kind !== S.kind) return false;
-    var s = statusOf(t);
-    if (st === "open" && s === "closed") return false;
-    if (st === "soon" && s !== "soon") return false;
-    if (st === "nodl" && s !== "nodl") return false;
-    if (st === "closed" && s !== "closed") return false;
-    var cat = $("category").value; if (cat && t.category !== cat) return false;
-    var src = $("source").value; if (src && t.source !== src) return false;
-    var from = $("from").value, to = $("to").value;
-    if (from || to) { if (!t.deadline) return false; if (from && t.deadline < from) return false; if (to && t.deadline > to) return false; }
-    if (q) {
-      var hay = [t.title, t.organization, t.summary, t.location, t.category, t.source, t.id].join(" ").toLowerCase();
-      return q.split(/\s+/).every(function (w) { return hay.indexOf(w) !== -1; });
-    }
-    return true;
-  }
-  function cmp(a, b) {
-    var k = S.sort, d = S.dir, x, y;
-    if (k === "dl") { x = a.deadline || ""; y = b.deadline || ""; if (!x && !y) return 0; if (!x) return 1; if (!y) return -1; }
-    else if (k === "pub") { x = pubOf(a); y = pubOf(b); if (!x && !y) return 0; if (!x) return 1; if (!y) return -1; }
-    else { x = String(k === "title" ? a.title : k === "org" ? a.organization : a.category || "").toLowerCase();
-           y = String(k === "title" ? b.title : k === "org" ? b.organization : b.category || "").toLowerCase();
-           if (!x && y) return 1; if (x && !y) return -1; return d * x.localeCompare(y); }
-    return x < y ? -d : x > y ? d : 0;
-  }
+      $('reset').addEventListener('click', resetFilters);
+      $('download').addEventListener('click', () => {
+        const rows = applyFilters();
+        const csv = ['title,organization,category,status,deadline,source,link'];
+        rows.forEach((t) => {
+          csv.push(`"${(t.title || '').replace(/"/g, '""')}","${(t.organization || '').replace(/"/g, '""')}","${(t.category || 'Other').replace(/"/g, '""')}","${statusOf(t)}","${t.deadline || ''}","${(t.source || '').replace(/"/g, '""')}","${(t.link || '').replace(/"/g, '""')}"`);
+        });
+        const blob = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
+        const a = document.createElement('a');
+        const url = URL.createObjectURL(blob);
+        a.href = url;
+        a.download = 'tenders.csv';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+      });
 
-  /* ---------- render ---------- */
-  function render() {
-    writeQS();
-    var all = S.all;
-    // stats (independent of filters)
-    var open = 0, soon = 0, fresh = 0;
-    all.forEach(function (t) { var s = statusOf(t); if (s !== "closed") open++; if (s === "soon") soon++; if (isNew(t)) fresh++; });
-    $("s-open").firstChild.textContent = open; $("s-soon").firstChild.textContent = soon;
-    $("s-new").firstChild.textContent = fresh; $("s-all").firstChild.textContent = all.length;
+      $('pager').addEventListener('click', (event) => {
+        const btn = event.target.closest('[data-page]');
+        if (!btn) return;
+        const page = Number(btn.dataset.page);
+        if (!page || Number.isNaN(page)) return;
+        state.page = page;
+        renderRows(applyFilters());
+      });
 
-    // tabs with counts (respect every filter except type)
-    var counts = {};
-    all.forEach(function (t) { if (matches(t, { skipKind: true })) { counts[t.kind] = (counts[t.kind] || 0) + 1; counts[""] = (counts[""] || 0) + 1; } });
-    $("tabs").innerHTML = KINDS.map(function (k) {
-      return '<button class="tab" role="tab" data-kind="' + k[0] + '" aria-selected="' + (S.kind === k[0]) + '">' + esc(k[1]) +
-             '<span class="n">' + (counts[k[0]] || 0) + "</span></button>";
-    }).join("");
-
-    S.view = all.filter(function (t) { return matches(t, {}); }).sort(cmp);
-    var ps = parseInt($("ps").value, 10) || 25, pages = Math.max(1, Math.ceil(S.view.length / ps));
-    if (S.page > pages) S.page = pages;
-    var start = (S.page - 1) * ps, slice = S.view.slice(start, start + ps);
-
-    $("count").innerHTML = "<b>" + S.view.length + "</b> tender" + (S.view.length === 1 ? "" : "s") +
-      (S.view.length ? " · showing " + (start + 1) + "–" + (start + slice.length) : "");
-
-    document.querySelectorAll("th.sort").forEach(function (th) {
-      th.setAttribute("aria-sort", th.dataset.k === S.sort ? (S.dir === 1 ? "ascending" : "descending") : "none");
-    });
-
-    $("rows").innerHTML = slice.length ? slice.map(function (t, i) { return rowHtml(t, start + i); }).join("")
-      : '<tr><td colspan="8" class="empty">' + (S.all.length ? "No tenders match these filters." : "No tenders collected yet. Run the “Collect tenders” workflow once.") + "</td></tr>";
-    renderPager(pages);
-  }
-
-  function dlHtml(t) {
-    var d = daysLeft(t);
-    if (d === null) return '<span class="d">Not stated</span><span class="badge b-none">See notice</span>';
-    var cls = d < 0 ? "b-closed" : d <= 7 ? "b-soon" : "b-open";
-    var lab = d < 0 ? "Closed" : d === 0 ? "Closes today" : d + (d === 1 ? " day left" : " days left");
-    return '<span class="d">' + fmt(t.deadline) + '</span><span class="badge ' + cls + '">' + lab + "</span>";
-  }
-  function rowHtml(t, i) {
-    var url = safeUrl(t.link), idx = S.all.indexOf(t);
-    var sub = t.summary ? esc(t.summary.slice(0, 150)) + (t.summary.length > 150 ? "…" : "") : "";
-    return "<tr>" +
-      '<td class="num">' + (i + 1) + "</td>" +
-      '<td class="idc' + (idShort(t) === "—" ? " noid" : "") + '" data-label="ID">' + esc(idShort(t)) + "</td>" +
-      '<td class="tt"><a class="t" href="#" data-i="' + idx + '">' + esc(t.title) + "</a>" +
-        (isNew(t) ? '<span class="badge b-new">NEW</span>' : "") +
-        (t.ai_extracted ? '<span class="badge b-ai" title="Read by AI from a web page or newspaper. Verify on the original.">AI</span>' : "") +
-        (sub ? '<div class="sub">' + sub + "</div>" : "") + "</td>" +
-      '<td class="org" data-label="Organization">' + (t.organization ? esc(t.organization) : '<span class="sub">—</span>') + "</td>" +
-      '<td data-label="Category"><span class="chip">' + esc(t.category || "Other") + '</span><span class="kind">' + esc(t.source) + "</span></td>" +
-      '<td data-label="Published">' + (pubOf(t) ? fmt(pubOf(t)) : "—") + "</td>" +
-      '<td class="dl" data-label="Closing">' + dlHtml(t) + "</td>" +
-      '<td class="act">' + (url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">View ↗</a>' : "") + "</td></tr>";
-  }
-
-  function renderPager(pages) {
-    var p = S.page, nums = [], i;
-    for (i = 1; i <= pages; i++) if (i === 1 || i === pages || Math.abs(i - p) <= 2) nums.push(i);
-    var out = "", prev = 0;
-    nums.forEach(function (n) {
-      if (prev && n - prev > 1) out += '<button disabled>…</button>';
-      out += '<button data-p="' + n + '"' + (n === p ? ' aria-current="page"' : "") + ">" + n + "</button>"; prev = n;
-    });
-    $("pager").innerHTML = '<span class="info">Page ' + p + " of " + pages + '</span><div class="pages">' +
-      '<button data-p="1"' + (p === 1 ? " disabled" : "") + ">« First</button>" +
-      '<button data-p="' + (p - 1) + '"' + (p === 1 ? " disabled" : "") + ">‹ Prev</button>" + out +
-      '<button data-p="' + (p + 1) + '"' + (p === pages ? " disabled" : "") + ">Next ›</button>" +
-      '<button data-p="' + pages + '"' + (p === pages ? " disabled" : "") + ">Last »</button></div>";
-  }
-
-  function renderSources() {
-    var s = (S.meta && S.meta.sources) || [];
-    $("src").innerHTML = s.length ? s.map(function (x) {
-      var txt = x.note || (x.ok ? x.count + " in last run" : "failed");
-      return '<span class="' + (x.ok ? "" : "fail") + '" title="' + esc(x.error || "") + '">' + esc(x.name) + ": " + esc(txt) + "</span>";
-    }).join("") : "<span>No source information yet</span>";
-  }
-
-  /* ---------- detail dialog ---------- */
-  function openDetail(t) {
-    var url = safeUrl(t.link), d = daysLeft(t);
-    $("dtitle").textContent = t.title;
-    var rows = [
-      ["Status", d === null ? "Deadline not stated" : d < 0 ? "Closed" : d === 0 ? "Closes today" : d + " day(s) left"],
-      ["Closing date", t.deadline ? fmt(t.deadline) : "Not stated. See the notice."],
-      ["Published", pubOf(t) ? fmt(pubOf(t)) : "—"],
-      ["Organization", t.organization || "—"],
-      ["Category", t.category || "Other"],
-      ["Type", KIND_NAME[t.kind] || t.kind || "—"],
-      ["Source", t.source || "—"],
-      ["Tender ID", idShort(t) === "—" ? "—" : idShort(t)],
-      ["Location", t.location || ""],
-      ["Estimated value", t.value_bdt ? "BDT " + Number(t.value_bdt).toLocaleString("en-US") : ""],
-      ["First seen", t.first_seen ? fmt(t.first_seen) : ""],
-      ["Last seen", t.last_seen ? fmt(t.last_seen) : ""]
-    ].filter(function (r) { return r[1]; });
-    var h = '<dl class="grid">' + rows.map(function (r) { return "<dt>" + esc(r[0]) + "</dt><dd>" + esc(r[1]) + "</dd>"; }).join("") + "</dl>";
-    if (t.summary) h += "<p>" + esc(t.summary) + "</p>";
-    if (t.ai_extracted) h += '<div class="note">Details were read by an AI model from a web page or newspaper. Check the deadline and requirements on the original notice.</div>';
-    h += '<div class="dact">' + (url ? '<a class="btn" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">Open original notice ↗</a>' : "");
-    (t.also_at || []).forEach(function (u, i) {
-      var s = safeUrl(u); if (s) h += '<a class="btn ghost" href="' + esc(s) + '" target="_blank" rel="noopener noreferrer">Also listed (' + (i + 1) + ") ↗</a>";
-    });
-    $("dbody").innerHTML = h + "</div>";
-    var dlg = $("dlg");
-    if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
-  }
-
-  /* ---------- CSV ---------- */
-  function cell(v) { v = String(v == null ? "" : v); if (/^[=+\-@]/.test(v)) v = "'" + v; return '"' + v.replace(/"/g, '""') + '"'; }
-  function csv() {
-    var head = ["id", "title", "organization", "category", "type", "source", "published", "closing", "link"];
-    var lines = [head.join(",")].concat(S.view.map(function (t) {
-      return [idShort(t), t.title, t.organization, t.category, KIND_NAME[t.kind] || t.kind, t.source, pubOf(t), t.deadline, t.link].map(cell).join(",");
-    }));
-    var a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob(["﻿" + lines.join("\r\n")], { type: "text/csv;charset=utf-8" }));
-    a.download = "tenders.csv"; document.body.appendChild(a); a.click(); a.remove();
-    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
-  }
-
-  /* ---------- events ---------- */
-  function go() { S.page = 1; render(); }
-  var timer;
-  $("q").addEventListener("input", function () { clearTimeout(timer); timer = setTimeout(go, 180); });
-  ["status", "category", "source", "from", "to"].forEach(function (id) { $(id).addEventListener("change", go); });
-  $("ps").addEventListener("change", go);
-  $("reset").addEventListener("click", function () {
-    $("q").value = ""; $("status").value = "open"; $("category").value = ""; $("source").value = "";
-    $("from").value = ""; $("to").value = ""; S.kind = ""; S.sort = "pub"; S.dir = -1; go();
-  });
-  $("csv").addEventListener("click", csv);
-  $("ftoggle").addEventListener("click", function () {
-    var c = $("filters").classList.toggle("collapsed");
-    $("ftoggle").setAttribute("aria-expanded", String(!c));
-    $("ftoggle").textContent = c ? "Filters" : "Hide filters";
-  });
-  $("tabs").addEventListener("click", function (e) { var b = e.target.closest(".tab"); if (b) { S.kind = b.dataset.kind; go(); } });
-  $("pager").addEventListener("click", function (e) { var b = e.target.closest("button[data-p]"); if (b && !b.disabled) { S.page = +b.dataset.p; render(); window.scrollTo({ top: document.querySelector(".toolbar").offsetTop - 10 }); } });
-  document.querySelector("thead").addEventListener("click", function (e) {
-    var th = e.target.closest("th.sort"); if (!th) return;
-    if (S.sort === th.dataset.k) S.dir = -S.dir; else { S.sort = th.dataset.k; S.dir = (S.sort === "pub") ? -1 : 1; }
-    go();
-  });
-  $("rows").addEventListener("click", function (e) {
-    var a = e.target.closest("a.t"); if (!a) return; e.preventDefault(); openDetail(S.all[+a.dataset.i]);
-  });
-  $("dclose").addEventListener("click", function () { $("dlg").close ? $("dlg").close() : $("dlg").removeAttribute("open"); });
-  $("dlg").addEventListener("click", function (e) { if (e.target === $("dlg")) $("dlg").close(); });
-  function quick(id, status, kind) { $(id).addEventListener("click", function () { $("status").value = status; S.kind = kind == null ? S.kind : kind; go(); }); }
-  quick("s-open", "open", ""); quick("s-soon", "soon", ""); quick("s-all", "all", "");
-  $("s-new").addEventListener("click", function () { $("status").value = "open"; $("q").value = ""; S.sort = "pub"; S.dir = -1; S.kind = ""; go(); });
-  $("theme").addEventListener("click", function () {
-    var r = document.documentElement, dark = r.getAttribute("data-theme") === "dark" ||
-      (!r.getAttribute("data-theme") && window.matchMedia("(prefers-color-scheme: dark)").matches);
-    r.setAttribute("data-theme", dark ? "light" : "dark");
-    try { localStorage.setItem("theme", dark ? "light" : "dark"); } catch (e) {}
-  });
-  try { var th = localStorage.getItem("theme"); if (th) document.documentElement.setAttribute("data-theme", th); } catch (e) {}
-
-  load();
-})();
-</script>
+      setFiltersFromQuery(window.location.search);
+      fetchFilters();
+      fetchTenders();
+    })();
+  </script>
 </body>
 </html>
