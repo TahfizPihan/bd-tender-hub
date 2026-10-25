@@ -190,6 +190,12 @@ def get_tenders(filters: dict | None = None) -> list[dict]:
     return [dict(row) for row in rows]
 
 
+def get_tender_by_id(tender_id: str) -> dict | None:
+    conn = ensure_db()
+    row = conn.execute("SELECT * FROM tenders WHERE id = ? LIMIT 1", (tender_id,)).fetchone()
+    return dict(row) if row else None
+
+
 def get_filters() -> dict:
     conn = ensure_db()
     return {
