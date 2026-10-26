@@ -100,6 +100,57 @@ def guess_category(text):
     return "Other"
 
 
+# ---- procurement method, funding partner, nature --------------------------
+METHOD_RX = re.compile(r"\b(OTM|LTM|RFQ[UL]?|DPM|TSTM|OSTETM|OSTM|QCBS|LCS|SFB|SBCQ|SSS|FBS|CQS|IC|DC|CSO)\b")
+METHOD_NAMES = {"Open Tendering": "OTM", "Limited Tendering": "LTM", "Request for Quotation": "RFQ",
+                "Direct Procurement": "DPM", "Two Stage": "TSTM", "One Stage Two Envelope": "OSTETM"}
+PARTNERS = [
+    ("ADB", r"\bADB\b|asian development bank"), ("JICA", r"\bJICA\b|japan international cooperation"),
+    ("IFC", r"\bIFC\b|international finance corporation"),
+    ("World Bank", r"world\s*bank|\bIDA\b|\bIBRD\b|\bWB\b"),
+    ("IsDB", r"\bIsDB\b|islamic development bank"), ("AIIB", r"\bAIIB\b|asian infrastructure"),
+    ("KfW", r"\bKfW\b"), ("GIZ", r"\bGIZ\b"), ("EU", r"\bEU\b|european (union|commission|investment)|\bEIB\b"),
+    ("USAID", r"\bUSAID\b"), ("FCDO", r"\bFCDO\b|\bDFID\b|\bUK ?aid\b"),
+    ("UNDP", r"\bUNDP\b"), ("UNICEF", r"\bUNICEF\b"), ("Korea (KOICA/EDCF)", r"KOICA|EDCF|korea"),
+    ("China (Exim)", r"china|chinese|exim"), ("India (LoC)", r"india|\bLoC\b"),
+    ("AFD", r"\bAFD\b|agence fran"), ("Netherlands", r"netherlands|dutch"),
+]
+_PARTNER_RX = [(n, re.compile(p, re.I)) for n, p in PARTNERS]
+
+
+def find_method(text):
+    """'NCT Limited Tendering Method (LTM)' -> 'LTM'."""
+    t = text or ""
+    m = METHOD_RX.search(t)
+    if m:
+        return m.group(1)
+    for name, code in METHOD_NAMES.items():
+        if name.lower() in t.lower():
+            return code
+    return None
+
+
+def find_partner(*texts):
+    blob = " ".join(x for x in texts if x)
+    for name, rx in _PARTNER_RX:
+        if rx.search(blob):
+            return name
+    return None
+
+
+NATURE_MAP = {"goods": "Goods", "works": "Works", "work": "Works", "services": "Services",
+              "service": "Services", "physical service": "Physical service",
+              "non-physical service": "Services", "consultancy": "Services"}
+
+
+def norm_nature(v):
+    v = re.sub(r"\s+", " ", (v or "")).strip().lower()
+    for k, name in NATURE_MAP.items():
+        if v == k or v.startswith(k):
+            return name
+    return None
+
+
 def norm_text(s):
     s = (s or "").lower()
     s = re.sub(r"[^\w\s]", " ", s, flags=re.UNICODE)
@@ -124,6 +175,10 @@ def dedupe_key(rec):
     return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
 
 
+EXTRA_FIELDS = ("nature", "method", "proc_type", "ref_no", "deadline_time", "funding", "partner",
+                "district", "location", "value_bdt", "ministry", "ai_extracted", "via", "doc_price")
+
+
 def build_record(source, raw, now):
     """Turn a raw parsed item into a tender record."""
     title = (raw.get("title") or "").strip()
@@ -145,8 +200,21 @@ def build_record(source, raw, now):
         "last_seen": now.isoformat(timespec="seconds"),
         "also_at": [],
     }
-    rec["needs_ai"] = not (rec["deadline"] and rec["organization"])
+    for f in EXTRA_FIELDS:
+        if raw.get(f):
+            rec[f] = raw[f]
+    if raw.get("category"):
+        rec["category"] = raw["category"]
+    elif rec["category"] == "Other":
+        rec["category"] = {"Works": "Civil works", "Goods": "Goods"}.get(rec.get("nature"), "Other")
+    rec["needs_ai"] = not (rec["deadline"] and rec["organization"]) and not raw.get("no_ai")
     return rec
+
+
+def ref_key(rec):
+    """Reference numbers are unique per tender across e-GP and BPPA; compare digits/letters only."""
+    r = re.sub(r"[^0-9a-z]", "", str(rec.get("ref_no") or "").lower())
+    return r if len(r) >= 10 else None
 
 
 def merge(existing, fresh, now):
@@ -154,23 +222,29 @@ def merge(existing, fresh, now):
     and folds cross-source duplicates (same title+org+deadline) into one."""
     by_id = {r["id"]: r for r in existing}
     by_key = {dedupe_key(r): r for r in existing}
+    by_ref = {ref_key(r): r for r in existing if ref_key(r)}
     for rec in fresh:
         cur = by_id.get(rec["id"])
         if cur:
-            for f in ("organization", "deadline", "published", "summary"):
+            for f in ("organization", "deadline", "published", "summary") + EXTRA_FIELDS:
                 if not cur.get(f) and rec.get(f):
                     cur[f] = rec[f]
             cur["last_seen"] = rec["last_seen"]
             cur["needs_ai"] = cur.get("needs_ai", False) and not (cur.get("deadline") and cur.get("organization"))
             continue
-        twin = by_key.get(dedupe_key(rec))
+        twin = by_key.get(dedupe_key(rec)) or (by_ref.get(ref_key(rec)) if ref_key(rec) else None)
         if twin and twin["source_id"] != rec["source_id"]:
+            for f in ("method", "nature", "partner", "funding", "ref_no", "deadline_time", "ministry"):
+                if not twin.get(f) and rec.get(f):
+                    twin[f] = rec[f]
             if rec["link"] and rec["link"] != twin["link"] and rec["link"] not in twin["also_at"]:
                 twin["also_at"].append(rec["link"])
             twin["last_seen"] = rec["last_seen"]
             continue
         by_id[rec["id"]] = rec
         by_key[dedupe_key(rec)] = rec
+        if ref_key(rec):
+            by_ref[ref_key(rec)] = rec
     return list(by_id.values())
 
 
