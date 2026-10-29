@@ -1,13 +1,12 @@
 {
- "generated_at": "2026-10-29T00:52:53+00:00",
+ "generated_at": "2026-10-29T09:51:55+00:00",
  "count": 90,
  "sources": [
   {
    "id": "egp-daily",
    "name": "e-GP (daily RSS)",
-   "ok": false,
-   "count": 0,
-   "error": "404 Client Error: Not Found for url: https://www.eprocure.gov.bd/RSS/DailyTender.xml"
+   "ok": true,
+   "count": 0
   },
   {
    "id": "egp-weekly",
@@ -65,7 +64,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-28T12:45:27+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -83,7 +82,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -101,7 +100,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -119,7 +118,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -137,7 +136,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -155,7 +154,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -173,7 +172,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -191,7 +190,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -209,7 +208,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -227,7 +226,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -245,7 +244,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -263,7 +262,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -281,7 +280,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -299,7 +298,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -317,7 +316,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -335,7 +334,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -353,7 +352,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -371,7 +370,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -389,7 +388,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -407,7 +406,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -425,7 +424,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -443,7 +442,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -461,7 +460,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -479,7 +478,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -497,7 +496,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -515,7 +514,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -533,7 +532,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -551,7 +550,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -569,7 +568,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -587,7 +586,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -605,7 +604,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -623,7 +622,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -641,7 +640,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -659,7 +658,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -677,7 +676,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -695,7 +694,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -713,7 +712,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -731,7 +730,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -749,7 +748,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -767,7 +766,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -785,7 +784,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -803,7 +802,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -821,7 +820,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -839,7 +838,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -857,7 +856,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -875,7 +874,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -893,7 +892,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -911,7 +910,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -929,7 +928,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -947,7 +946,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -965,7 +964,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -983,7 +982,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1001,7 +1000,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1019,7 +1018,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1037,7 +1036,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1055,7 +1054,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1073,7 +1072,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1091,7 +1090,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1109,7 +1108,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1127,7 +1126,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1145,7 +1144,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1163,7 +1162,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1181,7 +1180,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1199,7 +1198,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1217,7 +1216,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1235,7 +1234,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1253,7 +1252,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1271,7 +1270,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1289,7 +1288,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1307,7 +1306,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1325,7 +1324,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1343,7 +1342,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1361,7 +1360,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1379,7 +1378,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1397,7 +1396,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1415,7 +1414,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -1433,7 +1432,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1451,7 +1450,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -1469,7 +1468,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -1487,7 +1486,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1505,7 +1504,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1523,7 +1522,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1541,7 +1540,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1559,7 +1558,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1577,7 +1576,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1595,7 +1594,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1613,7 +1612,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1631,7 +1630,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1649,7 +1648,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -1667,7 +1666,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-29T00:52:53+00:00",
+   "last_seen": "2026-10-29T09:51:55+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
