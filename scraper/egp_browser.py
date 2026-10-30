@@ -25,15 +25,17 @@ TIME_RX = re.compile(r"\b(\d{1,2}:\d{2}(?:\s*[AP]M)?)\b", re.I)
 
 JS_TABLE = """() => {
   const clean = s => (s || '').replace(/\\u00a0/g, ' ').trim();
-  for (const t of document.querySelectorAll('table')) {
-    const head = t.querySelector('tr');
-    if (!head) continue;
-    const headers = [...head.querySelectorAll('th,td')].map(c => clean(c.innerText));
+  // the page nests tables for layout: use the innermost table that holds the results
+  const tables = [...document.querySelectorAll('table')].filter(t => !t.querySelector('table'));
+  for (const t of tables) {
+    const trs = [...t.rows];
+    if (!trs.length) continue;
+    const headers = [...trs[0].cells].map(c => clean(c.innerText));
     const h = headers.join(' | ').toLowerCase();
     if (!(/title/.test(h) && /(closing|publishing)/.test(h))) continue;
     const rows = [];
-    for (const tr of t.querySelectorAll('tr')) {
-      const cells = [...tr.children].filter(c => /^(TD)$/.test(c.tagName));
+    for (const tr of trs.slice(1)) {
+      const cells = [...tr.cells].filter(c => c.tagName === 'TD');
       if (cells.length < 4) continue;
       const a = tr.querySelector('a[href]');
       rows.push({cells: cells.map(c => clean(c.innerText)), href: a ? a.getAttribute('href') : null});
@@ -44,12 +46,25 @@ JS_TABLE = """() => {
 }"""
 
 JS_NEXT = """() => {
-  const els = [...document.querySelectorAll('a,button,span,input,li')];
-  const n = els.find(e => /^next\\b/i.test(clean(e)) && !e.disabled && !/disabled/i.test(e.className || ''));
-  function clean(e) { return ((e.innerText || e.value || '') + '').trim(); }
+  const clean = e => ((e.innerText || e.value || '') + '').trim();
+  const ok = e => !e.disabled && !/disabled/i.test(e.className || '') && !e.closest('.disabled,[disabled]');
+  const all = [...document.querySelectorAll('a,button,input[type=button],input[type=submit],span,li')]
+    .filter(e => /^next\\b/i.test(clean(e)) && ok(e));
+  all.sort((x, y) => (x.tagName === 'A' ? 0 : 1) - (y.tagName === 'A' ? 0 : 1));
+  const n = all[0];
   if (n) { n.click(); return true; }
   return false;
 }"""
+
+JS_PAGE_NO = """() => { const m = /Page\\s+(\\d+)\\s+of\\s+(\\d+)/i.exec(document.body.innerText); return m ? [+m[1], +m[2]] : null; }"""
+
+JS_FORM_DUMP = """() => [...document.querySelectorAll('input,select,textarea')].filter(e => e.type !== 'hidden' || /page|size|row|start|offset/i.test(e.name || e.id || ''))
+  .map(e => (e.tagName + ' name=' + (e.name || '') + ' id=' + (e.id || '') + ' type=' + (e.type || '') +
+     (e.tagName === 'SELECT' ? ' options=' + [...e.options].slice(0, 12).map(o => o.value + ':' + o.text.trim()).join('/') : '') +
+     (e.type === 'hidden' ? ' value=' + String(e.value).slice(0, 20) : ''))).slice(0, 60)"""
+
+JS_PAGER_HTML = """() => { const e = [...document.querySelectorAll('*')].find(x => x.children.length < 12 && /Next\\s*[›>]/.test(x.innerText || '') && /Previous/.test(x.innerText || '') && (x.innerText || '').length < 80);
+  return e ? e.outerHTML.slice(0, 1200) : 'pager not found'; }"""
 
 JS_PAGE_SIZE = """() => {
   for (const s of document.querySelectorAll('select')) {
@@ -74,7 +89,9 @@ def _col(headers, *keys, default=None):
 
 def parse_rows(headers, rows):
     """headers: list[str]; rows: list[{'cells': [...], 'href': str|None}] -> raw dicts."""
-    c_id = _col(headers, "id", default=1)
+    if any(len(h) > 200 for h in headers):      # wrong (layout) table captured: use the known column order
+        headers = []
+    c_id = _col(headers, "tender/proposal", default=_col(headers, "id", default=1))
     c_title = _col(headers, "title", default=2)
     c_org = _col(headers, "ministry", default=_col(headers, "organization", default=3))
     c_meth = _col(headers, "method", default=4)
@@ -118,6 +135,11 @@ def parse_rows(headers, rows):
     return out
 
 
+def _row_id(r):
+    m = re.search(r"\b(\d{5,})\b", (r["cells"][1] if len(r["cells"]) > 1 else ""))
+    return "egp-" + m.group(1) if m else None
+
+
 def _write_debug(lines):
     try:
         DEBUG_FILE.parent.mkdir(parents=True, exist_ok=True)
@@ -126,7 +148,7 @@ def _write_debug(lines):
         pass
 
 
-def scrape(url=DEFAULT_URL, max_pages=8, delay=2.0, page_timeout=60000, log=print):
+def scrape(url=DEFAULT_URL, max_pages=40, delay=1.5, page_timeout=60000, log=print, known_ids=None):
     """Drive the browser; return (headers, rows, debug_lines)."""
     from .browser import LAUNCH_ARGS, _sync
     from . import net
@@ -165,6 +187,11 @@ def scrape(url=DEFAULT_URL, max_pages=8, delay=2.0, page_timeout=60000, log=prin
                     pass
                 dbg.append("requests:\n" + "\n".join(requests_seen[-40:]))
                 return (data or {}).get("headers", []), [], dbg
+            try:
+                dbg.append("form controls:\n" + "\n".join(page.evaluate(JS_FORM_DUMP)))
+                dbg.append("pager html: " + str(page.evaluate(JS_PAGER_HTML)))
+            except Exception as e:
+                dbg.append(f"form dump failed: {e}")
             headers, all_rows, seen_first = data["headers"], list(data["rows"]), {data["rows"][0]["cells"][1] if len(data["rows"][0]["cells"]) > 1 else ""}
             try:
                 size = page.evaluate(JS_PAGE_SIZE)
@@ -187,7 +214,7 @@ def scrape(url=DEFAULT_URL, max_pages=8, delay=2.0, page_timeout=60000, log=prin
                     dbg.append(f"no Next control after page {n}")
                     break
                 new = None
-                for _ in range(20):
+                for _ in range(24):
                     page.wait_for_timeout(750)
                     cur = page.evaluate(JS_TABLE)
                     if cur and cur["rows"]:
@@ -198,8 +225,16 @@ def scrape(url=DEFAULT_URL, max_pages=8, delay=2.0, page_timeout=60000, log=prin
                             break
                 if not new:
                     dbg.append(f"page {n + 1} did not change; stopping")
+                    try:
+                        dbg.append("page number text: " + str(page.evaluate(JS_PAGE_NO)))
+                        dbg.append("pager html after click: " + str(page.evaluate(JS_PAGER_HTML)))
+                    except Exception:
+                        pass
                     break
                 all_rows.extend(new["rows"])
+                if known_ids and all(_row_id(r) in known_ids for r in new["rows"]):
+                    dbg.append(f"page {n + 1} fully known; stopping (incremental)")
+                    break
             dbg.append("headers: " + json.dumps(headers, ensure_ascii=False))
             dbg.append("first rows: " + json.dumps(all_rows[:2], ensure_ascii=False))
             dbg.append("requests:\n" + "\n".join(requests_seen[-25:]))
@@ -208,9 +243,14 @@ def scrape(url=DEFAULT_URL, max_pages=8, delay=2.0, page_timeout=60000, log=prin
             browser.close()
 
 
-def run_source(src, now, scraper=scrape, log=print):
-    headers, rows, dbg = scraper(src.get("url") or DEFAULT_URL, int(src.get("pages", 8)),
-                                 float(src.get("delay", 2.0)))
+def run_source(src, now, scraper=scrape, log=print, existing=None):
+    known = {r["id"] for r in (existing or []) if r.get("source_id") == src["id"]}
+    try:
+        headers, rows, dbg = scraper(src.get("url") or DEFAULT_URL, int(src.get("pages", 40)),
+                                     float(src.get("delay", 1.5)), known_ids=known)
+    except TypeError:      # simple scrapers (tests) without the incremental argument
+        headers, rows, dbg = scraper(src.get("url") or DEFAULT_URL, int(src.get("pages", 40)),
+                                     float(src.get("delay", 1.5)))
     _write_debug(dbg)
     parsed = parse_rows(headers, rows)
     if not parsed:

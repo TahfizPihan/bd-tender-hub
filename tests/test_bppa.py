@@ -110,3 +110,10 @@ def test_plain_text_fallback_layout():
     html = "<html><body><p>Procurement Method</p><p>:</p><p>NCT Open Tendering Method (OTM)</p><p>Development Partner</p><p>JICA</p></body></html>"
     f = bppa.detail_fields(bppa.parse_detail(html), "Works")
     assert f["method"] == "OTM" and f["partner"] == "JICA"
+
+
+def test_title_cleanup_and_category_from_title():
+    assert bppa.clean_title("Uniform 44.03.0000.017.07.229.2026-3762", "44.03.0000.017.07.229.2026-3762") == "Uniform"
+    assert bppa.pick_category("Construction of Academic Building. EED/Desk-1/3065", "incl. furniture", "Works") == "Civil works"
+    assert bppa.pick_category("Supply of Office Furniture", "", "Goods") == "Furniture"
+    assert bppa.pick_category("Rice", "", "Goods") == "Goods"

@@ -68,8 +68,7 @@ a{color:var(--brand)}
 /* filters */
 .filters{background:var(--panel);border:1px solid var(--line);border-top:0;border-radius:0 0 12px 12px;padding:12px;
   display:grid;gap:10px;grid-template-columns:1fr}
-@media(min-width:640px){.filters{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1000px){.filters{grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr}}
+@media(min-width:640px){.filters{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}.filters .keep{grid-column:span 2}}
 .field label{display:block;font-size:.74rem;color:var(--muted);margin:0 0 3px;text-transform:uppercase;letter-spacing:.4px}
 input,select,button{font:inherit;color:inherit}
 .field input,.field select{width:100%;min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
@@ -113,6 +112,20 @@ td.tt{min-width:300px;max-width:460px}
 .b-ai{background:var(--none-bg);color:var(--muted);margin-left:6px;font-weight:500;vertical-align:1px}
 .chip{display:inline-block;background:var(--brand-soft);color:var(--brand);border-radius:999px;padding:1px 10px;font-size:.78rem;white-space:nowrap}
 .kind{display:block;color:var(--muted);font-size:.78rem;margin-top:3px}
+.hint{display:block;color:var(--muted);font-size:.74rem;margin-top:3px}
+.watch{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.wchip{border:1px solid var(--line);background:var(--card,transparent);color:inherit;border-radius:999px;padding:6px 12px;font:inherit;font-size:.85rem;cursor:pointer}
+.wchip[aria-pressed="true"]{background:var(--brand);color:#fff;border-color:var(--brand)}
+.wchip .n{opacity:.75;margin-left:6px;font-weight:650}
+.wchip.save{border-style:dashed}
+.wchip .x{margin-left:6px;opacity:.6}
+#elsewhere-links a{display:block;padding:6px 0}
+.tags{margin-bottom:4px;display:flex;gap:4px;flex-wrap:wrap}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:0 7px;font-size:.74rem;font-weight:650;white-space:nowrap}
+.tag.m{background:var(--brand-soft);color:var(--brand);border-color:transparent}
+.tag.p{background:var(--new-bg);color:var(--new);border-color:transparent}
+.t2{color:var(--muted);font-size:.78rem}
+td.idc{max-width:150px;overflow-wrap:anywhere}
 td.dl{white-space:nowrap}
 td.dl .d{font-variant-numeric:tabular-nums;display:block;margin-bottom:3px}
 td.act{white-space:nowrap}
@@ -190,10 +203,12 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
 
   <div class="tabs" id="tabs" role="tablist" aria-label="Tender type"></div>
 
+  <div class="watch" id="watch" aria-label="Saved searches"></div>
   <button class="btn ghost" id="ftoggle" type="button" aria-expanded="false" aria-controls="filters">Filters</button>
   <form class="filters collapsed" id="filters" onsubmit="return false" autocomplete="off">
     <div class="field keep"><label for="q">Search</label>
-      <input id="q" type="search" placeholder="Title, organization, ID… (English or বাংলা)"></div>
+      <input id="q" type="search" placeholder='e.g. interior OR "fit-out" -road   (English or বাংলা)'>
+      <small class="hint">Words = AND · <b>OR</b> or | = either · <b>"quotes"</b> = exact phrase · <b>-word</b> = exclude</small></div>
     <div class="field"><label for="status">Status</label>
       <select id="status">
         <option value="open">Open (not closed)</option>
@@ -204,6 +219,11 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
       </select></div>
     <div class="field"><label for="category">Category</label><select id="category"><option value="">All categories</option></select></div>
     <div class="field"><label for="source">Source</label><select id="source"><option value="">All sources</option></select></div>
+    <div class="field"><label for="method">Method</label><select id="method"><option value="">All methods</option></select></div>
+    <div class="field"><label for="partner">Funded by</label><select id="partner"><option value="">Anyone</option></select></div>
+    <div class="field"><label for="nature">Nature</label><select id="nature"><option value="">Any</option></select></div>
+    <div class="field"><label for="district">District</label><select id="district"><option value="">All districts</option></select></div>
+    <div class="field"><label for="posted">First listed</label><select id="posted"><option value="">Any time</option><option value="1">Last 24 hours</option><option value="3">Last 3 days</option><option value="7">Last 7 days</option><option value="30">Last 30 days</option></select></div>
     <div class="field"><label for="from">Closes from</label><input id="from" type="date"></div>
     <div class="field"><label for="to">Closes until</label><input id="to" type="date"></div>
     <div class="frow">
@@ -227,7 +247,7 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
           <th>Tender ID</th>
           <th class="sort" data-k="title">Title</th>
           <th class="sort" data-k="org">Organization</th>
-          <th class="sort" data-k="cat">Category</th>
+          <th class="sort" data-k="cat">Type</th>
           <th class="sort" data-k="pub">Published</th>
           <th class="sort" data-k="dl">Closing</th>
           <th>Notice</th>
@@ -238,8 +258,11 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
     <div class="pager" id="pager"></div>
   </div>
 
+  <details class="src" id="elsewhere"><summary>Search other sites for this keyword (Google, Facebook, LinkedIn, Instagram…)</summary>
+    <div class="srcgrid" id="elsewhere-links"></div>
+    <p class="hint" style="padding:0 12px 10px">These open the other site in a new tab. Many private and interior jobs are posted only on social media or company pages. Paste a good link into <code>inbox.txt</code> in the repository and the collector will read it.</p></details>
   <details class="src"><summary>Source status</summary><div class="srcgrid" id="src"></div></details>
-  <footer>This is an index of public notices. Every row links to the original; confirm the deadline, fees and
+  <footer id="foot">Version <span id="ver"></span>. This is an index of public notices. Every row links to the original; confirm the deadline, fees and
   documents on the official source before bidding. Items marked “AI” were read by an AI model and can contain mistakes.</footer>
 </div>
 
@@ -253,9 +276,10 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
   "use strict";
   var DAY = 86400000;
   var KINDS = [["", "All"], ["public", "Government (e-GP)"], ["development", "Development partners"],
-               ["private", "Private / NGO"], ["newspaper", "Newspaper"]];
-  var KIND_NAME = { "public": "Government (e-GP)", development: "Development partner", "private": "Private / NGO", newspaper: "Newspaper" };
-  var QS_KEYS = ["q", "status", "kind", "category", "source", "from", "to", "sort", "dir", "ps"];
+               ["private", "Private / NGO"], ["newspaper", "Newspaper"], ["lead", "News leads"]];
+  var KIND_NAME = { "public": "Government (e-GP)", development: "Development partner", "private": "Private / NGO", newspaper: "Newspaper", lead: "News lead" };
+  var BUILD = 3;
+  var QS_KEYS = ["q", "status", "kind", "category", "source", "method", "partner", "district", "nature", "posted", "from", "to", "sort", "dir", "ps"];
 
   var $ = function (id) { return document.getElementById(id); };
   var S = { all: [], meta: null, kind: "", sort: "pub", dir: -1, page: 1, view: [] };
@@ -291,6 +315,7 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
     var id = String(t.id || "");
     if (id.indexOf("egp-") === 0) return id.slice(4);
     if (id.indexOf("wb-") === 0) return id.slice(3);
+    if (t.ref_no) return t.ref_no;
     return "—";
   }
 
@@ -313,7 +338,7 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
       if ($("q").value.trim()) p.set("q", $("q").value.trim());
       if ($("status").value !== "open") p.set("status", $("status").value);
       if (S.kind) p.set("kind", S.kind);
-      ["category", "source", "from", "to"].forEach(function (k) { if ($(k).value) p.set(k, $(k).value); });
+      ["category", "source", "method", "partner", "district", "nature", "posted", "from", "to"].forEach(function (k) { if ($(k).value) p.set(k, $(k).value); });
       if (S.sort !== "pub" || S.dir !== -1) { p.set("sort", S.sort); p.set("dir", S.dir === 1 ? "asc" : "desc"); }
       if ($("ps").value !== "25") p.set("ps", $("ps").value);
       var qs = p.toString();
@@ -338,6 +363,12 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
         S.meta = data; S.all = data.tenders || [];
         fillSelect("category", uniq("category"));
         fillSelect("source", uniq("source"));
+        fillSelect("method", uniq("method"));
+        fillSelect("partner", uniq("partner"));
+        fillSelect("nature", uniq("nature"));
+        S.all.forEach(function (t) { if (!t.district && t.location) t.district = null; });
+        fillSelect("district", uniq("district"));
+        $("ver").textContent = BUILD + (data.collector_version ? "." + data.collector_version : "");
         readQS();
         var g = data.generated_at ? new Date(data.generated_at) : null;
         $("updated").textContent = (g ? "Updated " + g.toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short", timeZone: "Asia/Dhaka" }) + " (BST)" : "No data yet") + " · " + res.from;
@@ -359,7 +390,11 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
       var h = (Date.now() - g.getTime()) / 3600000;
       if (h > 8) msgs.push("<b>Data is " + Math.floor(h) + " hours old.</b> The collector may have stopped: open GitHub → Actions to check.");
     }
-    var failed = ((S.meta && S.meta.sources) || []).filter(function (x) { return !x.ok; });
+    var srcs = (S.meta && S.meta.sources) || [];
+    if (g && !srcs.some(function (x) { return x.id === "bppa-govt"; }))
+      msgs.push("<b>Your repository is still running the old collector.</b> It has no BPPA / e-GP-list reader, so only some sources are collected. " +
+        "Upload the latest files (README, “Update steps”), then run <i>Collect tenders</i> again.");
+    var failed = ((S.meta && S.meta.sources) || []).filter(function (x) { return !x.ok && !x.experimental; });
     if (failed.length) msgs.push("<b>" + failed.length + " source" + (failed.length > 1 ? "s" : "") + " failed in the last run:</b> " +
       failed.map(function (x) { return esc(x.name); }).join(", ") + ". See “Source status” at the bottom.");
     if (g && !S.all.length) msgs.push("The collector ran but found <b>0 tenders</b>. Open the Actions log to see why.");
@@ -377,6 +412,28 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
   }
 
   /* ---------- filtering & sorting ---------- */
+  /* "a b" = AND, "a OR b" or "a|b" = either, "quoted phrase", -exclude */
+  var _pq = { q: null, v: null };
+  function parseQuery(q) {
+    if (_pq.q === q) return _pq.v;
+    var toks = [], re = /(-?)"([^"]+)"|(\S+)/g, m;
+    while ((m = re.exec(q))) {
+      if (m[2] != null) toks.push({ neg: !!m[1], w: m[2].toLowerCase() });
+      else if (m[3] === "|" || m[3].toUpperCase() === "OR") toks.push({ or: true });
+      else if (m[3].indexOf("|") > 0 && m[3][0] !== "-") m[3].split("|").forEach(function (x, i) { if (i) toks.push({ or: true }); if (x) toks.push({ neg: false, w: x.toLowerCase() }); });
+      else if (m[3][0] === "-" && m[3].length > 1) toks.push({ neg: true, w: m[3].slice(1).toLowerCase() });
+      else toks.push({ neg: false, w: m[3].toLowerCase() });
+    }
+    var groups = [[]], neg = [];
+    toks.forEach(function (t) { if (t.or) groups.push([]); else if (t.neg) neg.push(t.w); else groups[groups.length - 1].push(t.w); });
+    var v = { groups: groups.filter(function (g) { return g.length; }), neg: neg };
+    _pq = { q: q, v: v }; return v;
+  }
+  function queryMatch(p, hay) {
+    for (var i = 0; i < p.neg.length; i++) if (hay.indexOf(p.neg[i]) !== -1) return false;
+    if (!p.groups.length) return true;
+    return p.groups.some(function (g) { return g.every(function (w) { return hay.indexOf(w) !== -1; }); });
+  }
   function matches(t, o) {
     var q = $("q").value.trim().toLowerCase(), st = $("status").value;
     if (!o.skipKind && S.kind && t.kind !== S.kind) return false;
@@ -387,11 +444,16 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
     if (st === "closed" && s !== "closed") return false;
     var cat = $("category").value; if (cat && t.category !== cat) return false;
     var src = $("source").value; if (src && t.source !== src) return false;
+    var mt = $("method").value; if (mt && t.method !== mt) return false;
+    var pt = $("partner").value; if (pt && t.partner !== pt) return false;
     var from = $("from").value, to = $("to").value;
     if (from || to) { if (!t.deadline) return false; if (from && t.deadline < from) return false; if (to && t.deadline > to) return false; }
+    var np = $("nature").value; if (np && t.nature !== np) return false;
+    var dp = $("district").value; if (dp && (t.district || t.location) !== dp) return false;
+    var pd = $("posted").value; if (pd) { var fs = Date.parse(t.first_seen || ""); if (!fs || Date.now() - fs > pd * DAY) return false; }
     if (q) {
-      var hay = [t.title, t.organization, t.summary, t.location, t.category, t.source, t.id].join(" ").toLowerCase();
-      return q.split(/\s+/).every(function (w) { return hay.indexOf(w) !== -1; });
+      var hay = [t.title, t.organization, t.summary, t.location, t.category, t.source, t.id, t.ref_no, t.method, t.partner, t.ministry, t.nature, t.district].join(" ").toLowerCase();
+      return queryMatch(parseQuery(q), hay);
     }
     return true;
   }
@@ -408,6 +470,7 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
   /* ---------- render ---------- */
   function render() {
     writeQS();
+    renderWatch();
     var all = S.all;
     // stats (independent of filters)
     var open = 0, soon = 0, fresh = 0;
@@ -445,7 +508,14 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
     if (d === null) return '<span class="d">Not stated</span><span class="badge b-none">See notice</span>';
     var cls = d < 0 ? "b-closed" : d <= 7 ? "b-soon" : "b-open";
     var lab = d < 0 ? "Closed" : d === 0 ? "Closes today" : d + (d === 1 ? " day left" : " days left");
-    return '<span class="d">' + fmt(t.deadline) + '</span><span class="badge ' + cls + '">' + lab + "</span>";
+    return '<span class="d">' + fmt(t.deadline) + (t.deadline_time ? ' <span class="t2">' + esc(t.deadline_time) + "</span>" : "") + '</span><span class="badge ' + cls + '">' + lab + "</span>";
+  }
+  function tagsHtml(t) {
+    var h = "";
+    if (t.method) h += '<span class="tag m" title="Procurement method">' + esc(t.method) + "</span>";
+    if (t.nature) h += '<span class="tag">' + esc(t.nature) + "</span>";
+    if (t.partner) h += '<span class="tag p" title="Development partner">' + esc(t.partner) + "</span>";
+    return h ? '<div class="tags">' + h + "</div>" : "";
   }
   function rowHtml(t, i) {
     var url = safeUrl(t.link), idx = S.all.indexOf(t);
@@ -458,7 +528,7 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
         (t.ai_extracted ? '<span class="badge b-ai" title="Read by AI from a web page or newspaper. Verify on the original.">AI</span>' : "") +
         (sub ? '<div class="sub">' + sub + "</div>" : "") + "</td>" +
       '<td class="org" data-label="Organization">' + (t.organization ? esc(t.organization) : '<span class="sub">—</span>') + "</td>" +
-      '<td data-label="Category"><span class="chip">' + esc(t.category || "Other") + '</span><span class="kind">' + esc(t.source) + "</span></td>" +
+      '<td data-label="Type">' + tagsHtml(t) + '<span class="chip">' + esc(t.category || "Other") + '</span><span class="kind">' + esc(t.source) + "</span></td>" +
       '<td data-label="Published">' + (pubOf(t) ? fmt(pubOf(t)) : "—") + "</td>" +
       '<td class="dl" data-label="Closing">' + dlHtml(t) + "</td>" +
       '<td class="act">' + (url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">View ↗</a>' : "") + "</td></tr>";
@@ -483,7 +553,7 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
     var s = (S.meta && S.meta.sources) || [];
     $("src").innerHTML = s.length ? s.map(function (x) {
       var txt = x.note || (x.ok ? x.count + " in last run" : "failed");
-      return '<span class="' + (x.ok ? "" : "fail") + '" title="' + esc(x.error || "") + '">' + esc(x.name) + ": " + esc(txt) + "</span>";
+      return '<span class="' + (x.ok ? "" : "fail") + '" title="' + esc(x.error || "") + '">' + esc(x.name) + (x.experimental ? " (experimental)" : "") + ": " + esc(x.ok ? txt : (x.error || "failed")) + "</span>";
     }).join("") : "<span>No source information yet</span>";
   }
 
@@ -493,9 +563,16 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
     $("dtitle").textContent = t.title;
     var rows = [
       ["Status", d === null ? "Deadline not stated" : d < 0 ? "Closed" : d === 0 ? "Closes today" : d + " day(s) left"],
-      ["Closing date", t.deadline ? fmt(t.deadline) : "Not stated. See the notice."],
+      ["Closing date", t.deadline ? fmt(t.deadline) + (t.deadline_time ? " · " + t.deadline_time : "") : "Not stated. See the notice."],
       ["Published", pubOf(t) ? fmt(pubOf(t)) : "—"],
       ["Organization", t.organization || "—"],
+      ["Ministry / division", t.ministry || ""],
+      ["Procurement method", t.method ? t.method + (t.proc_type ? " (" + t.proc_type + ")" : "") : ""],
+      ["Nature", t.nature || ""],
+      ["Funded by", t.partner || t.funding || ""],
+      ["Reference no.", t.ref_no || ""],
+      ["District", t.district || ""],
+      ["Document price", t.doc_price || ""],
       ["Category", t.category || "Other"],
       ["Type", KIND_NAME[t.kind] || t.kind || "—"],
       ["Source", t.source || "—"],
@@ -520,9 +597,9 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
   /* ---------- CSV ---------- */
   function cell(v) { v = String(v == null ? "" : v); if (/^[=+\-@]/.test(v)) v = "'" + v; return '"' + v.replace(/"/g, '""') + '"'; }
   function csv() {
-    var head = ["id", "title", "organization", "category", "type", "source", "published", "closing", "link"];
+    var head = ["id", "title", "organization", "ministry", "category", "nature", "method", "funded_by", "type", "source", "published", "closing", "closing_time", "link"];
     var lines = [head.join(",")].concat(S.view.map(function (t) {
-      return [idShort(t), t.title, t.organization, t.category, KIND_NAME[t.kind] || t.kind, t.source, pubOf(t), t.deadline, t.link].map(cell).join(",");
+      return [idShort(t), t.title, t.organization, t.ministry, t.category, t.nature, t.method, t.partner || t.funding, KIND_NAME[t.kind] || t.kind, t.source, pubOf(t), t.deadline, t.deadline_time, t.link].map(cell).join(",");
     }));
     var a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob(["﻿" + lines.join("\r\n")], { type: "text/csv;charset=utf-8" }));
@@ -530,14 +607,58 @@ footer{color:var(--muted);font-size:.8rem;padding:10px 0 40px}
     setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
   }
 
+  /* ---------- saved searches ---------- */
+  var PRESETS = [
+    { name: "Interior & fit-out", q: 'interior OR "fit-out" OR fitout OR "fit out" OR "false ceiling" OR partition OR decoration OR carpentry OR joinery OR flooring OR "wall panel" OR ইন্টেরিয়র OR অভ্যন্তরীণ' },
+    { name: "Furniture supply", q: 'furniture OR workstation OR desk OR chair OR table OR cabinet OR almirah OR sofa OR wardrobe OR shelf OR আসবাব OR চেয়ার OR টেবিল' },
+    { name: "Interior + furniture", q: 'interior OR "fit-out" OR fitout OR furniture OR workstation OR "false ceiling" OR partition OR decoration OR আসবাব OR ইন্টেরিয়র' }
+  ];
+  function savedSearches() { try { return JSON.parse(localStorage.getItem("watch") || "[]"); } catch (e) { return []; } }
+  function storeSearches(a) { try { localStorage.setItem("watch", JSON.stringify(a)); } catch (e) {} }
+  function renderWatch() {
+    var cur = $("q").value.trim(), mine = savedSearches();
+    function cnt(q) { var p = parseQuery(q); var n = 0; S.all.forEach(function (t) { if (statusOf(t) === "closed") return;
+      var hay = [t.title, t.organization, t.summary, t.category, t.nature, t.ministry].join(" ").toLowerCase(); if (queryMatch(p, hay)) n++; }); return n; }
+    var h = PRESETS.map(function (w, i) { return chip(w, "p" + i); }).join("") + mine.map(function (w, i) { return chip(w, "u" + i, true); }).join("");
+    function chip(w, key, del) {
+      return '<button type="button" class="wchip" data-w="' + key + '" aria-pressed="' + (cur === w.q) + '">' + esc(w.name) + '<span class="n">' + cnt(w.q) + "</span>" +
+             (del ? '<span class="x" data-del="' + key + '" title="Remove">×</span>' : "") + "</button>";
+    }
+    h += '<button type="button" class="wchip save" id="wsave">+ Save this search</button>';
+    $("watch").innerHTML = h;
+    var terms = cur.replace(/["\-|]|\bOR\b/g, " ").replace(/\s+/g, " ").trim() || "interior fit-out tender Bangladesh";
+    var e = encodeURIComponent(terms + " tender Bangladesh"), g = encodeURIComponent(terms);
+    $("elsewhere-links").innerHTML = [
+      ["Google (whole web)", "https://www.google.com/search?q=" + e],
+      ["Google, last week only", "https://www.google.com/search?q=" + e + "&tbs=qdr:w"],
+      ["bdtender.com via Google", "https://www.google.com/search?q=site:bdtender.com+" + g],
+      ["alltender.com via Google", "https://www.google.com/search?q=site:alltender.com+" + g],
+      ["Facebook posts", "https://www.facebook.com/search/posts?q=" + e],
+      ["LinkedIn posts", "https://www.linkedin.com/search/results/content/?keywords=" + e],
+      ["Instagram tag", "https://www.instagram.com/explore/tags/" + encodeURIComponent(terms.replace(/\s+/g, "").toLowerCase()) + "/"]
+    ].map(function (l) { return '<a href="' + l[1] + '" target="_blank" rel="noopener noreferrer">' + esc(l[0]) + " ↗</a>"; }).join("");
+  }
+  $("watch").addEventListener("click", function (e) {
+    var del = e.target.closest("[data-del]");
+    if (del) { var a = savedSearches(); a.splice(+del.dataset.del.slice(1), 1); storeSearches(a); renderWatch(); e.stopPropagation(); return; }
+    if (e.target.id === "wsave") {
+      var q = $("q").value.trim(); if (!q) return;
+      var name = window.prompt("Name for this search:", q.slice(0, 24)); if (!name) return;
+      var a2 = savedSearches(); a2.push({ name: name.slice(0, 30), q: q }); storeSearches(a2); renderWatch(); return;
+    }
+    var b = e.target.closest(".wchip[data-w]"); if (!b) return;
+    var k = b.dataset.w, w = k[0] === "p" ? PRESETS[+k.slice(1)] : savedSearches()[+k.slice(1)];
+    if (!w) return; $("q").value = $("q").value.trim() === w.q ? "" : w.q; go();
+  });
+
   /* ---------- events ---------- */
   function go() { S.page = 1; render(); }
   var timer;
   $("q").addEventListener("input", function () { clearTimeout(timer); timer = setTimeout(go, 180); });
-  ["status", "category", "source", "from", "to"].forEach(function (id) { $(id).addEventListener("change", go); });
+  ["status", "category", "source", "method", "partner", "district", "nature", "posted", "from", "to"].forEach(function (id) { $(id).addEventListener("change", go); });
   $("ps").addEventListener("change", go);
   $("reset").addEventListener("click", function () {
-    $("q").value = ""; $("status").value = "open"; $("category").value = ""; $("source").value = "";
+    $("q").value = ""; $("status").value = "open"; $("category").value = ""; $("source").value = ""; $("method").value = ""; $("partner").value = ""; $("district").value = ""; $("nature").value = ""; $("posted").value = "";
     $("from").value = ""; $("to").value = ""; S.kind = ""; S.sort = "pub"; S.dir = -1; go();
   });
   $("csv").addEventListener("click", csv);

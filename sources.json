@@ -6,8 +6,8 @@
     "kind": "public",
     "enabled": true,
     "pages": 8,
-    "detail_per_run": 60,
-    "delay": 1.2,
+    "detail_per_run": 120,
+    "delay": 1.0,
     "note": "Government tender advertisements (Goods, Works, Services, Physical services) from bppa.gov.bd, with procurement method (OTM/LTM...), funding partner (ADB/JICA/World Bank...) and closing time. First run reads the newest ~320 and 60 detail pages; later runs fill in the rest."
   },
   {
@@ -17,8 +17,8 @@
     "kind": "public",
     "enabled": true,
     "url": "https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t",
-    "pages": 8,
-    "delay": 2.0,
+    "pages": 40,
+    "delay": 1.5,
     "note": "The public e-GP tender list, read with a headless browser (login-free part only, no CAPTCHA). If it fails, data/egp_debug.txt in the repository shows what the browser saw."
   },
   {

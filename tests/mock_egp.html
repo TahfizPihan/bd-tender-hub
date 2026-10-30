@@ -1,12 +1,11 @@
 <!doctype html><html><head><meta charset="utf-8"><title>eTender/eProposal Search Results</title></head>
 <body><!-- SYNTHETIC page mimicking the e-GP list: table filled by JavaScript, "Next" pagination, page-size select. Tests only. -->
 <h3>eTender/eProposal Search Results</h3>
-<table id="t" border="1">
+<table id="layout"><tr><td>User Login | Help | Resources<br><table id="t" border="1">
 <tr><th>S.<br>No.</th><th>Tender/Proposal ID,<br>Reference No,<br>Public Status</th><th>Procurement Nature,<br>Title</th>
 <th>Ministry,<br>Division,<br>Organization,<br>PE</th><th>Type,<br>Method</th><th>Publishing Date and Time,<br>Closing Date and Time</th></tr>
 </table>
-<div>Rows <select id="size"><option selected>10</option><option>25</option></select>
-<span id="info"></span> <a href="#" id="first">« First</a> <a href="#" id="prev">‹ Previous</a> <a href="#" id="next">Next ›</a></div>
+<div><span id="info"></span> <ul style="list-style:none"><li><a href="javascript:void(0);" id="first">« First</a></li> <li><a href="javascript:void(0);" id="prev">‹ Previous</a></li> <li><a href="javascript:void(0);" id="next">Next ›</a></li></ul></div></td></tr></table>
 <script>
 const NAT = ["Works","Goods","Services"];
 const ALL = Array.from({length: 60}, (_, i) => ({
@@ -16,7 +15,7 @@ const ALL = Array.from({length: 60}, (_, i) => ({
   method: ["NCT", i % 2 ? "LTM" : "OTM"], pub: "20-Oct-2026 10:00", close: (1 + i % 28) + "-Dec-2026 12:00"
 }));
 let page = 0;
-function size() { return parseInt(document.getElementById('size').value, 10); }
+function size() { return 10; }
 function draw() {
   const t = document.getElementById('t');
   while (t.rows.length > 1) t.deleteRow(1);
@@ -33,6 +32,5 @@ function draw() {
   document.getElementById('info').textContent = 'Page ' + (page + 1) + ' of ' + Math.ceil(ALL.length / s);
 }
 document.getElementById('next').onclick = e => { e.preventDefault(); if ((page + 1) * size() < ALL.length) { page++; setTimeout(draw, 300); } };
-document.getElementById('size').onchange = () => { page = 0; setTimeout(draw, 300); };
 setTimeout(draw, 900);   // table is filled in after load, like the real page
 </script></body></html>

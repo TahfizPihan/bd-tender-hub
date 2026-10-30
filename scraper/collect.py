@@ -77,7 +77,7 @@ def main(argv=None):
             elif src["type"] == "bppa":
                 recs = bppa.run_source(src, now, existing=existing)
             elif src["type"] == "egp_browser":
-                recs = egp_browser.run_source(src, now)
+                recs = egp_browser.run_source(src, now, existing=existing)
             else:
                 recs = run_source(src, now)
             fresh.extend(recs)

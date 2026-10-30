@@ -74,8 +74,8 @@ def test_real_browser_reads_js_table_and_paginates(tmp_path, monkeypatch):
     threading.Thread(target=srv.serve_forever, daemon=True).start()
     try:
         url = f"http://127.0.0.1:{srv.server_address[1]}/mock_egp.html"
-        # 60 rows, page size capped at 25 -> 3 pages, so 'Next' must be used twice
-        src = {**SRC, "url": url, "pages": 5, "delay": 0.1}
+        # 60 rows, 10 per page, table nested in a layout table like the real page, no page-size control
+        src = {**SRC, "url": url, "pages": 8, "delay": 0.1}
         recs = egp_browser.run_source(src, NOW)
         ids = sorted(r["id"] for r in recs)
         assert len(ids) == 60 and ids[0] == "egp-1177000" and ids[-1] == "egp-1177059"
@@ -85,3 +85,22 @@ def test_real_browser_reads_js_table_and_paginates(tmp_path, monkeypatch):
         assert "headers:" in (tmp_path / "dbg.txt").read_text()
     finally:
         srv.shutdown()
+
+
+def test_real_egp_rows_from_the_live_site():
+    """Rows captured from the live e-GP page by the collector (data/egp_debug.txt of the user's repo)."""
+    import json
+    d = json.loads((HERE / "real_egp_rows.json").read_text(encoding="utf-8"))
+    # also feed the junk 'header' the old reader captured from the outer layout table
+    for headers in (d["headers"], ["User Login\n" + "x" * 400, "Help"]):
+        out = egp_browser.parse_rows(headers, d["rows"])
+        assert len(out) == 10
+        first = out[0]
+        assert first["_id"] == "1357693" and first["nature"] == "Goods"
+        assert first["title"].startswith("Procurement of High Performance Laboratory")
+        assert first["ministry"] == "Ministry of Health and Family Welfare"
+        assert first["organization"] == "National Institute of ENT"
+        assert (first["published"], first["deadline"], first["deadline_time"]) == ("2026-10-29", "2026-11-23", "12:30")
+        assert first["method"] == "OTM" and first["proc_type"] == "NCT"
+    furn = [r for r in out if "Furniture" in r["title"]]
+    assert len(furn) == 2 and {r["nature"] for r in furn} == {"Works", "Goods"}

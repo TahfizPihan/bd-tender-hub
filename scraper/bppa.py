@@ -44,6 +44,28 @@ def _clean(s):
     return re.sub(r"\s+", " ", s or "").strip()
 
 
+def clean_title(title, ref=None):
+    """BPPA appends the reference number to the title text; keep the title only."""
+    t = _clean(title)
+    if ref:
+        t = t.replace(ref, " ")
+    t = REF_RX.sub(" ", t)
+    t = _clean(t).strip(" -:,;/.")
+    return t or _clean(title)
+
+
+def pick_category(title, desc, nature):
+    """Decide from the title first (so a building tender that merely lists furniture stays
+    'Civil works'); use the description only when the title says nothing."""
+    title = re.sub(r"\S*/\S*", " ", title or "")      # office codes like EED/Desk-5/992 are not words
+    cat = normalize.guess_category(title)
+    if cat == "Other" and desc:
+        cat = normalize.guess_category(title + " " + desc)
+    if cat == "Other":
+        cat = {"Works": "Civil works", "Goods": "Goods"}.get(nature, "Other")
+    return cat
+
+
 # ---------------------------------------------------------------- list page
 def parse_list(html, category, base=BASE):
     """Return raw rows from one listing page."""
@@ -63,6 +85,7 @@ def parse_list(html, category, base=BASE):
         cells = [_clean(td.get_text(" ")) for td in tr.find_all(["td", "th"])]
         title_cell_idx = next((i for i, td in enumerate(tr.find_all(["td", "th"])) if a in td.find_all("a")), 1)
         title = _clean(a.get_text(" "))
+        raw_title = title
         cell_txt = cells[title_cell_idx] if title_cell_idx < len(cells) else title
         ref = None
         mref = REF_RX.search(cell_txt.replace(title, " ")) or REF_RX.search(cell_txt)
@@ -74,6 +97,7 @@ def parse_list(html, category, base=BASE):
         issue = _dmy(dates[0][0]) if dates else None
         close = _dmy(dates[1][0]) if len(dates) > 1 else None
         ctime = dates[1][1].upper() if len(dates) > 1 and dates[1][1] else None
+        title = clean_title(raw_title, ref)
         if not title:
             continue
         rows.append({"detail_id": did, "category": m.group(1).lower(), "title": title, "ref_no": ref,
@@ -175,9 +199,12 @@ def run_source(src, now, existing=None, fetcher=None, sleep=time.sleep, log=prin
     fetcher = fetcher or net.fetch
     cats = src.get("categories") or list(CATEGORIES)
     pages = int(src.get("pages", 6))
-    detail_cap = int(src.get("detail_per_run", 60))
-    delay = float(src.get("delay", 1.2))
+    detail_cap = int(src.get("detail_per_run", 120))
+    delay = float(src.get("delay", 1.0))
     known = {r["id"]: r for r in (existing or []) if r.get("source_id") == src["id"]}
+    for k in known.values():            # tidy records saved by earlier versions
+        k["title"] = clean_title(k.get("title"), k.get("ref_no"))
+        k["category"] = pick_category(k["title"], k.get("summary", ""), k.get("nature"))
     records, failures, total_pages = {}, 0, 0
     for cat in cats:
         cat_name = CATEGORIES.get(cat, cat.title())
@@ -234,8 +261,7 @@ def run_source(src, now, existing=None, fetcher=None, sleep=time.sleep, log=prin
         rec.update(f)                      # the detail page is the authority
         if desc:
             rec["summary"] = desc[:400]
-            cat = normalize.guess_category(rec["title"] + " " + desc)
-            rec["category"] = cat if cat != "Other" else {"Works": "Civil works", "Goods": "Goods"}.get(rec.get("nature"), "Other")
+            rec["category"] = pick_category(rec["title"], desc, rec.get("nature"))
         rec["detail_done"] = True
         rec["needs_ai"] = False
         done += 1

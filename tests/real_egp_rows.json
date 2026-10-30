@@ -1,0 +1,122 @@
+{
+ "headers": [
+  "S.\nNo.",
+  "Tender/Proposal ID,\nReference No,\nPublic Status",
+  "Procurement Nature,\nTitle",
+  "Ministry,\nDivision,\nOrganization,\nPE",
+  "Type,\nMethod",
+  "Publishing Date and Time,\nClosing Date and Time"
+ ],
+ "rows": [
+  {
+   "cells": [
+    "1",
+    "1357693,\nNIENT/ADMIN/TENDER/HEAVY/2026-2027/2142,\nLive",
+    "Goods,\n\n\nProcurement of High Performance Laboratory Binocular Microscope FY 2026-27",
+    "Ministry of Health and Family Welfare,\nHealth Services Division,\nDirectorate General of Health Services (DGHS),\nNational Institute of ENT",
+    "NCT,\nOTM",
+    "29-Oct-2026 23:58,\n23-Nov-2026 12:30"
+   ],
+   "href": "javascript:void(0);"
+  },
+  {
+   "cells": [
+    "2",
+    "1361974,\nJKKNIU/EO/2011-12/10/part1/FY2026-27/Elec/OTM/G-02,\nLive",
+    "Goods,\n\n\nSupply of Electric Goods for JKKNIU",
+    "Ministry of Education,\nSecondary and Higher Education Division,\nJatiya Kabi Kazi Nazrul Islam University,\nEngineering Office",
+    "NCT,\nOTM",
+    "29-Oct-2026 23:58,\n11-Nov-2026 16:00"
+   ],
+   "href": "javascript:void(0);"
+  },
+  {
+   "cells": [
+    "3",
+    "1357694,\nNIENT/ADMIN/TENDER/HEAVY/2026-2027/2142,\nLive",
+    "Goods,\n\n\nProcurement of Online UPS 3KVA FY 2026-27",
+    "Ministry of Health and Family Welfare,\nHealth Services Division,\nDirectorate General of Health Services (DGHS),\nNational Institute of ENT",
+    "NCT,\nOTM",
+    "29-Oct-2026 23:58,\n23-Nov-2026 12:30"
+   ],
+   "href": "javascript:void(0);"
+  },
+  {
+   "cells": [
+    "4",
+    "1362810,\nPWD/WOOD1/2026-27/Manikganj Medical clg/Fur/001,\nLive",
+    "Works,\n\n\nManufacturing, Supplying & Fitting of Furniture for Manikganj Medical College, Manikganj",
+    "Ministry of Housing and Public Works,\nPublic Works Department (PWD),\nPWD Wood Workshop Division",
+    "NCT,\nOTM",
+    "29-Oct-2026 23:30,\n08-Nov-2026 17:00"
+   ],
+   "href": "javascript:void(0);"
+  },
+  {
+   "cells": [
+    "5",
+    "1319949,\nUHC/fultala/2026/1448,\nLive",
+    "Goods,\n\n\nProcurement of MSR Equipment",
+    "Ministry of Health and Family Welfare,\nHealth Services Division,\nDirectorate General of Health Services (DGHS),\nFultola Upazila Health Complex",
+    "NCT,\nOTM",
+    "29-Oct-2026 23:16,\n12-Nov-2026 11:00"
+   ],
+   "href": "javascript:void(0);"
+  },
+  {
+   "cells": [
+    "6",
+    "1319950,\nUHC/fultala/2026/1449,\nLive",
+    "Goods,\n\n\nProcurement of Gauge,Bandage and Cotton",
+    "Ministry of Health and Family Welfare,\nHealth Services Division,\nDirectorate General of Health Services (DGHS),\nFultola Upazila Health Complex",
+    "NCT,\nOTM",
+    "29-Oct-2026 23:09,\n12-Nov-2026 11:00"
+   ],
+   "href": "javascript:void(0);"
+  },
+  {
+   "cells": [
+    "7",
+    "1319951,\nUHC/fultala/2026/1450,\nLive",
+    "Goods,\n\n\nProcurement of Linen",
+    "Ministry of Health and Family Welfare,\nHealth Services Division,\nDirectorate General of Health Services (DGHS),\nFultola Upazila Health Complex",
+    "NCT,\nOTM",
+    "29-Oct-2026 23:03,\n12-Nov-2026 11:00"
+   ],
+   "href": "javascript:void(0);"
+  },
+  {
+   "cells": [
+    "8",
+    "1334264,\n34.03.0000.005.13.569.2026/Media,\nLive",
+    "Works,\n\n\nWork for convert Level 6 into a media center of NSC Tower.",
+    "Ministry of Youth & Sports,\nNational Sports Council,\nOffice of the Director (P&D)",
+    "NCT,\nOTM",
+    "29-Oct-2026 23:00,\n15-Nov-2026 15:00"
+   ],
+   "href": "javascript:void(0);"
+  },
+  {
+   "cells": [
+    "9",
+    "1319952,\nUHC/fultala/2026/1451,\nLive",
+    "Goods,\n\n\nProcurement of Chemical Reagent",
+    "Ministry of Health and Family Welfare,\nHealth Services Division,\nDirectorate General of Health Services (DGHS),\nFultola Upazila Health Complex",
+    "NCT,\nOTM",
+    "29-Oct-2026 22:53,\n12-Nov-2026 11:00"
+   ],
+   "href": "javascript:void(0);"
+  },
+  {
+   "cells": [
+    "10",
+    "1319953,\nUHC/fultala/2026/1452,\nLive",
+    "Goods,\n\n\nProcurement of Furniture",
+    "Ministry of Health and Family Welfare,\nHealth Services Division,\nDirectorate General of Health Services (DGHS),\nFultola Upazila Health Complex",
+    "NCT,\nOTM",
+    "29-Oct-2026 22:50,\n12-Nov-2026 11:00"
+   ],
+   "href": "javascript:void(0);"
+  }
+ ]
+}
