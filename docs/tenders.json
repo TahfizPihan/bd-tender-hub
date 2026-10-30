@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T17:44:28+00:00",
+ "generated_at": "2026-10-30T17:59:37+00:00",
  "collector_version": 3,
  "count": 330,
  "sources": [
@@ -7,7 +7,7 @@
    "id": "bppa-govt",
    "name": "BPPA tender notices (Govt)",
    "ok": true,
-   "count": 320
+   "count": 0
   },
   {
    "id": "egp-list",
@@ -254,8 +254,8 @@
    "organization": "E in C",
    "category": "Civil works",
    "deadline": "2026-11-08",
-   "published": "2026-10-14",
-   "summary": "",
+   "published": "2026-10-29",
+   "summary": "Supply & installation of Computer & Accessories including ancillary works for Construction of Cancer Centre at Dhaka -",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98773.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -267,7 +267,14 @@
    "deadline_time": "12:00 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Defence",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "-",
+   "doc_price": "3,000.00",
+   "ref_no": "400/Ad/62/E-4/15",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98774",
@@ -398,8 +405,8 @@
    "organization": "Additional Director (Commercial), TCB, Dhaka.",
    "category": "Goods",
    "deadline": "2026-11-17",
-   "published": "2026-10-17",
-   "summary": "",
+   "published": "2026-10-27",
+   "summary": "2,000 (Two Thousand) M. Ton/ 21,73,920 (Twenty one lac Seventy Three Thousand Nine Hundred Twenty) Liter Refined soyabean oil in 2 liter PET bottle delivery to TCB’s Godowns at Dhaka, Chattogram, Khulna, Rajshahi, Rangpur, Moulovibazar, Mymenshing, Cumilla, Madaripur, Jhenaidha, Bogura, Dinajpur, Gazipur. Offers are also to be made on District’s godown/ Upazila’s godown of respective offices of TC",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98733.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -412,7 +419,13 @@
    "deadline_time": "12:00 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Commerce",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Own Funds Own Funds",
+   "doc_price": "6,000 (Six Thousand) Taka.",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98734",
@@ -420,8 +433,8 @@
    "organization": "Additional Director (Commercial), TCB, Dhaka.",
    "category": "Goods",
    "deadline": "2026-11-17",
-   "published": "2026-10-17",
-   "summary": "",
+   "published": "2026-10-27",
+   "summary": "10,000 (Ten Thousand) M. Ton Whole Husked (Without Husk) Red Lentil and Delivery to TCB’s Godowns at Dhaka, Chattogram, Khulna, Rajshahi, Rangpur, Barishal, Moulovibazar, Mymensingh, Cumilla, Madaripur, Jhenaidhah, Bogura, Dinajpur, Gazipur/64 District’s godown/All upazila’s godown.",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98734.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -434,7 +447,13 @@
    "deadline_time": "12:00 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Commerce",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Own Funds Own Funds",
+   "doc_price": "7,000 (Seven Thousand) Taka.",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98735",
@@ -442,8 +461,8 @@
    "organization": "Additional Director (Commercial), TCB, Dhaka.",
    "category": "Goods",
    "deadline": "2026-11-17",
-   "published": "2026-10-17",
-   "summary": "",
+   "published": "2026-10-27",
+   "summary": "3,500 (Three Thousand Five Hundred) M. Ton Brown Color Chickpea in 50 Kg Bag delivered to tcbs 14 godown allover the country.",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98735.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -456,7 +475,13 @@
    "deadline_time": "12:00 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Commerce",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Own Funds Own Funds",
+   "doc_price": "6,000 (Six Thousand) Taka.",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98736",
@@ -519,8 +544,8 @@
    "organization": "Nasingdi Palli Bidyut Samity-1",
    "category": "Electrical",
    "deadline": "2026-11-08",
-   "published": "2026-10-18",
-   "summary": "",
+   "published": "2026-10-27",
+   "summary": "Turnkey Contract for Design, Supply, Installation, Testing & Commissioning of 251 KWp Rooftop Solar System to Palash Upazilla Compex Bhaban, Charsindur/Gazaria/Jinerdi/Danga Union Parisad Bhaban, Powro Bhaban, Upazila Dakbanglo Bhaban & UNO Residential Quarter in Palash upazila under Narsingdi Palli Bidyut Samity-1.",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98738.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -533,7 +558,11 @@
    "deadline_time": "12:00 PM",
    "district": "Narsingdi",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Energy, Power and Minearal Resources",
+   "proc_type": "NCT",
+   "funding": "Own Funds Own Funds",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98743",
@@ -597,8 +626,8 @@
    "organization": "BCIC",
    "category": "Goods",
    "deadline": "2026-11-24",
-   "published": "2026-10-19",
-   "summary": "",
+   "published": "2026-10-26",
+   "summary": "15,000 MT+ 10% Rock Sulphur/ Bright Yellow Sulphur/ Bright Yellow Sulphur Crude 15,000 MT+ 10% Rock Sulphur/ Bright Yellow Sulphur/ Bright Yellow Sulphur Crude",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98721.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -610,7 +639,14 @@
    "deadline_time": "11:00 AM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Industries",
+   "method": "OTM",
+   "proc_type": "ICT",
+   "funding": "Own Funds Own Funds",
+   "doc_price": "12000",
+   "ref_no": "Pur-3.3333/2026-2027",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98722",
@@ -787,8 +823,8 @@
    "organization": "DDG, Communication Branch",
    "category": "Goods",
    "deadline": "2026-11-02",
-   "published": "2026-10-19",
-   "summary": "",
+   "published": "2026-10-21",
+   "summary": "Anti Drone System N/A.",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98698.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -801,7 +837,13 @@
    "deadline_time": "08:00 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Home Affairs",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "N/A.",
+   "doc_price": "2500",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98699",
@@ -809,8 +851,8 @@
    "organization": "Director Admin Q, Ansar & VDP HQS, Khilgaon, Dhaka",
    "category": "Goods",
    "deadline": "2026-11-10",
-   "published": "2026-10-18",
-   "summary": "",
+   "published": "2026-10-21",
+   "summary": "The Procurement of Ration Item Supply and transportation of serial 15",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98699.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -823,7 +865,13 @@
    "deadline_time": "03:00 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Home Affairs",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Non_Development GOB",
+   "doc_price": "A-6000,B-5000,C-5000,D-5000",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98700",
@@ -831,8 +879,8 @@
    "organization": "Director Admin Q, Ansar & VDP HQS, Khilgaon, Dhaka",
    "category": "Goods",
    "deadline": "2026-11-17",
-   "published": "2026-10-18",
-   "summary": "",
+   "published": "2026-10-21",
+   "summary": "The Procurement of Wheat Crushing, Packaging, Carrying, Loading and Unloading for the period of January/2027 to Jun/2027. Supply and transportation of serial 15",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98700.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -845,7 +893,13 @@
    "deadline_time": "03:00 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Home Affairs",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Non_Development GOB",
+   "doc_price": "5000",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98685",
@@ -853,8 +907,8 @@
    "organization": "Senior General Manager, Mymensingh Palli Bidyut Samity-2, Bhaluka, Mymensingh",
    "category": "Goods",
    "deadline": "2026-11-11",
-   "published": "2026-10-13",
-   "summary": "",
+   "published": "2026-10-19",
+   "summary": "Supply, Installation and Integration of Smart Pre-payment meter including necessary communication module (BREB Item No. J-42, J-44 & J-42.2) (Phase-1)",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98685.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -867,7 +921,12 @@
    "deadline_time": "12:00 PM",
    "district": "Mymensingh",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Energy, Power and Minearal Resources",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Not Applicable.",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98695",
@@ -876,7 +935,7 @@
    "category": "Goods",
    "deadline": "2026-11-15",
    "published": "2026-10-15",
-   "summary": "",
+   "summary": "Procurement of SPC Pole (2nd Phase) R-42, R-44, R-46, R-48, R-49 Procurement of SPC Pole (2nd Phase)",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98695.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -889,7 +948,13 @@
    "deadline_time": "12:00 PM",
    "district": "Narayanganj",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Energy, Power and Minearal Resources",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Own Funds Own Funds",
+   "doc_price": "5000",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98697",
@@ -898,7 +963,7 @@
    "category": "Goods",
    "deadline": "2026-11-11",
    "published": "2026-10-19",
-   "summary": "",
+   "summary": "Procurement of Archway, Metal Detector and Luggage Scanner for Security System Under DMTCL",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98697.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -911,7 +976,12 @@
    "deadline_time": "03:00 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Road Transport and Bridges",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Own Funds Own Funds",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98676",
@@ -919,8 +989,8 @@
    "organization": "General Manager (Administration Division)",
    "category": "Goods",
    "deadline": "2026-12-07",
-   "published": "2026-10-13",
-   "summary": "",
+   "published": "2026-10-18",
+   "summary": "Rig Instrumentation Spares for Begumganj-5 Appraisal cum Development Well and Begumganj-6 Exploratory Well",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98676.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -932,7 +1002,13 @@
    "deadline_time": "11:00 AM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Energy, Power and Minearal Resources",
+   "proc_type": "ICT",
+   "funding": "Development Budget GOB",
+   "doc_price": "13800 BDT or USD 115.00 (Non-refundable), including VAT",
+   "ref_no": "BAPEX/ADMIN/INT/TEN-1345/2026",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98677",
@@ -941,7 +1017,7 @@
    "category": "Civil works",
    "deadline": "2026-10-29",
    "published": "2026-10-18",
-   "summary": "",
+   "summary": "Supply and installation of a passenger lift with a capacity of 750-800 kg for the five-storey building of the NSI office in Rajbari district.",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98677.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -953,7 +1029,14 @@
    "deadline_time": "12:00 PM",
    "district": "Rajbari",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Housing and Public Works",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "N/A",
+   "doc_price": "2500",
+   "ref_no": "PWD/Rjbri/NSI/Memono-413/05-04-26/2026-2027",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98678",
@@ -961,8 +1044,8 @@
    "organization": "DDG, Communication Branch",
    "category": "Goods",
    "deadline": "2026-10-29",
-   "published": "2026-10-15",
-   "summary": "",
+   "published": "2026-10-18",
+   "summary": "Walkie Talkie Set Complete - DMR VHF (With License) N/A",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98678.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -975,16 +1058,22 @@
    "deadline_time": "05:00 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Home Affairs",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "N/A",
+   "doc_price": "2500",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98680",
    "title": "Procurement of 3D Seismic Data Interpretation System (LOT-01: G&G Interpretation, Modeling & Log Interpretation Systems with related Services and LOT-02: Seismic Reservoir Characterization System with related Services) BAPEX/Admin/Int/Ten-1358/2026",
    "organization": "General Manager, Administration Division, Bangladesh Petroleum Exploration & Production Company Limited (BAPEX)",
-   "category": "Goods",
+   "category": "Civil works",
    "deadline": "2026-12-01",
-   "published": "2026-10-14",
-   "summary": "",
+   "published": "2026-10-18",
+   "summary": "LOT-01: G&G Interpretation, Modeling & Log Interpretation Systems with Necessary Hardware; and LOT-02: Seismic Reservoir Characterization System with Necessary Hardware. • Commissioning & Installation: The bidder should provide service on Commissioning & Installation of the Software & Hardware at BAPEX Dhaka Office. • Work association: 142 days for LOT-01 and 58 Days for LOT-02",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98680.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -996,7 +1085,13 @@
    "deadline_time": "11:30 AM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Energy, Power and Minearal Resources",
+   "proc_type": "ICT",
+   "funding": "Development Budget Own Funds",
+   "doc_price": "BDT 13,800.00 or USD 112.00 (Non-refundable) Including VAT",
+   "ref_no": "BAPEX/Admin/Int/Ten-1358/2026",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98663",
@@ -1139,10 +1234,10 @@
    "id": "bppa-goods-98669",
    "title": "14.35.0000.520.42.002.26.49",
    "organization": "Project Director, “Installation of Fixed Generators for Mobile Network Operators to Ensure Emergency Power Supply for Disaster Management (FGDM)” -Project, Teletalk Bangladesh Limited",
-   "category": "Goods",
+   "category": "Electrical",
    "deadline": "2026-11-16",
-   "published": "2026-10-15",
-   "summary": "",
+   "published": "2026-10-17",
+   "summary": "Supply, Installation and Commissioning of Generator and Other Equipment (with Remote Monitoring System) under FGDM Project (Lot-1).",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98669.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -1155,16 +1250,22 @@
    "deadline_time": "02:30 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Post, Telecommunications & Information Technology",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Development Budget Own Funds",
+   "doc_price": "10000",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98670",
    "title": "14.35.0000.520.42.002.26.51",
    "organization": "Project Director, “Installation of Fixed Generators for Mobile Network Operators to Ensure Emergency Power Supply for Disaster Management (FGDM)” -Project, Teletalk Bangladesh Limited",
-   "category": "Goods",
+   "category": "Electrical",
    "deadline": "2026-11-16",
-   "published": "2026-10-15",
-   "summary": "",
+   "published": "2026-10-17",
+   "summary": "Supply, Installation and Commissioning of Generator and Other Equipment (with Remote Monitoring System) under FGDM Project (Lot-3).",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98670.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -1177,16 +1278,22 @@
    "deadline_time": "02:30 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Post, Telecommunications & Information Technology",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Development Budget Own Funds",
+   "doc_price": "10000",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98671",
    "title": "14.35.0000.520.42.002.26.52",
    "organization": "Project Director, “Installation of Fixed Generators for Mobile Network Operators to Ensure Emergency Power Supply for Disaster Management (FGDM)” -Project, Teletalk Bangladesh Limited",
-   "category": "Goods",
+   "category": "Electrical",
    "deadline": "2026-11-16",
-   "published": "2026-10-15",
-   "summary": "",
+   "published": "2026-10-17",
+   "summary": "Supply, Installation and Commissioning of Generator and Other Equipment (with Remote Monitoring System) under FGDM Project (Lot-4).",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98671.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -1199,7 +1306,13 @@
    "deadline_time": "02:30 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Post, Telecommunications & Information Technology",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Development Budget Own Funds",
+   "doc_price": "10000",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98672",
@@ -1270,8 +1383,8 @@
    "organization": "Director Admin Q, Ansar & VDP HQS, Khilgaon, Dhaka",
    "category": "Goods",
    "deadline": "2026-10-29",
-   "published": "2026-10-14",
-   "summary": "",
+   "published": "2026-10-15",
+   "summary": "The Procurement of TC Cloth Black, TC Cloth Agate green and TC Cloth Combat Supply and transportation of serial 15",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98656.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -1284,7 +1397,13 @@
    "deadline_time": "03:00 AM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Home Affairs",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Non_Development GOB",
+   "doc_price": "A-2500,B-4000,C-4000",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98657",
@@ -1373,8 +1492,8 @@
    "organization": "Bangladesh Petroleum Corporation",
    "category": "Goods",
    "deadline": "2026-10-04",
-   "published": "2026-10-13",
-   "summary": "",
+   "published": "2026-10-14",
+   "summary": "Procurement of 3.5808-3.8046 Million Barrels (480000-510000 Metric Ton) of Gasoil 0.005% 'S' and 0.72-0.96 Million Barrels (90000-120000 Metric Ton) of Jet A-1 during January-June, 2027",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98640.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -1383,11 +1502,17 @@
    "last_seen": "2026-10-30T17:44:28+00:00",
    "also_at": [],
    "nature": "Goods",
-   "ref_no": "28.03.0000.000.045.01.0021.26",
+   "ref_no": "28.03.0000.000.045.01.0021.26.(PG-01)",
    "deadline_time": "12:00 PM",
    "district": "Chattogram",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Energy, Power and Minearal Resources",
+   "method": "OTM",
+   "proc_type": "ICT",
+   "funding": "Own Funds Own Funds",
+   "doc_price": "12000",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98641",
@@ -1555,7 +1680,7 @@
    "category": "Civil works",
    "deadline": "2026-10-30",
    "published": "2026-10-14",
-   "summary": "",
+   "summary": "Supply of 5 nos Water Bowser (10, 000 litre) for Department of Fire service and Civil Defense (FSCD)",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98648.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -1567,7 +1692,14 @@
    "deadline_time": "01:00 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Local Government, Rural Development and Co-operatives",
+   "proc_type": "ICT",
+   "funding": "The World Bank",
+   "partner": "World Bank",
+   "doc_price": "For delivery of the bidding documents within Bangladesh: Bangladesh Taka 12,000 or US Dollars 100. For delivery outside Bangladesh: Bangladesh Taka 20,000 or US Dollars 165.",
+   "ref_no": "6.02.0000.560.07.037.25-6051",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98649",
@@ -1597,7 +1729,7 @@
    "category": "Goods",
    "deadline": "2026-11-26",
    "published": "2026-10-14",
-   "summary": "",
+   "summary": "1) 15,000 Pcs Flash Bang Grenade",
    "link": "https://www.bppa.gov.bd/advertisement-goods/details-98650.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -1606,11 +1738,16 @@
    "last_seen": "2026-10-30T17:44:28+00:00",
    "also_at": [],
    "nature": "Goods",
-   "ref_no": "44.01.0000.058.07.020.26/03",
+   "ref_no": "44.01.0000.058.07.020.26/03(2026-2027)",
    "deadline_time": "12:00 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Home Affairs",
+   "proc_type": "ICT",
+   "funding": "Non_Development GOB",
+   "doc_price": "1) 12,000/-",
+   "detail_done": true
   },
   {
    "id": "bppa-goods-98653",
@@ -2138,8 +2275,8 @@
    "organization": "Rangamati Road Division",
    "category": "Civil works",
    "deadline": "2026-10-27",
-   "published": "2026-10-17",
-   "summary": "",
+   "published": "2026-10-28",
+   "summary": "Construction of RCC Retaining Wall Ch. 11+150 to Ch. 11+230 of Bogachari-Nanyarchar-Longudu Road (Z-1612) under Road Division Rangamati, during the year 2026-2027.",
    "link": "https://www.bppa.gov.bd/advertisement-works/details-98753.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -2151,7 +2288,14 @@
    "deadline_time": "02:00 PM",
    "district": "Rangamati",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Road Transport and Bridges",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Non_Development GOB",
+   "doc_price": "1500",
+   "ref_no": "EE/RANGA/RHD/EGP-07/2026-2027",
+   "detail_done": true
   },
   {
    "id": "bppa-works-98754",
@@ -2159,8 +2303,8 @@
    "organization": "Rangamati Road Division",
    "category": "Civil works",
    "deadline": "2026-10-27",
-   "published": "2026-10-17",
-   "summary": "",
+   "published": "2026-10-28",
+   "summary": "Road Widening of At 14 th (p), 15th (p), KM of Rangamati (Gagra)-Chandraghona-Bangalhalia-Bandarban Road (R-161) under Rangamati Road Division during the year 2026-2027.",
    "link": "https://www.bppa.gov.bd/advertisement-works/details-98754.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -2172,7 +2316,14 @@
    "deadline_time": "02:00 PM",
    "district": "Rangamati",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Road Transport and Bridges",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Non_Development GOB",
+   "doc_price": "1500",
+   "ref_no": "EE/RANGA/RHD/EGP-08/2026-2027",
+   "detail_done": true
   },
   {
    "id": "bppa-works-98756",
@@ -2804,7 +2955,7 @@
    "category": "Civil works",
    "deadline": "2026-10-24",
    "published": "2026-10-25",
-   "summary": "",
+   "summary": "Construction of Custom Bonded Boundary Wall around removed Ansar Barak-08 and developing vacant land to Yard. N/A",
    "link": "https://www.bppa.gov.bd/advertisement-works/details-98704.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -2817,7 +2968,13 @@
    "deadline_time": "11:00 AM",
    "district": "Chattogram",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Shipping",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "N/A",
+   "doc_price": "4000",
+   "detail_done": true
   },
   {
    "id": "bppa-works-98705",
@@ -2826,7 +2983,7 @@
    "category": "Civil works",
    "deadline": "2026-11-09",
    "published": "2026-10-14",
-   "summary": "",
+   "summary": "Construction of 02(Two) number 20-Storied Residential RCC Building with 01(One) Basement including excavation, Piling works, Raft foundation, RCC Retaining wall, internal Electrification, Sanitary-plumbing, Water Supply and Internal Road with Footpath etc. Detail in the Section VI. Scope of Works of the Prequalification document. N/A",
    "link": "https://www.bppa.gov.bd/advertisement-works/details-98705.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -2838,7 +2995,14 @@
    "deadline_time": "03:00 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Finance",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "N/A",
+   "doc_price": "BDT 10,000/-",
+   "ref_no": "CSD-2(PMD):5/58/2026-09",
+   "detail_done": true
   },
   {
    "id": "bppa-works-98712",
@@ -2846,8 +3010,8 @@
    "organization": "Digital Entrepreneurship and Innovation Eco-System Development Project",
    "category": "Civil works",
    "deadline": "2026-11-11",
-   "published": "2026-10-19",
-   "summary": "",
+   "published": "2026-10-25",
+   "summary": "Establishment of University Innovation Hub in North South University (NSU), Dhaka N/A",
    "link": "https://www.bppa.gov.bd/advertisement-works/details-98712.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -2856,11 +3020,18 @@
    "last_seen": "2026-10-30T17:44:28+00:00",
    "also_at": [],
    "nature": "Works",
-   "ref_no": "56.02.0000.028.07.256.26-1400",
+   "ref_no": "56.02.0000.028.07.256.26-1400-DEIEDP-BHTPA-WD-7-5",
    "deadline_time": "03:30 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Post, Telecommunications & Information Technology",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "IDA, World Bank",
+   "partner": "World Bank",
+   "doc_price": "2500",
+   "detail_done": true
   },
   {
    "id": "bppa-works-98713",
@@ -2893,10 +3064,10 @@
    "id": "bppa-works-98701",
    "title": "W-23_pump_Motor_Z_C",
    "organization": "Executive engineer,EM-Division-3,PWD",
-   "category": "Civil works",
+   "category": "Goods",
    "deadline": "2026-11-02",
-   "published": "2026-10-19",
-   "summary": "",
+   "published": "2026-10-23",
+   "summary": "onstruction of Multi-Storied Residential Flats for Government Employees inside Azimpur Govt. Colony, Dhaka (Zone-C) [Sub-Head:-Supply, Installation, Testing & Commissioning of 22 Nos 20-H.P Submersible Pump Motor Set, 06 Nos 7.5 HP Centrifugal Pump & 03 Nos Submersible Sewage Pump Motor) [Package No-W-23) onstruction of Multi-Storied Residential Flats for Government Employees inside Azimpur Govt. ",
    "link": "https://www.bppa.gov.bd/advertisement-works/details-98701.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -2908,7 +3079,13 @@
    "deadline_time": "11:45 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Housing and Public Works",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Development Budget GOB",
+   "ref_no": "W-23_pump_Motor_Z_C",
+   "detail_done": true
   },
   {
    "id": "bppa-works-98684",
@@ -2917,7 +3094,7 @@
    "category": "Civil works",
    "deadline": "2026-10-25",
    "published": "2026-10-19",
-   "summary": "",
+   "summary": "BADC-327: INTERNATIONAL LIMITED TENDER FOR TRANSPORTATION OF OPTIONAL 6TH LOT OF 40,000 MT (+/- 10%) DAP FERTILIZER IN BULK IN SINGLE SHIPMENT FROM JORF LASFAR PORT, MOROCCO AND DELIVERY IN 50 KG NET BAG TO TRANSPORT AGENT OF BADC LOCATED AT CHATTOGRAM & SHIROMONI GHAT, KHULNA VIA OUTER ANCHORAGE OF CHATTOGRAM PORT (A/B/C ANCHORAGE), BANGLADESH AND/OR HARBARIA, MONGLA PORT, BANGLADESH AS PACKAGE B",
    "link": "https://www.bppa.gov.bd/advertisement-works/details-98684.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -2926,11 +3103,16 @@
    "last_seen": "2026-10-30T17:44:28+00:00",
    "also_at": [],
    "nature": "Works",
-   "ref_no": "18.16.0000.373.02.327.26-27",
+   "ref_no": "18.16.0000.373.02.327.26-27/COMC-04102026",
    "deadline_time": "12:15 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Shipping",
+   "method": "LTM",
+   "proc_type": "ICT",
+   "funding": "Own Funds GOB",
+   "detail_done": true
   },
   {
    "id": "bppa-works-98686",
@@ -3046,8 +3228,8 @@
    "organization": "Rangamati Road Division",
    "category": "Civil works",
    "deadline": "2026-11-02",
-   "published": "2026-10-18",
-   "summary": "",
+   "published": "2026-10-19",
+   "summary": "Construction of RCC Retaining Wall with pile foundation & RCC U Drain at 2nd KM of (Doyal chattar- Parjatan)Parjaton Road Link Road of Chattogram-Hathazari-Rangamati National Highway (N-106) under Rangamati Road Division during the financial year 2026-2027.",
    "link": "https://www.bppa.gov.bd/advertisement-works/details-98691.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -3059,7 +3241,14 @@
    "deadline_time": "02:00 PM",
    "district": "Rangamati",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Road Transport and Bridges",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Non_Development GOB",
+   "doc_price": "2500",
+   "ref_no": "EE/RANGA/RHD/EGP-09/2026-2027",
+   "detail_done": true
   },
   {
    "id": "bppa-works-98692",
@@ -3111,8 +3300,8 @@
    "organization": "Rangamati Road Division",
    "category": "Civil works",
    "deadline": "2026-11-16",
-   "published": "2026-10-18",
-   "summary": "",
+   "published": "2026-10-19",
+   "summary": "Construction of 34.88 m ( 1 x 33.54 m ) Long P.C. Girder Bridge(Betchari Bridge) at 4th (p) Km. (Ch. 3+657Km) of Ranirhat-Kawkhali Road (Z-1613) Under Road Division Rangamati During The Year 2026-2027.",
    "link": "https://www.bppa.gov.bd/advertisement-works/details-98694.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -3124,7 +3313,14 @@
    "deadline_time": "02:00 PM",
    "district": "Rangamati",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Road Transport and Bridges",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Non_Development GOB",
+   "doc_price": "5000",
+   "ref_no": "e-Gp/PMPBridge/RRD-01/2026-2027",
+   "detail_done": true
   },
   {
    "id": "bppa-works-98696",
@@ -3183,7 +3379,7 @@
    "category": "Civil works",
    "deadline": "2026-11-16",
    "published": "2026-10-18",
-   "summary": "",
+   "summary": "Construction of New road (including hard shoulder) (width-10.30m), 04(four) nos Box culvert, 02(two) nos underpass, 01 (one) no RCC bridge, drains, protective works and installation of sign signal, Directional and Overhead sign of Ramerkanda-Lakirchar (Rohitpur Link Road) Development Project under Munshiganj Road Division during the year 2025 - 2026",
    "link": "https://www.bppa.gov.bd/advertisement-works/details-98679.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -3196,7 +3392,13 @@
    "deadline_time": "04:00 PM",
    "district": "Munshiganj",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Road Transport and Bridges",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Development Budget GOB",
+   "doc_price": "10,000/-",
+   "detail_done": true
   },
   {
    "id": "bppa-works-98682",
@@ -3275,8 +3477,8 @@
    "organization": "Narayanganj City Corporation",
    "category": "Civil works",
    "deadline": "2026-10-28",
-   "published": "2026-10-14",
-   "summary": "",
+   "published": "2026-10-15",
+   "summary": "Installation Of Production Tube well (12 Nos) at Ward no-01, 02, 05, 07, 08, 09, 21, 23 and 24 in different zone under NCC.",
    "link": "https://www.bppa.gov.bd/advertisement-works/details-98661.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -3285,11 +3487,17 @@
    "last_seen": "2026-10-30T17:44:28+00:00",
    "also_at": [],
    "nature": "Works",
-   "ref_no": "46.16.6700.015.09.209.2019.2011",
+   "ref_no": "MemoNo.46.16.6700.015.09.209.2019.2011(40),Corrigendum(MemoNo.46.16.6700.015.09.209.2019.1792(35)",
    "deadline_time": "02:00 PM",
    "district": "Narayanganj",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Local Government, Rural Development and Co-operatives",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "JICA",
+   "partner": "JICA",
+   "detail_done": true
   },
   {
    "id": "bppa-works-98662",
@@ -3298,7 +3506,7 @@
    "category": "Civil works",
    "deadline": "2026-11-02",
    "published": "2026-10-15",
-   "summary": "",
+   "summary": "Construction of RCC Box Culvert at 11th (p) Km (Ch: 10+609) of Mariamnogor-Ranirhat (Gabtol) Road (Z-1617) under Chattogram Road Division during the year 2026-2027. N/A",
    "link": "https://www.bppa.gov.bd/advertisement-works/details-98662.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -3310,7 +3518,14 @@
    "deadline_time": "12:00 PM",
    "district": "Chattogram",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Road Transport and Bridges",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "N/A",
+   "doc_price": "2500.00",
+   "ref_no": "e-GP/PMPBridge/01/EE/CRD/RHD/2026-2027(ID-1354476)",
+   "detail_done": true
   },
   {
    "id": "bppa-works-98651",
@@ -3361,7 +3576,7 @@
    "category": "Civil works",
    "deadline": "2026-11-10",
    "published": "2026-10-14",
-   "summary": "",
+   "summary": "To Design and Build the Sewage Treatment Plant & Trunk Sewer for North Kattoli Catchment (Catchment-5) including covering : i) Capacity 50,000 m3/d to fit with both wastewater volumes generated by catchment 5 at the 2035 horizon and spare capacity provided under Catchment 1 project, for which civil works of shared facilities are already planned; ii) Biological treatment (activated sludge), up to p",
    "link": "https://www.bppa.gov.bd/advertisement-works/details-98654.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -3374,7 +3589,14 @@
    "deadline_time": "01:00 PM",
    "district": "Chattogram",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Local Government, Rural Development and Co-operatives",
+   "method": "OTM",
+   "proc_type": "ICT",
+   "funding": "Agence Française de Développement (AFD)",
+   "partner": "AFD",
+   "doc_price": "12000",
+   "detail_done": true
   },
   {
    "id": "bppa-works-98655",
@@ -3383,7 +3605,7 @@
    "category": "Civil works",
    "deadline": "2026-11-11",
    "published": "2026-10-14",
-   "summary": "",
+   "summary": "To Design and Build a complete sewerage system for North Kattoli Catchment including covering : i) Approximately 93 km of sewers ranging in size from 200mm to 1200 mm diameter and up to 6 m depth; ii) Installation of approximately 8,100 domestic / commercial connections ; iii) Design and installation of on-site sanitation systems for unserved areas (approximately 15% of the total catchment populat",
    "link": "https://www.bppa.gov.bd/advertisement-works/details-98655.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -3396,7 +3618,14 @@
    "deadline_time": "01:00 PM",
    "district": "Chattogram",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Local Government, Rural Development and Co-operatives",
+   "method": "OTM",
+   "proc_type": "ICT",
+   "funding": "Agence Française de Développement (AFD)",
+   "partner": "AFD",
+   "doc_price": "12000",
+   "detail_done": true
   },
   {
    "id": "bppa-works-98632",
@@ -3954,7 +4183,10 @@
    "ref_no": "41.01.0000.124.07.029.2026-1208",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Social Welfare",
+   "funding": "Development Budget Grant/Credit",
+   "detail_done": true
   },
   {
    "id": "bppa-services-10704",
@@ -3975,7 +4207,10 @@
    "ref_no": "52.01.0000.000.909.07.0028.26.1487",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Planning",
+   "funding": "Development Budget GOB",
+   "detail_done": true
   },
   {
    "id": "bppa-services-10705",
@@ -3996,7 +4231,10 @@
    "ref_no": "42.01.0000.000.817.31.0001.26-1095",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Water Resources",
+   "funding": "Development Budget Grant/Credit",
+   "detail_done": true
   },
   {
    "id": "bppa-services-10706",
@@ -4017,7 +4255,10 @@
    "ref_no": "54.01.0000.000.710.20.0046.26-1509",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Railways",
+   "funding": "Development Budget GOB",
+   "detail_done": true
   },
   {
    "id": "bppa-services-10707",
@@ -4039,7 +4280,10 @@
    "deadline_time": "11:00 AM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Energy, Power and Minearal Resources",
+   "funding": "Own Funds Own Funds",
+   "detail_done": true
   },
   {
    "id": "bppa-services-10696",
@@ -4059,7 +4303,10 @@
    "nature": "Services",
    "district": "Jashore",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Education",
+   "funding": "Development Budget Loan",
+   "detail_done": true
   },
   {
    "id": "bppa-services-10697",
@@ -4080,7 +4327,10 @@
    "ref_no": "35.01.2607.079.35.001.26",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Road Transport and Bridges",
+   "funding": "Development Budget GOB",
+   "detail_done": true
   },
   {
    "id": "bppa-services-10698",
@@ -4102,7 +4352,10 @@
    "deadline_time": "1:00 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Road Transport and Bridges",
+   "funding": "Development Budget GOB",
+   "detail_done": true
   },
   {
    "id": "bppa-services-10699",
@@ -4124,7 +4377,10 @@
    "deadline_time": "3:00 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Road Transport and Bridges",
+   "funding": "Development Budget Loan",
+   "detail_done": true
   },
   {
    "id": "bppa-services-10700",
@@ -4145,7 +4401,10 @@
    "ref_no": "08.01.0000.000.056.21.0001.26-547",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Finance",
+   "funding": "Non_Development GOB",
+   "detail_done": true
   },
   {
    "id": "bppa-services-10701",
@@ -4166,7 +4425,10 @@
    "ref_no": "35.01.2690.078.07.057.25-2885",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Road Transport and Bridges",
+   "funding": "Development Budget GOB",
+   "detail_done": true
   },
   {
    "id": "bppa-services-10702",
@@ -4188,7 +4450,10 @@
    "deadline_time": "03:00 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Finance",
+   "funding": "Non_Development GOB",
+   "detail_done": true
   },
   {
    "id": "bppa-services-10703",
@@ -4209,7 +4474,10 @@
    "ref_no": "46.16.0000.012.31.013.17.110",
    "district": "Narayanganj",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Local Government, Rural Development and Co-operatives",
+   "funding": "Own Funds Own Funds",
+   "detail_done": true
   },
   {
    "id": "bppa-services-10690",
@@ -4943,10 +5211,10 @@
    "id": "bppa-physical-service-98724",
    "title": "GPFPLC/COM/SALES/2026-27/JAS(Re-Tender)/24",
    "organization": "Ghorashal Polash Fertilizer Public Limited Company, Polash, Narsingdi.",
-   "category": "Other",
+   "category": "Civil works",
    "deadline": "2026-11-09",
-   "published": "2026-10-25",
-   "summary": "",
+   "published": "2026-10-26",
+   "summary": "Appointment of contractor for the transportation, unloading and stacking (at a maximum height of 32 stacks) of 25000 (Twenty Five thousand) MT. of bagged urea fertilizer produced by GPFPLC from the factory side to Jessore Buffer by road/ river.",
    "link": "https://www.bppa.gov.bd/advertisement-physical-service/details-98724.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -4958,16 +5226,23 @@
    "deadline_time": "11:00 AM",
    "district": "Narsingdi",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Industries",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Own Funds Own Funds",
+   "doc_price": "4000",
+   "ref_no": "GPFPLC/COM/SALES/2026-27/JAS(Re-Tender)/24",
+   "detail_done": true
   },
   {
    "id": "bppa-physical-service-98725",
    "title": "GPFPLC/COM/SALES/2026-27/PAR(Re-Tender)/04",
    "organization": "Ghorashal Polash Fertilizer Public Limited Company, Polash, Narsingdi.",
-   "category": "Other",
+   "category": "Civil works",
    "deadline": "2026-11-09",
-   "published": "2026-10-25",
-   "summary": "",
+   "published": "2026-10-26",
+   "summary": "Appointment of a contractor for the transportation, post-transportation, unloading and stacking (at a maximum height of 32 stacks) of 5000( five thousand) MT. of bagged urea fertilizer produced by GPFPLC from the factory side to Parbotipur Buffer by road/ river.",
    "link": "https://www.bppa.gov.bd/advertisement-physical-service/details-98725.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -4979,16 +5254,23 @@
    "deadline_time": "11:00 AM",
    "district": "Narsingdi",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Industries",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Own Funds Own Funds",
+   "doc_price": "2500",
+   "ref_no": "GPFPLC/COM/SALES/2026-27/PAR(Re-Tender)/04",
+   "detail_done": true
   },
   {
    "id": "bppa-physical-service-98726",
    "title": "GPFPLC/COM/SALES/2026-27/KAL(Re-Tender)/25",
    "organization": "Ghorashal Polash Fertilizer Public Limited Company, Polash, Narsingdi.",
-   "category": "Other",
+   "category": "Civil works",
    "deadline": "2026-11-09",
-   "published": "2026-10-25",
-   "summary": "",
+   "published": "2026-10-26",
+   "summary": "Appointment of contractor for the transportation, unloading and stacking (at a maximum height of 32 stacks) of 25000 (Twenty Five thousand) MT. of bagged urea fertilizer produced by GPFPLC from the factory side to Kaligonj Buffer by road/ river.",
    "link": "https://www.bppa.gov.bd/advertisement-physical-service/details-98726.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -5000,16 +5282,23 @@
    "deadline_time": "11:00 AM",
    "district": "Narsingdi",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Industries",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Own Funds Own Funds",
+   "doc_price": "4000",
+   "ref_no": "GPFPLC/COM/SALES/2026-27/KAL(Re-Tender)/25",
+   "detail_done": true
   },
   {
    "id": "bppa-physical-service-98727",
    "title": "GPFPLC/COM/SALES/2026-27/THA/32",
    "organization": "Ghorashal Polash Fertilizer Public Limited Company, Polash, Narsingdi.",
-   "category": "Other",
+   "category": "Civil works",
    "deadline": "2026-11-09",
-   "published": "2026-10-25",
-   "summary": "",
+   "published": "2026-10-26",
+   "summary": "Appointment of contractor for the transportation, unloading and stacking (at a maximum height of 32 stacks) of 20000 (Twenty thousand) MT. of bagged urea fertilizer produced by GPFPLC from the factory side to Thakurgoan Buffer by road/ river.",
    "link": "https://www.bppa.gov.bd/advertisement-physical-service/details-98727.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -5021,16 +5310,23 @@
    "deadline_time": "11:00 AM",
    "district": "Narsingdi",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Industries",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Own Funds Own Funds",
+   "doc_price": "4000",
+   "ref_no": "GPFPLC/COM/SALES/2026-27/THA/32",
+   "detail_done": true
   },
   {
    "id": "bppa-physical-service-98728",
    "title": "GPFPLC/COM/SALES/2026-27/SHE/31",
    "organization": "Ghorashal Polash Fertilizer Public Limited Company, Polash, Narsingdi.",
-   "category": "Other",
+   "category": "Civil works",
    "deadline": "2026-11-09",
-   "published": "2026-10-25",
-   "summary": "",
+   "published": "2026-10-26",
+   "summary": "Appointment of contractor for the transportation, unloading and stacking (at a maximum height of 32 stacks) of 20000 (Twenty thousand) MT. of bagged urea fertilizer produced by GPFPLC from the factory side to Sherpur Buffer by road/ river.",
    "link": "https://www.bppa.gov.bd/advertisement-physical-service/details-98728.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -5042,16 +5338,23 @@
    "deadline_time": "11:00 AM",
    "district": "Narsingdi",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Industries",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Own Funds Own Funds",
+   "doc_price": "4000",
+   "ref_no": "GPFPLC/COM/SALES/2026-27/SHE/31",
+   "detail_done": true
   },
   {
    "id": "bppa-physical-service-98729",
    "title": "GPFPLC/COM/SALES/2026-27/AFC/30",
    "organization": "Ghorashal Polash Fertilizer Public Limited Company, Polash, Narsingdi.",
-   "category": "Other",
+   "category": "Civil works",
    "deadline": "2026-11-09",
-   "published": "2026-10-25",
-   "summary": "",
+   "published": "2026-10-26",
+   "summary": "Appointment of contractor for the transportation, unloading and stacking (at a maximum height of 32 stacks) of 20000 (Twenty thousand) MT. of bagged urea fertilizer produced by GPFPLC from the factory side to AFCCL Buffer by road/ river.",
    "link": "https://www.bppa.gov.bd/advertisement-physical-service/details-98729.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -5063,16 +5366,23 @@
    "deadline_time": "11:00 AM",
    "district": "Narsingdi",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Industries",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Own Funds Own Funds",
+   "doc_price": "4000",
+   "ref_no": "GPFPLC/COM/SALES/2026-27/AFC/30",
+   "detail_done": true
   },
   {
    "id": "bppa-physical-service-98730",
    "title": "GPFPLC/COM/SALES/2026-27/MAH/29",
    "organization": "Ghorashal Polash Fertilizer Public Limited Company, Polash, Narsingdi.",
-   "category": "Other",
+   "category": "Civil works",
    "deadline": "2026-11-09",
-   "published": "2026-10-25",
-   "summary": "",
+   "published": "2026-10-26",
+   "summary": "Appointment of contractor for the transportation, unloading and stacking (at a maximum height of 32 stacks) of 10000 (Ten thousand) MT. of bagged urea fertilizer produced by GPFPLC from the factory side to Mohendronagor Buffer by road/ river.",
    "link": "https://www.bppa.gov.bd/advertisement-physical-service/details-98730.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -5084,16 +5394,23 @@
    "deadline_time": "11:00 AM",
    "district": "Narsingdi",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Industries",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Own Funds Own Funds",
+   "doc_price": "4000",
+   "ref_no": "GPFPLC/COM/SALES/2026-27/MAH/29",
+   "detail_done": true
   },
   {
    "id": "bppa-physical-service-98731",
    "title": "GPFPLC/COM/SALES/2026-27/RAJ/10",
    "organization": "Ghorashal Polash Fertilizer Public Limited Company, Polash, Narsingdi.",
-   "category": "Other",
+   "category": "Civil works",
    "deadline": "2026-11-09",
-   "published": "2026-10-25",
-   "summary": "",
+   "published": "2026-10-26",
+   "summary": "Appointment of contractor for the transportation, unloading and stacking (at a maximum height of 32 stacks) of 25000 (Twenty Five thousand) MT. of bagged urea fertilizer produced by GPFPLC from the factory side to Rajshahi Buffer by road/ river",
    "link": "https://www.bppa.gov.bd/advertisement-physical-service/details-98731.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -5105,16 +5422,23 @@
    "deadline_time": "11:00 AM",
    "district": "Narsingdi",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Industries",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Own Funds Own Funds",
+   "doc_price": "4000",
+   "ref_no": "GPFPLC/COM/SALES/2026-27/RAJ/10",
+   "detail_done": true
   },
   {
    "id": "bppa-physical-service-98732",
    "title": "GPFPLC/COM/SALES/2026-27/BOG/07",
    "organization": "Ghorashal Polash Fertilizer Public Limited Company, Polash, Narsingdi.",
-   "category": "Other",
+   "category": "Civil works",
    "deadline": "2026-10-16",
-   "published": "2026-10-25",
-   "summary": "",
+   "published": "2026-10-26",
+   "summary": "Appointment of contractor for the transportation, unloading and stacking (at a maximum height of 32 stacks) of 30000 (Thirty thousand) MT. of bagged urea fertilizer produced by GPFPLC from the factory side to Bogura Buffer by road/ river.",
    "link": "https://www.bppa.gov.bd/advertisement-physical-service/details-98732.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -5126,7 +5450,14 @@
    "deadline_time": "11:00 AM",
    "district": "Narsingdi",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Industries",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Own Funds Own Funds",
+   "doc_price": "4000",
+   "ref_no": "GPFPLC/COM/SALES/2026-27/BOG/07",
+   "detail_done": true
   },
   {
    "id": "bppa-physical-service-98711",
@@ -5160,10 +5491,10 @@
    "id": "bppa-physical-service-98681",
    "title": "14.35.0000.520.34.001.26.83",
    "organization": "Project Director, “Installation of Fixed Generators for Mobile Network Operators to Ensure Emergency Power Supply for Disaster Management (FGDM)” -Project, Teletalk Bangladesh Limited",
-   "category": "Other",
+   "category": "ICT",
    "deadline": "2026-10-28",
    "published": "2026-10-18",
-   "summary": "",
+   "summary": "Office Space Rent for the Project Titled “Installation of Fixed Generators for Mobile Network Operators to Ensure Emergency Power Supply for Disaster Management (FGDM)”- Project (PS-1). (Re-Tender). Office Space Rent for the Project Titled “Installation of Fixed Generators for Mobile Network Operators to Ensure Emergency Power Supply for Disaster Management (FGDM)”- Project (PS-1). (Re-Tender).",
    "link": "https://www.bppa.gov.bd/advertisement-physical-service/details-98681.html",
    "source_id": "bppa-govt",
    "source": "BPPA tender notices (Govt)",
@@ -5176,7 +5507,13 @@
    "deadline_time": "02:30 PM",
    "district": "Dhaka",
    "needs_ai": false,
-   "via": "bppa"
+   "via": "bppa",
+   "ministry": "Ministry of Post, Telecommunications & Information Technology",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "funding": "Development Budget Own Funds",
+   "doc_price": "2500",
+   "detail_done": true
   },
   {
    "id": "bppa-physical-service-98617",
@@ -5532,7 +5869,7 @@
    "source": "News leads: furniture supply",
    "kind": "lead",
    "first_seen": "2026-10-30T16:09:14+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true
   },
@@ -5583,7 +5920,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-29T18:26:47+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -5601,7 +5938,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-28T12:45:27+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5619,7 +5956,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5637,7 +5974,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5655,7 +5992,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5673,7 +6010,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5691,7 +6028,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5709,7 +6046,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5727,7 +6064,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5745,7 +6082,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5763,7 +6100,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5781,7 +6118,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5799,7 +6136,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5817,7 +6154,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5835,7 +6172,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5853,7 +6190,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -5871,7 +6208,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5889,7 +6226,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5907,7 +6244,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5925,7 +6262,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5943,7 +6280,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -5961,7 +6298,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -5979,7 +6316,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -5997,7 +6334,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -6015,7 +6352,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6033,7 +6370,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -6051,7 +6388,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6069,7 +6406,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6087,7 +6424,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -6105,7 +6442,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6123,7 +6460,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -6141,7 +6478,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6159,7 +6496,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6177,7 +6514,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6195,7 +6532,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -6213,7 +6550,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -6231,7 +6568,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6249,7 +6586,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6267,7 +6604,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6285,7 +6622,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6303,7 +6640,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6321,7 +6658,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -6339,7 +6676,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6357,7 +6694,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6375,7 +6712,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6393,7 +6730,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6411,7 +6748,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6429,7 +6766,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6447,7 +6784,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6465,7 +6802,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6483,7 +6820,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6501,7 +6838,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6519,7 +6856,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6537,7 +6874,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6555,7 +6892,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6573,7 +6910,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6591,7 +6928,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6609,7 +6946,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6627,7 +6964,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6645,7 +6982,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6663,7 +7000,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6681,7 +7018,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6699,7 +7036,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6717,7 +7054,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6735,7 +7072,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6753,7 +7090,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6771,7 +7108,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6789,7 +7126,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6807,7 +7144,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6825,7 +7162,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6843,7 +7180,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6861,7 +7198,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6879,7 +7216,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6897,7 +7234,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6915,7 +7252,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6933,7 +7270,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6951,7 +7288,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -6969,7 +7306,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -6987,7 +7324,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -7005,7 +7342,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -7023,7 +7360,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -7041,7 +7378,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -7059,7 +7396,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -7077,7 +7414,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -7095,7 +7432,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -7113,7 +7450,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -7131,7 +7468,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -7149,7 +7486,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -7167,7 +7504,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -7185,7 +7522,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -7203,7 +7540,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-10-30T17:44:28+00:00",
+   "last_seen": "2026-10-30T17:59:37+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
