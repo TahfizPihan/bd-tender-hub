@@ -5,7 +5,8 @@ World Bank, private banks/NGOs and newspaper tender pages, an AI step reads the 
 static page lets you search and filter. Every entry links back to the original notice.
 
 ```
-e-GP RSS ─────────────┐
+e-GP list (browser) ──┐
+BPPA notices ─────────┤
 World Bank API ───────┤
 bank / NGO pages ─────┼─> scraper ──> docs/tenders.json ──> docs/index.html
 newspaper e-papers ───┤   (GitHub Actions, every 3h)         (private, see below)
@@ -16,7 +17,7 @@ Cost: **0** (GitHub Actions + Gemini free tier + free hosting).
 
 ## Set up (about 15 minutes)
 
-1. Create a **private** GitHub repository and push this folder to it.
+1. Use your GitHub repository (it must be public for the web page, see below).
 2. **Settings → Secrets and variables → Actions → New secret**: `GEMINI_API_KEY`
    (free key from https://aistudio.google.com). Needed for banks/NGOs and newspapers;
    e-GP and the World Bank work without it.
@@ -25,37 +26,52 @@ Cost: **0** (GitHub Actions + Gemini free tier + free hosting).
 
 The workflow runs the tests first, so a broken change never overwrites your data.
 
-## Keep it private
+## Update steps (do this whenever I send a new zip)
 
-GitHub Pages sites are public even for private repos (except on paid plans), so don't use it. Options:
+The page shows a red banner **"Your repository is still running the old collector"** when the code in
+your repo is out of date. To update: unzip, open your repo on GitHub, **Add file, Upload files**, drag in
+everything from the unzipped folder (including the `.github`, `scraper`, `tests` and `docs` folders and
+`sources.json`, `requirements.txt`) and commit. Then **Actions, Collect tenders, Run workflow**.
+Do not upload a `tenders.json` or `data` folder from the zip; your live ones stay untouched.
+Check the page footer: it shows the version (for example `3.3`).
 
-- **Simplest:** `git pull`, then `python -m http.server -d docs 8000` and open http://localhost:8000.
-- **Phone and laptop:** connect the private repo to Cloudflare Pages (build output folder `docs`),
-  then limit access to your own email with Cloudflare Access (Zero Trust has a free tier).
+## Searching
+
+The search box accepts `interior OR "fit-out" -road`: words are AND, `OR` or `|` means either,
+quotes are an exact phrase, `-word` excludes. Chips under the tabs are saved searches (Interior and
+fit-out, Furniture supply, and your own: type a search, press "+ Save this search"; they are kept in
+your browser). The "Search other sites" panel opens Google, Facebook, LinkedIn and Instagram searches for
+the same words. Social sites are opened by you, not scraped: their terms forbid automated copying.
+
+bdtender.com and alltender.com terms forbid copying their content, so they are linked, not collected.
+News leads (Google News RSS for interior and furniture tenders) are shown under the "News leads" tab.
+
+## Viewing it (public repo + GitHub Pages)
+
+1. Make the repo **public** (Settings, Danger Zone, Change visibility). It holds only public tender notices.
+2. Settings, Pages: Source = *Deploy from a branch*, branch `main`, folder `/docs`.
+3. Open `https://<your-user>.github.io/bd-tender-hub/`. The page loads fresh data straight from
+   `raw.githubusercontent.com`, so it is current even before Pages redeploys.
 
 ## Sources
 
-| Source | Type | How |
+| Source | Kind | How |
 |---|---|---|
-| e-GP daily + weekly | Government | official RSS feeds, enabled |
-| World Bank (Bangladesh) | Development partners | public JSON API; bids, EOIs and prequalification; enabled |
-| BRAC e-Tender | Private / NGO | AI reads the live list page; enabled |
-| Islami Bank Bangladesh | Private | AI reads the tender-notice table; enabled |
-| Meghna Bank | Private | AI reads the notice board (pages 1-2); enabled |
-| Uttara Bank | Private | AI reads its tender page; enabled, layout unverified |
-| Newspapers (Daily Star, Prothom Alo, ...) | Newspaper | AI reads e-paper tender pages; needs setup per paper |
-| `inbox.txt` | Any | you paste a page image/PDF URL |
+| BPPA advertisements (goods, works, services) | Government | server-rendered lists plus detail pages: OTM/LTM method, funding partner (ADB, JICA, World Bank ...), closing time. New notices only after the first run |
+| e-GP public tender list | Government | read with a headless browser (the list is built by JavaScript) |
+| World Bank (Bangladesh) | Development partner | public JSON API |
+| ADB, JICA | Development partner | headless browser plus AI; marked *experimental* |
+| BRAC, Islami Bank, Meghna Bank, Uttara Bank | Private / NGO | AI reads the notice page |
+| Newspapers | Private works | need one e-paper URL pattern per paper, or `inbox.txt` |
 
-Government agency websites are intentionally not collected: their tenders are on e-GP.
+Filters on the page: method (OTM, LTM, RFQ ...), funded by (ADB, JICA, World Bank, IFC ...), category, source.
+"CTM" is not a standard method in Bangladesh public procurement rules, so it is not a filter.
 
-**Check the first run.** I could only read these sites through a limited tool, not from the build
-sandbox, so none of the collectors has run against a live site yet. They are tested against
-synthetic samples shaped like what I saw. Open the Actions log and `docs/tenders.json` after the
-first run. Each source reports `ok` or an error on the page footer. Likely issues:
-- *"almost no text"* means the page builds its list with JavaScript (possible for BRAC). That
-  source cannot be read automatically.
-- *"disallowed by robots.txt"* means the site forbids automated access; the collector respects that.
-- Empty deadline/organization on e-GP items means the RSS layout needs a small parser tweak.
+**Check the first run.** The e-GP and BPPA readers are tested against samples shaped like the real
+pages (including a JavaScript-built mock of e-GP), not against the live sites. After the first run:
+- Actions log: each source prints `[ok]` or `[fail]` with the reason.
+- The page footer, "Source status": shows the same per source (experimental ones do not raise the warning banner).
+- `data/egp_debug.txt` records what the browser saw on the e-GP page. If e-GP shows 0 tenders, send me that file.
 
 ## How the AI page reader works
 

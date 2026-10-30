@@ -1,0 +1,38 @@
+<!doctype html><html><head><meta charset="utf-8"><title>eTender/eProposal Search Results</title></head>
+<body><!-- SYNTHETIC page mimicking the e-GP list: table filled by JavaScript, "Next" pagination, page-size select. Tests only. -->
+<h3>eTender/eProposal Search Results</h3>
+<table id="t" border="1">
+<tr><th>S.<br>No.</th><th>Tender/Proposal ID,<br>Reference No,<br>Public Status</th><th>Procurement Nature,<br>Title</th>
+<th>Ministry,<br>Division,<br>Organization,<br>PE</th><th>Type,<br>Method</th><th>Publishing Date and Time,<br>Closing Date and Time</th></tr>
+</table>
+<div>Rows <select id="size"><option selected>10</option><option>25</option></select>
+<span id="info"></span> <a href="#" id="first">« First</a> <a href="#" id="prev">‹ Previous</a> <a href="#" id="next">Next ›</a></div>
+<script>
+const NAT = ["Works","Goods","Services"];
+const ALL = Array.from({length: 60}, (_, i) => ({
+  id: 1177000 + i, ref: "MOWR/BWDB/2026/" + (100 + i), nature: NAT[i % 3],
+  title: (i % 3 === 0 ? "Construction of embankment, Package " : i % 3 === 1 ? "Supply of office furniture lot " : "Consultancy for survey ") + (i + 1),
+  org: ["Ministry of Water Resources,", "Water Resources Division,", "Bangladesh Water Development Board,", "XEN, Rangpur O&M Division " + i],
+  method: ["NCT", i % 2 ? "LTM" : "OTM"], pub: "20-Oct-2026 10:00", close: (1 + i % 28) + "-Dec-2026 12:00"
+}));
+let page = 0;
+function size() { return parseInt(document.getElementById('size').value, 10); }
+function draw() {
+  const t = document.getElementById('t');
+  while (t.rows.length > 1) t.deleteRow(1);
+  const s = size(), slice = ALL.slice(page * s, page * s + s);
+  slice.forEach((r, k) => {
+    const tr = t.insertRow();
+    tr.insertCell().innerHTML = page * s + k + 1;
+    tr.insertCell().innerHTML = r.id + "<br>" + r.ref + "<br>Live";
+    tr.insertCell().innerHTML = r.nature + "<br><a href='/resources/common/ViewTender.jsp?id=" + r.id + "&h=t'>" + r.title + "</a>";
+    tr.insertCell().innerHTML = r.org.join("<br>");
+    tr.insertCell().innerHTML = r.method.join("<br>");
+    tr.insertCell().innerHTML = r.pub + "<br>" + r.close;
+  });
+  document.getElementById('info').textContent = 'Page ' + (page + 1) + ' of ' + Math.ceil(ALL.length / s);
+}
+document.getElementById('next').onclick = e => { e.preventDefault(); if ((page + 1) * size() < ALL.length) { page++; setTimeout(draw, 300); } };
+document.getElementById('size').onchange = () => { page = 0; setTimeout(draw, 300); };
+setTimeout(draw, 900);   // table is filled in after load, like the real page
+</script></body></html>

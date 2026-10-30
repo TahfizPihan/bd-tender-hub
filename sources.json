@@ -1,21 +1,25 @@
 [
   {
-    "id": "egp-daily",
-    "name": "e-GP (daily RSS)",
-    "type": "rss",
-    "url": "https://www.eprocure.gov.bd/RSS/DailyTender.xml",
+    "id": "bppa-govt",
+    "name": "BPPA tender notices (Govt)",
+    "type": "bppa",
     "kind": "public",
     "enabled": true,
-    "note": "Official feed linked from eprocure.gov.bd/SubscribeToRSS.jsp. Covers government tenders, so agency websites are not collected separately."
+    "pages": 8,
+    "detail_per_run": 60,
+    "delay": 1.2,
+    "note": "Government tender advertisements (Goods, Works, Services, Physical services) from bppa.gov.bd, with procurement method (OTM/LTM...), funding partner (ADB/JICA/World Bank...) and closing time. First run reads the newest ~320 and 60 detail pages; later runs fill in the rest."
   },
   {
-    "id": "egp-weekly",
-    "name": "e-GP (weekly RSS)",
-    "type": "rss",
-    "url": "https://www.eprocure.gov.bd/RSS/WeeklyTender.xml",
+    "id": "egp-list",
+    "name": "e-GP eTenders list (Govt)",
+    "type": "egp_browser",
     "kind": "public",
     "enabled": true,
-    "note": "Same feed, wider window. Duplicates are merged by tender ID."
+    "url": "https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t",
+    "pages": 8,
+    "delay": 2.0,
+    "note": "The public e-GP tender list, read with a headless browser (login-free part only, no CAPTCHA). If it fails, data/egp_debug.txt in the repository shows what the browser saw."
   },
   {
     "id": "worldbank-bd",
@@ -27,13 +31,35 @@
     "note": "Public API. Bids, EOIs and prequalification for World Bank funded projects. Contract awards skipped. Free, no key."
   },
   {
+    "id": "adb",
+    "name": "Asian Development Bank",
+    "type": "browser_page",
+    "kind": "development",
+    "enabled": true,
+    "experimental": true,
+    "url": "https://www.adb.org/projects/tenders",
+    "focus": "Bangladesh",
+    "note": "Experimental. Most ADB funded Bangladesh contracts are also advertised through e-GP/BPPA and tagged 'ADB' there."
+  },
+  {
+    "id": "jica",
+    "name": "JICA Bangladesh Office",
+    "type": "browser_page",
+    "kind": "development",
+    "enabled": true,
+    "experimental": true,
+    "url": "https://www.jica.go.jp/bangladesh/english/office/others/index.html",
+    "focus": "procurement, tender, bidding or consultant selection",
+    "note": "Experimental. JICA funded works are procured through e-GP and appear there tagged 'JICA'."
+  },
+  {
     "id": "brac-tender",
     "name": "BRAC e-Tender",
-    "type": "ai_page",
+    "type": "browser_page",
     "kind": "private",
     "enabled": true,
     "url": "https://tender.brac.net/",
-    "note": "Live tenders list. If the first-run log says the page has almost no text, the list is loaded by JavaScript and this source cannot be read automatically."
+    "note": "BRAC's tender list is built by JavaScript, so it is opened in a headless browser, then read by AI."
   },
   {
     "id": "ibbl",
@@ -64,7 +90,26 @@
     "kind": "private",
     "enabled": true,
     "url": "https://www.uttarabank-bd.com/home/tender",
-    "note": "Tender page linked from the bank's Media Room menu; layout not verified."
+    "note": "Tender page linked from the bank's Media Room menu; layout not verified.",
+    "experimental": true
+  },
+  {
+    "id": "egp-daily",
+    "name": "e-GP (daily RSS)",
+    "type": "rss",
+    "url": "https://www.eprocure.gov.bd/RSS/DailyTender.xml",
+    "kind": "public",
+    "enabled": false,
+    "note": "Switched off: the RSS feeds returned nothing. Replaced by 'egp-list' and 'bppa-govt' below. Set enabled to true to retry."
+  },
+  {
+    "id": "egp-weekly",
+    "name": "e-GP (weekly RSS)",
+    "type": "rss",
+    "url": "https://www.eprocure.gov.bd/RSS/WeeklyTender.xml",
+    "kind": "public",
+    "enabled": false,
+    "note": "Switched off: the RSS feeds returned nothing. Replaced by 'egp-list' and 'bppa-govt' below. Set enabled to true to retry."
   },
   {
     "id": "daily-star",
@@ -101,5 +146,35 @@
       3
     ],
     "note": "Copy this block for each newspaper (Prothom Alo, Bangladesh Pratidin, Ittefaq, Jugantor, Samakal, Financial Express, New Age, Dhaka Tribune, Sangbad and so on). Dates use Bangladesh time."
+  },
+  {
+    "id": "lead-interior",
+    "name": "News leads: interior fit-out",
+    "type": "rss",
+    "kind": "lead",
+    "enabled": true,
+    "experimental": true,
+    "require_tender_word": true,
+    "url": "https://news.google.com/rss/search?q=%28tender+OR+%22invitation+for%22+OR+EOI+OR+quotation%29+%28%22interior%22+OR+%22fit-out%22+OR+%22fitout%22%29+Bangladesh+when%3A30d&hl=en-BD&gl=BD&ceid=BD:en"
+  },
+  {
+    "id": "lead-furniture",
+    "name": "News leads: furniture supply",
+    "type": "rss",
+    "kind": "lead",
+    "enabled": true,
+    "experimental": true,
+    "require_tender_word": true,
+    "url": "https://news.google.com/rss/search?q=%28tender+OR+%22invitation+for%22+OR+EOI+OR+quotation%29+%28furniture+OR+workstation%29+Bangladesh+when%3A30d&hl=en-BD&gl=BD&ceid=BD:en"
+  },
+  {
+    "id": "lead-tender-bd",
+    "name": "News leads: tender notices",
+    "type": "rss",
+    "kind": "lead",
+    "enabled": true,
+    "experimental": true,
+    "require_tender_word": true,
+    "url": "https://news.google.com/rss/search?q=%28%22tender+notice%22+OR+%22invitation+for+tender%22%29+Bangladesh+when%3A14d&hl=en-BD&gl=BD&ceid=BD:en"
   }
 ]
