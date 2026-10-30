@@ -73,7 +73,8 @@ def run_source(src, now, state, budget, fetcher=net.fetch, extractor=extract_ai.
             break
         budget[0] -= 1
         try:
-            items = extractor(text, url, now.astimezone(normalize.BD).date().isoformat())
+            kw = {"focus": src["focus"]} if src.get("focus") else {}
+            items = extractor(text, url, now.astimezone(normalize.BD).date().isoformat(), **kw)
         except Exception as e:
             log(f"  [AI failed] {url}: {e}")
             failures += 1

@@ -141,20 +141,21 @@ news, jobs and other content. Reply with JSON only: an array of objects with exa
 - Dates may be DD-MM-YYYY or written out; convert to YYYY-MM-DD. Today is %s.
 - deadline is the last date to submit; null if not clearly stated. Never guess or invent anything.
 - If the page lists no tender notices, reply [].
-
+%s
 PAGE URL: %s
 PAGE TEXT:
 %s
 """
 
 
-def extract_listing(text, page_url, today, retries=1):
+def extract_listing(text, page_url, today, retries=1, focus=None):
     """Extract tender notices from the text of a listing page."""
     import time
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
         raise RuntimeError("GEMINI_API_KEY not set")
-    parts = [{"text": LISTING_PROMPT % (", ".join(CATEGORIES), today, page_url, text)}]
+    focus_line = ("- Only include notices that concern %s; skip the rest." % focus) if focus else ""
+    parts = [{"text": LISTING_PROMPT % (", ".join(CATEGORIES), today, focus_line, page_url, text)}]
     for attempt in range(retries + 1):
         try:
             out = _call(parts, key)

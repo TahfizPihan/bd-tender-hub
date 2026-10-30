@@ -12,17 +12,20 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from . import epaper, extract_ai, net, normalize, parsers, webpage, worldbank
+from . import bppa, browser, egp_browser, epaper, extract_ai, net, normalize, parsers, webpage, worldbank
 from .net import fetch, robots_allows
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES_FILE = ROOT / "sources.json"
 OUT_FILE = ROOT / "docs" / "tenders.json"
+COLLECTOR_VERSION = 3
 
 
 def run_source(src, now, log=print):
     if src["type"] == "rss":
         raw = parsers.parse_rss(fetch(src["url"]), src)
+        if src.get("require_tender_word"):
+            raw = [r for r in raw if parsers.TENDER_WORDS.search((r.get("title") or "") + " " + (r.get("summary") or ""))]
     elif src["type"] == "html_links":
         if not robots_allows(src["url"]):
             raise RuntimeError("blocked by robots.txt")
@@ -67,19 +70,26 @@ def main(argv=None):
                 recs = epaper.run_source(src, now, page_state, budget)
             elif src["type"] == "ai_page":
                 recs = webpage.run_source(src, now, page_state, budget)
+            elif src["type"] == "browser_page":
+                recs = webpage.run_source(src, now, page_state, budget, fetcher=browser.fetch_html)
             elif src["type"] == "worldbank":
                 recs = worldbank.run_source(src, now)
+            elif src["type"] == "bppa":
+                recs = bppa.run_source(src, now, existing=existing)
+            elif src["type"] == "egp_browser":
+                recs = egp_browser.run_source(src, now)
             else:
                 recs = run_source(src, now)
             fresh.extend(recs)
-            status.append({"id": src["id"], "name": src["name"], "ok": True, "count": len(recs)})
+            status.append({"id": src["id"], "name": src["name"], "ok": True, "count": len(recs),
+                           **({"experimental": True} if src.get("experimental") else {})})
             print(f"[ok]   {src['id']}: {len(recs)} item(s)")
         except (epaper.Skipped, webpage.Skipped) as e:
             status.append({"id": src["id"], "name": src["name"], "ok": True, "count": 0, "note": str(e)})
             print(f"[skip] {src['id']}: {e}")
         except Exception as e:  # one broken source must not stop the others
             status.append({"id": src["id"], "name": src["name"], "ok": False, "count": 0,
-                           "error": str(e)[:200]})
+                           "error": str(e)[:300], **({"experimental": True} if src.get("experimental") else {})})
             print(f"[fail] {src['id']}: {e}", file=sys.stderr)
         time.sleep(1)
 
@@ -97,6 +107,7 @@ def main(argv=None):
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     OUT_FILE.write_text(json.dumps({
         "generated_at": now.isoformat(timespec="seconds"),
+        "collector_version": COLLECTOR_VERSION,
         "count": len(merged),
         "sources": status,
         "tenders": merged,

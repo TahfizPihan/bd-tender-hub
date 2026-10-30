@@ -79,11 +79,14 @@ def find_org(text):
 
 
 CATEGORY_RULES = [
+    ("Interior & fit-out", r"\b(interior|fit[\s\-]?out|fitout|false\s+ceiling|partition|modular\s+(?:kitchen|workstation)|"
+                          r"office\s+(?:decoration|renovation)|decoration|wood\s*work|carpentry|flooring|wall\s*paper|"
+                          r"blinds?|curtains?)\b|ইন্টেরিয়র|অভ্যন্তরীণ\s*সজ্জা"),
+    ("Furniture", r"\b(furniture|desks?|chairs?|tables?|cabinets?|almirah|bookshelf|workstations?|sofa|wardrobe)\b|আসবাব|চেয়ার|টেবিল"),
     ("Civil works", r"\b(road|bridge|culvert|building|construction|embankment|drain|"
                     r"pavement|repair|renovation|earthwork|civil|works?)\b|সড়ক|রাস্তা|সেতু|নির্মাণ|মেরামত|ভবন|বাঁধ"),
     ("ICT", r"\b(software|hardware|server|network|ict|computer|laptop|website|digital|"
             r"cctv|it\s+equipment|database|cloud)\b|সফটওয়্যার|কম্পিউটার|ডিজিটাল"),
-    ("Furniture", r"\b(furniture|desk|chair|table|cabinet|almirah|bookshelf|interior)\b|আসবাব|চেয়ার|টেবিল"),
     ("Medical", r"\b(medical|medicine|hospital|surgical|pharma|diagnostic|reagent|vaccine)\b|ঔষধ|চিকিৎসা|হাসপাতাল"),
     ("Consultancy", r"\b(consult\w*|survey|study|eoi|expression\s+of\s+interest|rfp|design\s+and\s+supervision)\b|পরামর্শক"),
     ("Electrical", r"\b(electric\w*|transformer|solar|generator|substation|cable|lighting)\b|বিদ্যুৎ|সোলার"),
