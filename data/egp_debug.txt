@@ -11,14 +11,14 @@ INPUT name=password id=txtPassword type=password
 INPUT name=Login id=btnLogin type=submit
 INPUT name=button2 id=button2 type=button
 INPUT name=button3 id=button3 type=button
-INPUT name= id=totalPages type=hidden value=63774
+INPUT name= id=totalPages type=hidden value=63780
 INPUT name=textfield3 id=dispPage type=text
 INPUT name=button id=btnGoto type=submit
 INPUT name= id=pageNo type=hidden value=1
 INPUT name=size id=size type=hidden value=10
 pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellpadding="0" class="pagging_1">
                                         <tbody><tr>
-                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">63774</span></td>
+                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">63780</span></td>
                                             <td align="center"><input name="textfield3" type="text" id="dispPage" value="1" class="formTxtBox_1" style="width:20px;">
                                                 &nbsp;
                                                 <label class="formBtn_1 t-align-center">
@@ -28,22 +28,13 @@ pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellp
                                                     <li><font size="3">«</font> <a disabled="true" href="javascript:void(0)" id="btnFirst" style="color: gray;">First</a></li>
                                                     <li><font size="3">‹</font> <a disabled="true" href="javascript:void(0)" id="btnPrevious" style="colo
 page size set to: 0
-page 17 fully known; stopping (incremental)
+page 8 fully known; stopping (incremental)
 headers: ["S.\nNo.", "Tender/Proposal ID,\nReference No,\nPublic Status", "Procurement Nature,\nTitle", "Ministry,\nDivision,\nOrganization,\nPE", "Type,\nMethod", "Publishing Date and Time,\nClosing Date and Time"]
-first rows: [{"cells": ["1", "1361775,\n45.02.0000.001.14.002.26-3242 Date:18.10.2026,\nLive", "Works,\n\n\nWD-9/FDMN-GOB-HED\nRepair & Renovation of 06 Nos. Community Clinic : 1. Edulpur CC, Arjuntola Union at Senbag Upazila. 2. Devisignpur CC, Nobipur Union at Senbag Upazila. 3. Pochcim Srinoddi CC, Batayia Union at Kabirhat Upazila. 4....", "Ministry of Health and Family Welfare,\nHealth Engineering Department (HED),\nHED, Noakhali Division, Noakhali", "NCT,\nOTM", "01-Nov-2026 19:00,\n16-Nov-2026 14:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1362557,\n05/Routine-3258110/OTM/HRD-26-27,\nLive", "Goods,\n\n\nSupplying of 25mm & 14mm size Stone chips, Pea-gravels, 1st Class Bricks, Sand, Fire Wood, Paint (Road Marking), Synthetic Bags & Geo-Bags at Shaistaganj Stackyard for routine maintenance work of different roads of Shaistaganj Road Sub-Div...", "Ministry of Road Transport and Bridges,\nRoad Transport and Highways Division,\nRoads & Highways Department (RHD),\nHabiganj Road Division", "NCT,\nOTM", "01-Nov-2026 18:45,\n16-Nov-2026 13:00"], "href": "javascript:void(0);"}]
+first rows: [{"cells": ["1", "1310824,\n21.00.0000.000.391.07.0041.26- 412,\nLive", "Goods,\n\n\nProcurement of ICT Hardware & Software", "Ministry of Planning,\nImplementation Monitoring and Evaluation Division,\nBangladesh Public Procurement Authority(BPPA),\nProcurement Modernization to Improve Public Service Delivery (PMIPSD)", "NCT,\nOTM", "02-Nov-2026 01:10,\n18-Nov-2026 15:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1364408,\nAPP/Dhk-1/Raj-1/2026-27/R-06,\nLive", "Works,\n\n\nDaily emergency civil sanitary repairs, cleaning of buildings including sweeping equipment and other ancillary repair work in 19 bungalow houses in the Judges Complex, where the Honorable Justices reside, Kakrail (from September-2026 to November-2026).", "Ministry of Housing and Public Works,\nPublic Works Department (PWD),\nDhaka PWD Division-1, Dhaka", "NCT,\nOTM", "01-Nov-2026 23:58,\n12-Nov-2026 11:30"], "href": "javascript:void(0);"}]
 requests:
 GET https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
