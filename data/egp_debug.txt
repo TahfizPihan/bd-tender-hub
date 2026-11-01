@@ -11,14 +11,14 @@ INPUT name=password id=txtPassword type=password
 INPUT name=Login id=btnLogin type=submit
 INPUT name=button2 id=button2 type=button
 INPUT name=button3 id=button3 type=button
-INPUT name= id=totalPages type=hidden value=63746
+INPUT name= id=totalPages type=hidden value=63759
 INPUT name=textfield3 id=dispPage type=text
 INPUT name=button id=btnGoto type=submit
 INPUT name= id=pageNo type=hidden value=1
 INPUT name=size id=size type=hidden value=10
 pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellpadding="0" class="pagging_1">
                                         <tbody><tr>
-                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">63746</span></td>
+                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">63759</span></td>
                                             <td align="center"><input name="textfield3" type="text" id="dispPage" value="1" class="formTxtBox_1" style="width:20px;">
                                                 &nbsp;
                                                 <label class="formBtn_1 t-align-center">
@@ -28,12 +28,25 @@ pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellp
                                                     <li><font size="3">«</font> <a disabled="true" href="javascript:void(0)" id="btnFirst" style="color: gray;">First</a></li>
                                                     <li><font size="3">‹</font> <a disabled="true" href="javascript:void(0)" id="btnPrevious" style="colo
 page size set to: 0
-page 2 fully known; stopping (incremental)
+page 15 fully known; stopping (incremental)
 headers: ["S.\nNo.", "Tender/Proposal ID,\nReference No,\nPublic Status", "Procurement Nature,\nTitle", "Ministry,\nDivision,\nOrganization,\nPE", "Type,\nMethod", "Publishing Date and Time,\nClosing Date and Time"]
-first rows: [{"cells": ["1", "1357964,\nOTM-2/2026-27,\nLive", "Goods,\n\n\nProcurement of Foreign Books for 16 Academic Departments", "Ministry of Education,\nSecondary and Higher Education Division,\nUniversity of Dhaka,\nOffice of the Librarian", "NCT,\nOTM", "01-Nov-2026 01:50,\n18-Nov-2026 13:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1357150,\nOTM-1/2026-27,\nLive", "Goods,\n\n\nProcurement of Computers, Monitors, UPS and other ICT Equipment", "Ministry of Education,\nSecondary and Higher Education Division,\nUniversity of Dhaka,\nOffice of the Librarian", "NCT,\nOTM", "01-Nov-2026 01:00,\n15-Nov-2026 13:00"], "href": "javascript:void(0);"}]
+first rows: [{"cells": ["1", "1362342,\nACE Memo No: 35.01.6000.010.000.07.0001.26-3575,\nLive", "Works,\n\n\nReplacement of Bearing Pad & Expansion Joint of Kotarkona Bridge at Kulaura-Shamshernagar-Srimangal Road (Z-2003) Road under Road Division, Moulvibazar During the year 2026-2027.", "Ministry of Road Transport and Bridges,\nRoad Transport and Highways Division,\nRoads & Highways Department (RHD),\nMoulvibazar Road Division", "NCT,\nOTM", "01-Nov-2026 11:30,\n16-Nov-2026 13:30"], "href": "javascript:void(0);"}, {"cells": ["2", "1363119,\nACE Memo No: 35.01.6000.010.000.07.0001.26-3574,\nLive", "Works,\n\n\nReplacement of Bearing Pad & Expansion Joint of Chatla Bridge at Moulvibazar-Shamshernagar-Chatla Check Post (Z-2002) Road under Road Division, Moulvibazar During the year 2026-2027.", "Ministry of Road Transport and Bridges,\nRoad Transport and Highways Division,\nRoads & Highways Department (RHD),\nMoulvibazar Road Division", "NCT,\nOTM", "01-Nov-2026 11:30,\n16-Nov-2026 13:30"], "href": "javascript:void(0);"}]
 requests:
 GET https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
