@@ -11,14 +11,14 @@ INPUT name=password id=txtPassword type=password
 INPUT name=Login id=btnLogin type=submit
 INPUT name=button2 id=button2 type=button
 INPUT name=button3 id=button3 type=button
-INPUT name= id=totalPages type=hidden value=63745
+INPUT name= id=totalPages type=hidden value=63746
 INPUT name=textfield3 id=dispPage type=text
 INPUT name=button id=btnGoto type=submit
 INPUT name= id=pageNo type=hidden value=1
 INPUT name=size id=size type=hidden value=10
 pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellpadding="0" class="pagging_1">
                                         <tbody><tr>
-                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">63745</span></td>
+                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">63746</span></td>
                                             <td align="center"><input name="textfield3" type="text" id="dispPage" value="1" class="formTxtBox_1" style="width:20px;">
                                                 &nbsp;
                                                 <label class="formBtn_1 t-align-center">
@@ -30,7 +30,7 @@ pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellp
 page size set to: 0
 page 2 fully known; stopping (incremental)
 headers: ["S.\nNo.", "Tender/Proposal ID,\nReference No,\nPublic Status", "Procurement Nature,\nTitle", "Ministry,\nDivision,\nOrganization,\nPE", "Type,\nMethod", "Publishing Date and Time,\nClosing Date and Time"]
-first rows: [{"cells": ["1", "1357150,\nOTM-1/2026-27,\nLive", "Goods,\n\n\nProcurement of Computers, Monitors, UPS and other ICT Equipment", "Ministry of Education,\nSecondary and Higher Education Division,\nUniversity of Dhaka,\nOffice of the Librarian", "NCT,\nOTM", "01-Nov-2026 01:00,\n15-Nov-2026 13:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1357693,\nNIENT/ADMIN/TENDER/HEAVY/2026-2027/2142,\nLive", "Goods,\n\n\nProcurement of High Performance Laboratory Binocular Microscope FY 2026-27", "Ministry of Health and Family Welfare,\nHealth Services Division,\nDirectorate General of Health Services (DGHS),\nNational Institute of ENT", "NCT,\nOTM", "29-Oct-2026 23:58,\n23-Nov-2026 12:30"], "href": "javascript:void(0);"}]
+first rows: [{"cells": ["1", "1357964,\nOTM-2/2026-27,\nLive", "Goods,\n\n\nProcurement of Foreign Books for 16 Academic Departments", "Ministry of Education,\nSecondary and Higher Education Division,\nUniversity of Dhaka,\nOffice of the Librarian", "NCT,\nOTM", "01-Nov-2026 01:50,\n18-Nov-2026 13:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1357150,\nOTM-1/2026-27,\nLive", "Goods,\n\n\nProcurement of Computers, Monitors, UPS and other ICT Equipment", "Ministry of Education,\nSecondary and Higher Education Division,\nUniversity of Dhaka,\nOffice of the Librarian", "NCT,\nOTM", "01-Nov-2026 01:00,\n15-Nov-2026 13:00"], "href": "javascript:void(0);"}]
 requests:
 GET https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
