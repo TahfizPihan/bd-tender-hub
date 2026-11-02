@@ -28,18 +28,12 @@ pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellp
                                                     <li><font size="3">«</font> <a disabled="true" href="javascript:void(0)" id="btnFirst" style="color: gray;">First</a></li>
                                                     <li><font size="3">‹</font> <a disabled="true" href="javascript:void(0)" id="btnPrevious" style="colo
 page size set to: 0
-page 8 fully known; stopping (incremental)
+page 2 fully known; stopping (incremental)
 headers: ["S.\nNo.", "Tender/Proposal ID,\nReference No,\nPublic Status", "Procurement Nature,\nTitle", "Ministry,\nDivision,\nOrganization,\nPE", "Type,\nMethod", "Publishing Date and Time,\nClosing Date and Time"]
 first rows: [{"cells": ["1", "1310824,\n21.00.0000.000.391.07.0041.26- 412,\nLive", "Goods,\n\n\nProcurement of ICT Hardware & Software", "Ministry of Planning,\nImplementation Monitoring and Evaluation Division,\nBangladesh Public Procurement Authority(BPPA),\nProcurement Modernization to Improve Public Service Delivery (PMIPSD)", "NCT,\nOTM", "02-Nov-2026 01:10,\n18-Nov-2026 15:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1364408,\nAPP/Dhk-1/Raj-1/2026-27/R-06,\nLive", "Works,\n\n\nDaily emergency civil sanitary repairs, cleaning of buildings including sweeping equipment and other ancillary repair work in 19 bungalow houses in the Judges Complex, where the Honorable Justices reside, Kakrail (from September-2026 to November-2026).", "Ministry of Housing and Public Works,\nPublic Works Department (PWD),\nDhaka PWD Division-1, Dhaka", "NCT,\nOTM", "01-Nov-2026 23:58,\n12-Nov-2026 11:30"], "href": "javascript:void(0);"}]
 requests:
 GET https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
