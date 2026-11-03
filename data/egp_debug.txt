@@ -28,29 +28,12 @@ pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellp
                                                     <li><font size="3">«</font> <a disabled="true" href="javascript:void(0)" id="btnFirst" style="color: gray;">First</a></li>
                                                     <li><font size="3">‹</font> <a disabled="true" href="javascript:void(0)" id="btnPrevious" style="colo
 page size set to: 0
-page 19 fully known; stopping (incremental)
+page 2 fully known; stopping (incremental)
 headers: ["S.\nNo.", "Tender/Proposal ID,\nReference No,\nPublic Status", "Procurement Nature,\nTitle", "Ministry,\nDivision,\nOrganization,\nPE", "Type,\nMethod", "Publishing Date and Time,\nClosing Date and Time"]
-first rows: [{"cells": ["1", "1359288,\nGAU/PIN12264/14/G6/33 Date: 03.11.2026,\nLive", "Goods,\n\n\nSupply and Installment of Teaching and Learning Equipments/Instruments for Laboratories/Workshops", "Ministry of Education,\nSecondary and Higher Education Division,\nGazipur Agricultural University,\nOffice of the Sub-Project Manager under HEAT Project (12264)", "NCT,\nOTM", "03-Nov-2026 23:00,\n24-Nov-2026 17:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1361748,\nEED/Gazipur/e-GP/ Works & Goods/2026-27/15,\nLive", "Goods,\n\n\nSupply, installation, testing and commissioning 60 KVA diesel generator & construction of generator room at Rani Bilash-Moni Govt. Boys High School, Sadar, Gazipur.", "Ministry of Education,\nSecondary and Higher Education Division,\nEducation Engineering Department,\nOffice of the Executive Engineer, EED, Gazipur District.", "NCT,\nOTM", "03-Nov-2026 23:00,\n19-Nov-2026 16:30"], "href": "javascript:void(0);"}]
+first rows: [{"cells": ["1", "1366353,\n33.02.0000.000.000.105.11.0004.26.1335,\nLive", "Goods,\n\n\nSupply of Office Stationary and Miscellaneous Goods for \"Grade 11 to Grade 20 employee recruitment examination under the revenue budget for the Department of Fisheries, Matsya Bhaban, Dhaka.", "Ministry of Fisheries & Livestock,\nDepartment of Fisheries,\nDepartment of Fisheries, Bangladesh", "NCT,\nOTM", "03-Nov-2026 23:40,\n16-Nov-2026 13:45"], "href": "javascript:void(0);"}, {"cells": ["2", "1359288,\nGAU/PIN12264/14/G6/33 Date: 03.11.2026,\nLive", "Goods,\n\n\nSupply and Installment of Teaching and Learning Equipments/Instruments for Laboratories/Workshops", "Ministry of Education,\nSecondary and Higher Education Division,\nGazipur Agricultural University,\nOffice of the Sub-Project Manager under HEAT Project (12264)", "NCT,\nOTM", "03-Nov-2026 23:00,\n24-Nov-2026 17:00"], "href": "javascript:void(0);"}]
 requests:
 GET https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
