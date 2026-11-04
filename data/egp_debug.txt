@@ -11,14 +11,14 @@ INPUT name=password id=txtPassword type=password
 INPUT name=Login id=btnLogin type=submit
 INPUT name=button2 id=button2 type=button
 INPUT name=button3 id=button3 type=button
-INPUT name= id=totalPages type=hidden value=63872
+INPUT name= id=totalPages type=hidden value=63885
 INPUT name=textfield3 id=dispPage type=text
 INPUT name=button id=btnGoto type=submit
 INPUT name= id=pageNo type=hidden value=1
 INPUT name=size id=size type=hidden value=10
 pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellpadding="0" class="pagging_1">
                                         <tbody><tr>
-                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">63872</span></td>
+                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">63885</span></td>
                                             <td align="center"><input name="textfield3" type="text" id="dispPage" value="1" class="formTxtBox_1" style="width:20px;">
                                                 &nbsp;
                                                 <label class="formBtn_1 t-align-center">
@@ -28,18 +28,13 @@ pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellp
                                                     <li><font size="3">«</font> <a disabled="true" href="javascript:void(0)" id="btnFirst" style="color: gray;">First</a></li>
                                                     <li><font size="3">‹</font> <a disabled="true" href="javascript:void(0)" id="btnPrevious" style="colo
 page size set to: 0
-page 20 fully known; stopping (incremental)
+page 15 fully known; stopping (incremental)
 headers: ["S.\nNo.", "Tender/Proposal ID,\nReference No,\nPublic Status", "Procurement Nature,\nTitle", "Ministry,\nDivision,\nOrganization,\nPE", "Type,\nMethod", "Publishing Date and Time,\nClosing Date and Time"]
-first rows: [{"cells": ["1", "1329007,\nMMCH/Diet/Tender/2026-2027/e-GP/8961,\nLive", "Goods (Framework Agreement),\n\n\nProcurement of Vegetables & Fruits for the F.Y 2026-2027 at Mymensingh Medical College Hospital.", "Ministry of Health and Family Welfare,\nHealth Services Division,\nDirectorate General of Health Services (DGHS),\nMymensingh Medical College Hospital", "NCT,\nOTM", "04-Nov-2026 12:00,\n03-Dec-2026 12:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1361636,\n12.01.0000.983.07.027.26.1090,\nLive", "Goods,\n\n\nProcurement of 177 set LLP with Fita Pipe", "Ministry of Agriculture,\nDepartment of Agricultural Extension (DAE),\nSustainable Agricultural Development through Extension of Modern Technologies in Rangpur Region Project (SDRnP)", "NCT,\nOTM", "04-Nov-2026 12:00,\n19-Nov-2026 12:00"], "href": "javascript:void(0);"}]
+first rows: [{"cells": ["1", "1351457,\n18.11.88.67.272.45.279.26,\nLive", "Works,\n\n\nAnnual repair, maintenance and ancillary works of various establishments of Bahadurabad Ferry Terminal under Sirajganj Division", "Ministry of Shipping,\nBangladesh Inland Water transport Authority (BIWTA),\nOffice of the Executive Engineer, Sirajganj, Engineering Dept.", "NCT,\nOTM", "04-Nov-2026 20:00,\n19-Nov-2026 16:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1366543,\nBUTEX/P&D/E-GP/Office Equipment (AC)/128/265,\nLive", "Goods,\n\n\n Package:12.Lot-4\nSupply, Installation, and Commissioning of Office Equipment (Air Condition)", "Ministry of Education,\nSecondary and Higher Education Division,\nBangladesh University of Textiles,\nPlanning and Development (PnD)", "NCT,\nOTM", "04-Nov-2026 20:00,\n19-Nov-2026 14:00"], "href": "javascript:void(0);"}]
 requests:
 GET https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
