@@ -11,14 +11,14 @@ INPUT name=password id=txtPassword type=password
 INPUT name=Login id=btnLogin type=submit
 INPUT name=button2 id=button2 type=button
 INPUT name=button3 id=button3 type=button
-INPUT name= id=totalPages type=hidden value=63908
+INPUT name= id=totalPages type=hidden value=63933
 INPUT name=textfield3 id=dispPage type=text
 INPUT name=button id=btnGoto type=submit
 INPUT name= id=pageNo type=hidden value=1
 INPUT name=size id=size type=hidden value=10
 pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellpadding="0" class="pagging_1">
                                         <tbody><tr>
-                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">63908</span></td>
+                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">63933</span></td>
                                             <td align="center"><input name="textfield3" type="text" id="dispPage" value="1" class="formTxtBox_1" style="width:20px;">
                                                 &nbsp;
                                                 <label class="formBtn_1 t-align-center">
@@ -28,25 +28,27 @@ pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellp
                                                     <li><font size="3">«</font> <a disabled="true" href="javascript:void(0)" id="btnFirst" style="color: gray;">First</a></li>
                                                     <li><font size="3">‹</font> <a disabled="true" href="javascript:void(0)" id="btnPrevious" style="colo
 page size set to: 0
-page 8 did not change; stopping
-page number text: [8, 63908]
-pager html after click: <table width="100%" border="0" id="pagination" cellspacing="0" cellpadding="0" class="pagging_1">
-                                        <tbody><tr>
-                                            <td align="left">Page <span id="pageNoTot">8</span> of <span id="pageTot">63908</span></td>
-                                            <td align="center"><input name="textfield3" type="text" id="dispPage" value="1" class="formTxtBox_1" style="width:20px;">
-                                                &nbsp;
-                                                <label class="formBtn_1 t-align-center">
-                                                    <input type="submit" name="button" id="btnGoto" value="Go To Page">
-                                                </label></td>
-                                            <td align="right" class="prevNext-container"><ul>
-                                                    <li><font size="3">«</font> <a href="javascript:void(0)" id="btnFirst" style="color: rgb(51, 51, 51);">First</a></li>
-                                                    <li><font size="3">‹</font> <a href="javascript:void(0)" id="btnPrevious" style="color: rgb(51, 51, 51);">
+page 26 fully known; stopping (incremental)
 headers: ["S.\nNo.", "Tender/Proposal ID,\nReference No,\nPublic Status", "Procurement Nature,\nTitle", "Ministry,\nDivision,\nOrganization,\nPE", "Type,\nMethod", "Publishing Date and Time,\nClosing Date and Time"]
-first rows: [{"cells": ["1", "1360459,\n5254/E,\nLive", "Works,\n\n\nMaintenance repair works of Phulpur Thana at district police Mymensingh.", "Ministry of Home Affairs,\nBangladesh Police,\nOffice of the Superintendent of Police, Mymensingh", "NCT,\nOTM", "05-Nov-2026 12:35,\n19-Nov-2026 12:30"], "href": "javascript:void(0);"}, {"cells": ["2", "1356260,\n18.13.0000.000.324.07.014.26,\nLive", "Works,\n\n\nReplacement of hyper Cell cone rubber fender for BD-1 & BD-2 of DOJ-4 and ancillary works at Patenga, Chattogram.", "Ministry of Shipping,\nChittagong Port Authority,\nExecutive Engineer_Harbour", "NCT,\nOTM", "05-Nov-2026 12:20,\n23-Nov-2026 11:15"], "href": "javascript:void(0);"}]
+first rows: [{"cells": ["1", "1367658,\n44.08.0158.300.07.119.26.49 date 05 November 2026,\nLive", "Works,\n\n\nRepair of the STBD Main Engine (Model: QSB6.7, 480 GSU) of the Metal Shark-31 boat under Bangladesh Coast Guard West Zone.", "Ministry of Home Affairs,\nBangladesh Coast Guard Force,\nOFFICE OF THE ZONAL COMMANDER WEST ZONE", "NCT,\nOTM", "05-Nov-2026 23:00,\n19-Nov-2026 23:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1367920,\nUHC/Nan/Cumi/MSR/2026-27/529,\nLive", "Goods,\n\n\nProcurement of Linen for the F.Y 2026-2027.", "Ministry of Health and Family Welfare,\nHealth Services Division,\nDirectorate General of Health Services (DGHS),\nNangolkot Upazila Health Complex, Cumilla", "NCT,\nOTM", "05-Nov-2026 23:00,\n16-Nov-2026 12:00"], "href": "javascript:void(0);"}]
 requests:
-GET https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
