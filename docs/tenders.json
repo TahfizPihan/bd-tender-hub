@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-11-05T17:22:05+00:00",
+ "generated_at": "2026-11-05T23:49:02+00:00",
  "collector_version": 3,
- "count": 2530,
+ "count": 2535,
  "sources": [
   {
    "id": "bppa-govt",
    "name": "BPPA tender notices (Govt)",
    "ok": true,
-   "count": 19
+   "count": 14
   },
   {
    "id": "egp-list",
    "name": "e-GP eTenders list (Govt)",
    "ok": true,
-   "count": 260
+   "count": 20
   },
   {
    "id": "worldbank-bd",
@@ -86,6 +86,126 @@
   }
  ],
  "tenders": [
+  {
+   "id": "egp-1363516",
+   "title": "Procurement of Surgical, Dental and Pathological items for Eastern Railway Hospital and Dispensaries for FY 2026-2027.",
+   "organization": "Office of the Chief Medical Officer (EAST), Chattogram",
+   "category": "Medical",
+   "deadline": "2026-11-16",
+   "published": "2026-11-05",
+   "summary": "",
+   "link": "https://www.eprocure.gov.bd/resources/common/ViewTender.jsp?id=1363516&h=t",
+   "source_id": "egp-list",
+   "source": "e-GP eTenders list (Govt)",
+   "kind": "public",
+   "first_seen": "2026-11-05T23:49:02+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
+   "also_at": [],
+   "nature": "Goods",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "ref_no": "54.01.1500.113.07.001.2026-2027.S",
+   "deadline_time": "12:00",
+   "ministry": "Ministry of Railways",
+   "needs_ai": false,
+   "via": "egp"
+  },
+  {
+   "id": "egp-1363991",
+   "title": "Procurement of Digital Autoclave Machine, X-ray (01 part), Physiotherapy Machine and other Machine related to physiotherapy for Chattogram Railway Hospital for FY. 2026-2027.",
+   "organization": "Office of the Chief Medical Officer (EAST), Chattogram",
+   "category": "ICT",
+   "deadline": "2026-11-16",
+   "published": "2026-11-05",
+   "summary": "",
+   "link": "https://www.eprocure.gov.bd/resources/common/ViewTender.jsp?id=1363991&h=t",
+   "source_id": "egp-list",
+   "source": "e-GP eTenders list (Govt)",
+   "kind": "public",
+   "first_seen": "2026-11-05T23:49:02+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
+   "also_at": [],
+   "nature": "Goods",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "ref_no": "54.01.1500.113.07.001.2026-2027.XF",
+   "deadline_time": "12:00",
+   "ministry": "Ministry of Railways",
+   "needs_ai": false,
+   "via": "egp"
+  },
+  {
+   "id": "egp-1364096",
+   "title": "Repair of Computer and other Machine related to Computer in the fiscal year 2026-2027.",
+   "organization": "Office of the Chief Medical Officer (EAST), Chattogram",
+   "category": "Civil works",
+   "deadline": "2026-11-16",
+   "published": "2026-11-05",
+   "summary": "",
+   "link": "https://www.eprocure.gov.bd/resources/common/ViewTender.jsp?id=1364096&h=t",
+   "source_id": "egp-list",
+   "source": "e-GP eTenders list (Govt)",
+   "kind": "public",
+   "first_seen": "2026-11-05T23:49:02+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
+   "also_at": [],
+   "nature": "Works",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "ref_no": "54.01.1500.113.07.001.2026-2027.RS",
+   "deadline_time": "12:00",
+   "ministry": "Ministry of Railways",
+   "needs_ai": false,
+   "via": "egp"
+  },
+  {
+   "id": "egp-1364021",
+   "title": "Procurement of Computer and accessories for use in CMO.E and subordinate offices for FY. 2026-2027.",
+   "organization": "Office of the Chief Medical Officer (EAST), Chattogram",
+   "category": "ICT",
+   "deadline": "2026-11-16",
+   "published": "2026-11-05",
+   "summary": "",
+   "link": "https://www.eprocure.gov.bd/resources/common/ViewTender.jsp?id=1364021&h=t",
+   "source_id": "egp-list",
+   "source": "e-GP eTenders list (Govt)",
+   "kind": "public",
+   "first_seen": "2026-11-05T23:49:02+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
+   "also_at": [],
+   "nature": "Goods",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "ref_no": "54.01.1500.113.07.001.2026-2027.C2",
+   "deadline_time": "12:00",
+   "ministry": "Ministry of Railways",
+   "needs_ai": false,
+   "via": "egp"
+  },
+  {
+   "id": "egp-1314759",
+   "title": "Procurement of a Digital X-ray Machine for Dhaka Railway Hospital for FY 2026-2027.",
+   "organization": "Office of the Chief Medical Officer (EAST), Chattogram",
+   "category": "ICT",
+   "deadline": "2026-11-16",
+   "published": "2026-11-05",
+   "summary": "",
+   "link": "https://www.eprocure.gov.bd/resources/common/ViewTender.jsp?id=1314759&h=t",
+   "source_id": "egp-list",
+   "source": "e-GP eTenders list (Govt)",
+   "kind": "public",
+   "first_seen": "2026-11-05T23:49:02+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
+   "also_at": [],
+   "nature": "Goods",
+   "method": "OTM",
+   "proc_type": "NCT",
+   "ref_no": "54.01.1500.113.07.001.2026-2027.X",
+   "deadline_time": "12:00",
+   "ministry": "Ministry of Railways",
+   "needs_ai": false,
+   "via": "egp"
+  },
   {
    "id": "bppa-goods-98837",
    "title": "Underground Cable Repair, Maintenance, Cable Layout, LAN Network System for Peelkhana Perimeter",
@@ -472,7 +592,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "nature": "Works",
    "method": "OTM",
@@ -496,7 +616,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "nature": "Works",
    "method": "OTM",
@@ -520,7 +640,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "nature": "Works",
    "method": "OTM",
@@ -544,7 +664,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "nature": "Works",
    "method": "OTM",
@@ -568,7 +688,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "nature": "Works",
    "method": "OTM",
@@ -592,7 +712,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "nature": "Works",
    "method": "OTM",
@@ -616,7 +736,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "nature": "Works",
    "method": "OTM",
@@ -640,7 +760,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "nature": "Works",
    "method": "OTM",
@@ -664,7 +784,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "nature": "Works",
    "method": "OTM",
@@ -688,7 +808,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "nature": "Works",
    "method": "OTM",
@@ -712,7 +832,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "nature": "Works",
    "method": "OTM",
@@ -736,7 +856,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "nature": "Works",
    "method": "OTM",
@@ -760,7 +880,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "nature": "Works",
    "method": "OTM",
@@ -784,7 +904,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "nature": "Works",
    "method": "OTM",
@@ -808,7 +928,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "nature": "Works",
    "method": "OTM",
@@ -6208,7 +6328,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -6226,7 +6346,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -6244,7 +6364,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -6262,7 +6382,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -6280,7 +6400,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-11-05T17:22:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -8732,7 +8852,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-04T21:18:10+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [
     "https://www.bppa.gov.bd/advertisement-goods/details-98832.html"
    ],
@@ -12523,7 +12643,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-11-04T14:26:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -12541,7 +12661,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-11-04T14:26:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -12559,7 +12679,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-11-04T14:26:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -12577,7 +12697,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-11-04T14:26:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -12595,7 +12715,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-11-04T14:26:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -12613,7 +12733,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-11-04T14:26:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -12631,7 +12751,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-11-04T14:26:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -12649,7 +12769,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-11-04T14:26:05+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -13175,7 +13295,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-04T06:09:58+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [
     "https://www.bppa.gov.bd/advertisement-works/details-98834.html"
    ],
@@ -19234,7 +19354,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-03T17:00:37+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [
     "https://www.bppa.gov.bd/advertisement-works/details-98819.html"
    ],
@@ -19285,7 +19405,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-03T17:00:37+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [
     "https://www.bppa.gov.bd/advertisement-goods/details-98818.html"
    ],
@@ -21640,7 +21760,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-11-03T17:00:37+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -21658,7 +21778,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-11-03T17:00:37+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -21676,7 +21796,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-11-03T17:00:37+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -21694,7 +21814,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-11-03T17:00:37+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -24292,7 +24412,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-03T06:42:42+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [
     "https://www.bppa.gov.bd/advertisement-works/details-98815.html"
    ],
@@ -24344,7 +24464,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-03T06:42:42+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [
     "https://www.bppa.gov.bd/advertisement-works/details-98816.html"
    ],
@@ -39600,7 +39720,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-01T13:15:23+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [
     "https://www.bppa.gov.bd/advertisement-works/details-98788.html"
    ],
@@ -39627,7 +39747,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-01T13:15:23+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [
     "https://www.bppa.gov.bd/advertisement-works/details-98787.html"
    ],
@@ -43002,7 +43122,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-11-01T05:57:53+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [
     "https://www.bppa.gov.bd/advertisement-services/details-10712.html"
    ],
@@ -49509,7 +49629,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-10-30T19:13:04+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [
     "https://www.bppa.gov.bd/advertisement-works/details-98800.html"
    ],
@@ -49584,7 +49704,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-10-30T19:13:04+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [
     "https://www.bppa.gov.bd/advertisement-works/details-98793.html"
    ],
@@ -49635,7 +49755,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-10-30T19:13:04+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [
     "https://www.bppa.gov.bd/advertisement-works/details-98794.html"
    ],
@@ -49662,7 +49782,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-10-30T19:13:04+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [
     "https://www.bppa.gov.bd/advertisement-works/details-98801.html"
    ],
@@ -49689,7 +49809,7 @@
    "source": "e-GP eTenders list (Govt)",
    "kind": "public",
    "first_seen": "2026-10-30T19:13:04+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [
     "https://www.bppa.gov.bd/advertisement-works/details-98798.html"
    ],
@@ -59467,7 +59587,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-29T18:26:47+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -59485,7 +59605,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-28T12:45:27+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59503,7 +59623,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59521,7 +59641,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59539,7 +59659,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59557,7 +59677,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59575,7 +59695,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59593,7 +59713,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59611,7 +59731,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59629,7 +59749,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59647,7 +59767,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59665,7 +59785,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59683,7 +59803,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59701,7 +59821,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59719,7 +59839,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59737,7 +59857,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -59755,7 +59875,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59773,7 +59893,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59791,7 +59911,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59809,7 +59929,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59827,7 +59947,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59845,7 +59965,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -59863,7 +59983,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -59881,7 +60001,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59899,7 +60019,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -59917,7 +60037,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59935,7 +60055,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -59953,7 +60073,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -59971,7 +60091,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -59989,7 +60109,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60007,7 +60127,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -60025,7 +60145,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60043,7 +60163,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60061,7 +60181,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60079,7 +60199,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -60097,7 +60217,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -60115,7 +60235,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60133,7 +60253,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60151,7 +60271,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60169,7 +60289,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60187,7 +60307,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60205,7 +60325,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -60223,7 +60343,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60241,7 +60361,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60259,7 +60379,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60277,7 +60397,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60295,7 +60415,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60313,7 +60433,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60331,7 +60451,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60349,7 +60469,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60367,7 +60487,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60385,7 +60505,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60403,7 +60523,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60421,7 +60541,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60439,7 +60559,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60457,7 +60577,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60475,7 +60595,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60493,7 +60613,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60511,7 +60631,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60529,7 +60649,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60547,7 +60667,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60565,7 +60685,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60583,7 +60703,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60601,7 +60721,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60619,7 +60739,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60637,7 +60757,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60655,7 +60775,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60673,7 +60793,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60691,7 +60811,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60709,7 +60829,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60727,7 +60847,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60745,7 +60865,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60763,7 +60883,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60781,7 +60901,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60799,7 +60919,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60817,7 +60937,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60835,7 +60955,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -60853,7 +60973,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60871,7 +60991,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": false,
    "via": "worldbank"
@@ -60979,7 +61099,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -60997,7 +61117,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -61015,7 +61135,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -61033,7 +61153,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -61051,7 +61171,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -61069,7 +61189,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
@@ -61087,7 +61207,7 @@
    "source": "World Bank (Bangladesh)",
    "kind": "development",
    "first_seen": "2026-10-24T08:29:59+00:00",
-   "last_seen": "2026-11-05T17:22:05+00:00",
+   "last_seen": "2026-11-05T23:49:02+00:00",
    "also_at": [],
    "needs_ai": true,
    "via": "worldbank"
