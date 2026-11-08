@@ -11,14 +11,14 @@ INPUT name=password id=txtPassword type=password
 INPUT name=Login id=btnLogin type=submit
 INPUT name=button2 id=button2 type=button
 INPUT name=button3 id=button3 type=button
-INPUT name= id=totalPages type=hidden value=63934
+INPUT name= id=totalPages type=hidden value=63959
 INPUT name=textfield3 id=dispPage type=text
 INPUT name=button id=btnGoto type=submit
 INPUT name= id=pageNo type=hidden value=1
 INPUT name=size id=size type=hidden value=10
 pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellpadding="0" class="pagging_1">
                                         <tbody><tr>
-                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">63934</span></td>
+                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">63959</span></td>
                                             <td align="center"><input name="textfield3" type="text" id="dispPage" value="1" class="formTxtBox_1" style="width:20px;">
                                                 &nbsp;
                                                 <label class="formBtn_1 t-align-center">
@@ -28,12 +28,32 @@ pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellp
                                                     <li><font size="3">«</font> <a disabled="true" href="javascript:void(0)" id="btnFirst" style="color: gray;">First</a></li>
                                                     <li><font size="3">‹</font> <a disabled="true" href="javascript:void(0)" id="btnPrevious" style="colo
 page size set to: 0
-page 2 fully known; stopping (incremental)
+page 27 fully known; stopping (incremental)
 headers: ["S.\nNo.", "Tender/Proposal ID,\nReference No,\nPublic Status", "Procurement Nature,\nTitle", "Ministry,\nDivision,\nOrganization,\nPE", "Type,\nMethod", "Publishing Date and Time,\nClosing Date and Time"]
-first rows: [{"cells": ["1", "1368235,\nSE Memo No: 1128, Date: 29-10-2026,\nLive", "Works,\n\n\nInstallation of 15 Nos 75 mm dia & 05 Nos 100 mm dia shrouded Tube Well with 1.5/2.0 HP capacity submersible pump under Revenue Budget at Gazipur District Under Department of Public Health Engineering During the Year 2026-2027.", "Ministry of Local Government, Rural Development and Co-operatives,\nLocal Government Division,\nDepartment of Public Health Engineering (DPHE),\nOffice of the Executive Engineer ,DPHE, Gazipur", "NCT,\nOTM", "08-Nov-2026 01:00,\n23-Nov-2026 12:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1368299,\n44.08.0158.300.08.150.26.93 dated 05 November 2026,\nLive", "Works,\n\n\nRepair of General Broadcast System (SRE) at BCG Base Mongla", "Ministry of Home Affairs,\nBangladesh Coast Guard Force,\nOFFICE OF THE ZONAL COMMANDER WEST ZONE", "NCT,\nOTM", "06-Nov-2026 22:20,\n16-Nov-2026 08:00"], "href": "javascript:void(0);"}]
+first rows: [{"cells": ["1", "1366651,\nCM/MM/016/26-27 Dt: 25.10.2026,\nLive", "Goods,\n\n\nProcurement of 15 Item Bearing", "Ministry of Industries,\nBangladesh Chemical Industries Corporation (BCIC),\nAshuganj Fertilizer and Chemical Company Limited(Commercial)", "NCT,\nOTM", "08-Nov-2026 16:15,\n23-Nov-2026 11:30"], "href": "javascript:void(0);"}, {"cells": ["2", "1367407,\nAPP-mymen-2026-27-NR -3,\nLive", "Works,\n\n\nEmergency Civil Sanitary repair work at Mymensingh DC office, Mymensingh", "Ministry of Housing and Public Works,\nPublic Works Department (PWD),\nMymensingh PWD Division, Mymensingh", "NCT,\nOTM", "08-Nov-2026 16:06,\n19-Nov-2026 10:30"], "href": "javascript:void(0);"}]
 requests:
-GET https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
