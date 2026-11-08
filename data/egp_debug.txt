@@ -1,1 +1,59 @@
-dbg
+url: https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
+final url: https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
+title: eTender/eProposal Search Results
+form controls:
+SELECT name=namelanguage id=idlanguage type=select-one options=en_US:English/bn_IN:Bangla
+INPUT name=keyword id=txtKeyword type=text
+SELECT name=cmbSearchTab id=cmbSearchTab type=select-one options=1:eTenders/2:Annual Procurement Plans/3:eContracts/4:eExperience
+INPUT name=keyword id=btnKeyword type=button
+INPUT name=emailId id=txtEmailId type=text
+INPUT name=password id=txtPassword type=password
+INPUT name=Login id=btnLogin type=submit
+INPUT name=button2 id=button2 type=button
+INPUT name=button3 id=button3 type=button
+INPUT name= id=totalPages type=hidden value=63982
+INPUT name=textfield3 id=dispPage type=text
+INPUT name=button id=btnGoto type=submit
+INPUT name= id=pageNo type=hidden value=1
+INPUT name=size id=size type=hidden value=10
+pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellpadding="0" class="pagging_1">
+                                        <tbody><tr>
+                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">63982</span></td>
+                                            <td align="center"><input name="textfield3" type="text" id="dispPage" value="1" class="formTxtBox_1" style="width:20px;">
+                                                &nbsp;
+                                                <label class="formBtn_1 t-align-center">
+                                                    <input type="submit" name="button" id="btnGoto" value="Go To Page">
+                                                </label></td>
+                                            <td align="right" class="prevNext-container"><ul>
+                                                    <li><font size="3">«</font> <a disabled="true" href="javascript:void(0)" id="btnFirst" style="color: gray;">First</a></li>
+                                                    <li><font size="3">‹</font> <a disabled="true" href="javascript:void(0)" id="btnPrevious" style="colo
+page size set to: 0
+page 24 fully known; stopping (incremental)
+headers: ["S.\nNo.", "Tender/Proposal ID,\nReference No,\nPublic Status", "Procurement Nature,\nTitle", "Ministry,\nDivision,\nOrganization,\nPE", "Type,\nMethod", "Publishing Date and Time,\nClosing Date and Time"]
+first rows: [{"cells": ["1", "1353871,\n27.21.0000.744.07.001.26.485 Date: 12/10/2026,\nLive", "Goods,\n\n\nSupplying & Installation of CCTV camera system for Kaliganj 132/33 kV Grid Substation under GMD- Jhenaidah", "Ministry of Energy, Power and Mineral Resources,\nPower Division,\nPower Grid Bangladesh PLC,\nGrid Maintenance Division, Jhenaidah", "NCT,\nOTM", "09-Nov-2026 03:00,\n24-Nov-2026 15:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1366545,\n46.207.026.09.25.076.2026-329,\nLive", "Goods,\n\n\nSupply of Brand New 03 (Nos.) Mini Coaster Bus.", "Ministry of Local Government, Rural Development and Co-operatives,\nLocal Government Division,\nDhaka South City Corporation,\nOffice of the Executive Engineer Mechanical (DSCC)", "NCT,\nOTM", "08-Nov-2026 23:59,\n23-Nov-2026 12:00"], "href": "javascript:void(0);"}]
+requests:
+POST https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
