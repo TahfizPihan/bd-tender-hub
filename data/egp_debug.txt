@@ -1,154 +1,59 @@
 url: https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 final url: https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 title: eTender/eProposal Search Results
-NO TABLE ROWS FOUND
-page text:
-National e-Government Procurement (e-GP) Portal of the Government of the People's Republic of Bangladesh
-Monday, 09 Nov, 2026 12:22:49 BST
-	
-Home Page   |   About e-GP  |   Contact Us  |  RSS Feed  |  Language  
-English
-Bangla
-	
-eTenders
-Annual Procurement Plans
-eContracts
-eExperience
-	
-	Advance Search
-
-
-Go To 	 eTenders	 Annual Procurement Plans	 eContracts	 eExperience	 Debarred Tenderers	 Reports	 Offline Tenders	 Offline Contracts
-		
-View All Notifications 
-
-
-User Login
-
-
-
-
-	Forgot Password?
-
-
-Help
-User Registration Flowchart
-User Registration Steps
-User Registration Manual - Bangla
-User Registration Manual - English
-Frequently Asked Questions (FAQ)
-Help Desk Support
-Recommended System Requirement
-Downloads
-WinZip
-PDF Viewer
-Bangla Font
-Resources
-e-GP Guidelines (Revised) 2025
-Information Security Policy
-Mandatory Registration Documents
-Member Scheduled Banks
-Public Procurement Forum
-Ask Procurement Expert
-Electronic Standard Tender Documents (eSTDs)
-External Links
-BPPA
-BWDB Website
-LGED Website
-REB Website
-RHD Website
-World Bank - Bangladesh
-	
-eTender/eProposal Search Results
-S.
-No.	Tender/Proposal ID,
-Reference No,
-Public Status	Procurement Nature,
-Title	Ministry,
-Division,
-Organization,
-PE	Type,
-Method	Publishing Date and Time,
-Closing Date and Time
-1	1366237,
-27.21.0000.633.07.001.26.789: Date:04.11.2026,
-Live	Works,
-
-
-Tower leg muffling and associated work of three nos. tower of 132 KV Aminbazar-MPGL-Savar Transmission line at Savar 132/33 KV Grid Substation Under GMD, Dhaka (North-West), Power Grid Bangladesh PLC.
-
-	Ministry of Energy, Power and Mineral Resources,
-Power Division,
-Power Grid Bangladesh PLC,
-Grid Maintenance Division, Dhaka North-West	NCT,
-OTM	09-Nov-2026 12:15,
-23-Nov-2026 14:00
-2	1368267,
-OTM/PMP/Bridge-04/e-GP/EE/RHD/Ban/2026-2027,
-Live	Works,
-
-
-Estimate for Construction of 130.85 m (3x42.68m) long P.C Girder Bridge (Shilok Bridge) at 39th km (Chainage 38+970m) of Rangamati (Ghagra)-Chandraghona-Bangalhalia-Bandarban (R-161) Road under Road Division Bandarban during the year 2026-2027.
-
-	Ministry of Road Transport and Bridges,
-Road Transport and Highways Division,
-Roads & Highways Department (RHD),
-Bandarban Road Division	NCT,
-OTM	09-Nov-2026 12:15,
-08-Dec-2026 12:00
-3	1368722,
-27.12.1936.572.01.038.26-5083, 08/11/2026,
-Live	Goods,
-
-
-Transformer Maintenance Hardware Item
-
-	Ministry of Energy, Power and Mineral Resources,
-Power Division,
-Rural Electrification Board (REB),
-Comilla Palli Bidyut Samity-3	NCT,
-OTM	09-Nov-2026 12:00,
-22-Nov-2026 12:00
-4	1368530,
-27.12.1936.572.01.038.26-5084, 08/11/2026,
-Live	Goods,
-
-
-Electricity Bill Form
-
-	Ministry of Energy, Power and Mineral Resources,
-Power Division,
-Rural Electrification Board (REB),
-Comilla Palli Bidyut Samity-3	NCT,
-OTM	09-Nov-2026 12:00,
-22-Nov-2026 12:00
-5	1368663,
-44.07.3800.133.04.003.26.4900 Date:09.11.2026,
-Live	Goods,
-
-
-Procurement of Supply of Various Types of Protein Items Categories-3 to Schedule-KA Package-1 for the Period from Januray/2027 to July/2027.
-
-	Ministry of Home Affairs,
-Prisons Directorate,
-Joypurhat District Jail	NCT,
-OTM	09-Nov-2026 12:00,
-23-Nov-2026 12:00
-6	1359545,
-39.01.0000.225.07.015.2026,
-Live	Goods,
-
-
-Supply of RIA Kits (Coated & Non-Coated) to NINMAS, Shahbah, Dhaka and 21 (Twenty One) INMAS of Bangladesh Atomic Energy Commission over a period of 12 months. 
-
-	Ministry of Science and Technology,
-Bangladesh Atomic Energy Commission (BAEC),
-Bioscience Division, BAEC Headquarter	ICT,
-OTM	09-Nov-2026 12:00,
-27-Dec-2026 12:00
-7	
+form controls:
+SELECT name=namelanguage id=idlanguage type=select-one options=en_US:English/bn_IN:Bangla
+INPUT name=keyword id=txtKeyword type=text
+SELECT name=cmbSearchTab id=cmbSearchTab type=select-one options=1:eTenders/2:Annual Procurement Plans/3:eContracts/4:eExperience
+INPUT name=keyword id=btnKeyword type=button
+INPUT name=emailId id=txtEmailId type=text
+INPUT name=password id=txtPassword type=password
+INPUT name=Login id=btnLogin type=submit
+INPUT name=button2 id=button2 type=button
+INPUT name=button3 id=button3 type=button
+INPUT name= id=totalPages type=hidden value=64014
+INPUT name=textfield3 id=dispPage type=text
+INPUT name=button id=btnGoto type=submit
+INPUT name= id=pageNo type=hidden value=1
+INPUT name=size id=size type=hidden value=10
+pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellpadding="0" class="pagging_1">
+                                        <tbody><tr>
+                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">64014</span></td>
+                                            <td align="center"><input name="textfield3" type="text" id="dispPage" value="1" class="formTxtBox_1" style="width:20px;">
+                                                &nbsp;
+                                                <label class="formBtn_1 t-align-center">
+                                                    <input type="submit" name="button" id="btnGoto" value="Go To Page">
+                                                </label></td>
+                                            <td align="right" class="prevNext-container"><ul>
+                                                    <li><font size="3">«</font> <a disabled="true" href="javascript:void(0)" id="btnFirst" style="color: gray;">First</a></li>
+                                                    <li><font size="3">‹</font> <a disabled="true" href="javascript:void(0)" id="btnPrevious" style="colo
+page size set to: 0
+page 34 fully known; stopping (incremental)
+headers: ["S.\nNo.", "Tender/Proposal ID,\nReference No,\nPublic Status", "Procurement Nature,\nTitle", "Ministry,\nDivision,\nOrganization,\nPE", "Type,\nMethod", "Publishing Date and Time,\nClosing Date and Time"]
+first rows: [{"cells": ["1", "1369234,\n44.08.0158.300.07.119.26.51 date 09 November 2026,\nLive", "Goods,\n\n\nProcurement of 03 (three) set Seawater Hydrophore Pumps for IPV Ships under Bangladesh Coast Guard West Zone.", "Ministry of Home Affairs,\nBangladesh Coast Guard Force,\nOFFICE OF THE ZONAL COMMANDER WEST ZONE", "NCT,\nOTM", "09-Nov-2026 23:00,\n23-Nov-2026 23:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1369098,\n44.08.0158.300.07.119.26.50 date 09 November 2026,\nLive", "Goods,\n\n\nProcurement of Filters for HSB, Typhoon and Stingray Boats under Bangladesh Coast Guard West Zone.", "Ministry of Home Affairs,\nBangladesh Coast Guard Force,\nOFFICE OF THE ZONAL COMMANDER WEST ZONE", "NCT,\nOTM", "09-Nov-2026 23:00,\n23-Nov-2026 23:00"], "href": "javascript:void(0);"}]
 requests:
-GET https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
