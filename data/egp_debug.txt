@@ -11,14 +11,14 @@ INPUT name=password id=txtPassword type=password
 INPUT name=Login id=btnLogin type=submit
 INPUT name=button2 id=button2 type=button
 INPUT name=button3 id=button3 type=button
-INPUT name= id=totalPages type=hidden value=64014
+INPUT name= id=totalPages type=hidden value=64018
 INPUT name=textfield3 id=dispPage type=text
 INPUT name=button id=btnGoto type=submit
 INPUT name= id=pageNo type=hidden value=1
 INPUT name=size id=size type=hidden value=10
 pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellpadding="0" class="pagging_1">
                                         <tbody><tr>
-                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">64014</span></td>
+                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">64018</span></td>
                                             <td align="center"><input name="textfield3" type="text" id="dispPage" value="1" class="formTxtBox_1" style="width:20px;">
                                                 &nbsp;
                                                 <label class="formBtn_1 t-align-center">
@@ -28,30 +28,13 @@ pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellp
                                                     <li><font size="3">«</font> <a disabled="true" href="javascript:void(0)" id="btnFirst" style="color: gray;">First</a></li>
                                                     <li><font size="3">‹</font> <a disabled="true" href="javascript:void(0)" id="btnPrevious" style="colo
 page size set to: 0
-page 34 fully known; stopping (incremental)
+page 5 fully known; stopping (incremental)
 headers: ["S.\nNo.", "Tender/Proposal ID,\nReference No,\nPublic Status", "Procurement Nature,\nTitle", "Ministry,\nDivision,\nOrganization,\nPE", "Type,\nMethod", "Publishing Date and Time,\nClosing Date and Time"]
-first rows: [{"cells": ["1", "1369234,\n44.08.0158.300.07.119.26.51 date 09 November 2026,\nLive", "Goods,\n\n\nProcurement of 03 (three) set Seawater Hydrophore Pumps for IPV Ships under Bangladesh Coast Guard West Zone.", "Ministry of Home Affairs,\nBangladesh Coast Guard Force,\nOFFICE OF THE ZONAL COMMANDER WEST ZONE", "NCT,\nOTM", "09-Nov-2026 23:00,\n23-Nov-2026 23:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1369098,\n44.08.0158.300.07.119.26.50 date 09 November 2026,\nLive", "Goods,\n\n\nProcurement of Filters for HSB, Typhoon and Stingray Boats under Bangladesh Coast Guard West Zone.", "Ministry of Home Affairs,\nBangladesh Coast Guard Force,\nOFFICE OF THE ZONAL COMMANDER WEST ZONE", "NCT,\nOTM", "09-Nov-2026 23:00,\n23-Nov-2026 23:00"], "href": "javascript:void(0);"}]
+first rows: [{"cells": ["1", "1354264,\nAPP ID : 232678,\nLive", "Works,\n\n\nCAFDRIRP/BARGUNA/UZR/W-39/ER/2026-27\nRehabilitation of Amtali HQ-Taltali HQ-Sonakata Sea Beach Road (Taltali Part) Road from Ch.5510m -9680m under Taltali Upazila, Dist: Barguna. [ROAD ID 504872003] [TALTALI]", "Ministry of Local Government, Rural Development and Co-operatives,\nLocal Government Division,\nLocal Government Engineering Department (LGED),\nOffice of the Executive Engineer, LGED, Barguna", "NCT,\nOTM", "10-Nov-2026 09:00,\n26-Nov-2026 12:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1358978,\n30.31.0000.000.401.31.0381.26.1321, Dt:20/8/2026,\nLive", "Works,\n\n\nRepair & maintenance works of P-4 (9 to 16) = 08 units in/c. other allied works at Kurmitola R/A at HSIA, Kurmitola, Dhaka.", "Ministry of Civil Aviation & Tourism,\nCivil Aviation Authority of Bangladesh,\nOffice of the Executive Engineer, Civil Division-2", "NCT,\nOTM", "10-Nov-2026 09:00,\n22-Nov-2026 14:00"], "href": "javascript:void(0);"}]
 requests:
+GET https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
