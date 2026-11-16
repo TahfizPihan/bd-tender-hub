@@ -11,14 +11,14 @@ INPUT name=password id=txtPassword type=password
 INPUT name=Login id=btnLogin type=submit
 INPUT name=button2 id=button2 type=button
 INPUT name=button3 id=button3 type=button
-INPUT name= id=totalPages type=hidden value=64208
+INPUT name= id=totalPages type=hidden value=64216
 INPUT name=textfield3 id=dispPage type=text
 INPUT name=button id=btnGoto type=submit
 INPUT name= id=pageNo type=hidden value=1
 INPUT name=size id=size type=hidden value=10
 pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellpadding="0" class="pagging_1">
                                         <tbody><tr>
-                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">64208</span></td>
+                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">64216</span></td>
                                             <td align="center"><input name="textfield3" type="text" id="dispPage" value="1" class="formTxtBox_1" style="width:20px;">
                                                 &nbsp;
                                                 <label class="formBtn_1 t-align-center">
@@ -28,26 +28,13 @@ pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellp
                                                     <li><font size="3">«</font> <a disabled="true" href="javascript:void(0)" id="btnFirst" style="color: gray;">First</a></li>
                                                     <li><font size="3">‹</font> <a disabled="true" href="javascript:void(0)" id="btnPrevious" style="colo
 page size set to: 0
-page 29 fully known; stopping (incremental)
+page 9 fully known; stopping (incremental)
 headers: ["S.\nNo.", "Tender/Proposal ID,\nReference No,\nPublic Status", "Procurement Nature,\nTitle", "Ministry,\nDivision,\nOrganization,\nPE", "Type,\nMethod", "Publishing Date and Time,\nClosing Date and Time"]
-first rows: [{"cells": ["1", "1371971,\nAPP ID- 229733 (69),\nLive", "Works,\n\n\nDevelopment of Mogotuli Bazar Road By Lane 1,2,3,4,5 & Nazir Bhander Road By Lane 1,2,3,4 Damaged Due to CWASA Sewerage Project at 28 no Pathantuli Ward.", "Ministry of Local Government, Rural Development and Co-operatives,\nLocal Government Division,\nChittagong City Corporation,\nOffice of Superintendent Engineer (Zone-6,7,8)", "NCT,\nOTM", "16-Nov-2026 17:00,\n03-Dec-2026 14:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1361014,\nG.R.26-27-041-05.,\nLive", "Goods,\n\n\nProcurement of Hardware Materials for Workshop.", "Ministry of Energy, Power and Mineral Resources,\nPower Division,\nRural Electrification Board (REB),\nManikganj Palli Bidyut Samity", "NCT,\nOTM", "16-Nov-2026 17:00,\n29-Nov-2026 15:30"], "href": "javascript:void(0);"}]
+first rows: [{"cells": ["1", "1372387,\n57.03.5835.470.07.645.26 Date 12.11.2026,\nLive", "Goods,\n\n\n\nProcurement of Raw materials and spare parts in Juri TSC Moulvibazar.", "Ministry of Education,\nTechnical & Madrasha Education Division,\nDirectorate of Technical Education,\nOffice of the Principal, Juri Govt. Technical School and College", "NCT,\nOTM", "16-Nov-2026 23:50,\n02-Dec-2026 16:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1342985,\nDSCC/2026-2027/Drain/W-09,\nLive", "Works,\n\n\nCleaning Work of Pipe drain & Open drain at Ward-09 Under Zone-2, DSCC (Fiscal Year 2026-2027).", "Ministry of Local Government, Rural Development and Co-operatives,\nLocal Government Division,\nDhaka South City Corporation,\nOffice of the Executive Engineer (Mechanical, WMD)", "NCT,\nOTM", "16-Nov-2026 23:00,\n30-Nov-2026 14:00"], "href": "javascript:void(0);"}]
 requests:
+GET https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
