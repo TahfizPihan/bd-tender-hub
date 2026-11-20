@@ -28,20 +28,12 @@ pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellp
                                                     <li><font size="3">«</font> <a disabled="true" href="javascript:void(0)" id="btnFirst" style="color: gray;">First</a></li>
                                                     <li><font size="3">‹</font> <a disabled="true" href="javascript:void(0)" id="btnPrevious" style="colo
 page size set to: 0
-page 10 fully known; stopping (incremental)
+page 2 fully known; stopping (incremental)
 headers: ["S.\nNo.", "Tender/Proposal ID,\nReference No,\nPublic Status", "Procurement Nature,\nTitle", "Ministry,\nDivision,\nOrganization,\nPE", "Type,\nMethod", "Publishing Date and Time,\nClosing Date and Time"]
 first rows: [{"cells": ["1", "1374216,\n44.04.3600.161.03.001.26-3927, Date-15.11.2026,\nLive", "Goods,\n\n\nProcurement of Dietary Articles (Different types of Vegetable) of Package-3 for the period of January/2027 to June/2027.", "Ministry of Home Affairs,\nPrisons Directorate,\nHabiganj District Jail", "NCT,\nOTM", "19-Nov-2026 23:30,\n30-Nov-2026 12:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1374218,\n44.04.3600.161.03.001.26-3929, Date-15.11.2026,\nLive", "Goods,\n\n\nProcurement of Dietary Articles (Various types of Oils, Spices, food ingredients and accessories) of Package-1 for the period of January/2027 to June/2027.", "Ministry of Home Affairs,\nPrisons Directorate,\nHabiganj District Jail", "NCT,\nOTM", "19-Nov-2026 23:30,\n30-Nov-2026 12:00"], "href": "javascript:void(0);"}]
 requests:
 GET https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
