@@ -11,14 +11,14 @@ INPUT name=password id=txtPassword type=password
 INPUT name=Login id=btnLogin type=submit
 INPUT name=button2 id=button2 type=button
 INPUT name=button3 id=button3 type=button
-INPUT name= id=totalPages type=hidden value=64379
+INPUT name= id=totalPages type=hidden value=64394
 INPUT name=textfield3 id=dispPage type=text
 INPUT name=button id=btnGoto type=submit
 INPUT name= id=pageNo type=hidden value=1
 INPUT name=size id=size type=hidden value=10
 pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellpadding="0" class="pagging_1">
                                         <tbody><tr>
-                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">64379</span></td>
+                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">64394</span></td>
                                             <td align="center"><input name="textfield3" type="text" id="dispPage" value="1" class="formTxtBox_1" style="width:20px;">
                                                 &nbsp;
                                                 <label class="formBtn_1 t-align-center">
@@ -28,11 +28,11 @@ pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellp
                                                     <li><font size="3">«</font> <a disabled="true" href="javascript:void(0)" id="btnFirst" style="color: gray;">First</a></li>
                                                     <li><font size="3">‹</font> <a disabled="true" href="javascript:void(0)" id="btnPrevious" style="colo
 page size set to: 0
-page 34 did not change; stopping
-page number text: [33, 64379]
+page 6 did not change; stopping
+page number text: [6, 64394]
 pager html after click: <table width="100%" border="0" id="pagination" cellspacing="0" cellpadding="0" class="pagging_1">
                                         <tbody><tr>
-                                            <td align="left">Page <span id="pageNoTot">33</span> of <span id="pageTot">64379</span></td>
+                                            <td align="left">Page <span id="pageNoTot">6</span> of <span id="pageTot">64394</span></td>
                                             <td align="center"><input name="textfield3" type="text" id="dispPage" value="1" class="formTxtBox_1" style="width:20px;">
                                                 &nbsp;
                                                 <label class="formBtn_1 t-align-center">
@@ -40,29 +40,11 @@ pager html after click: <table width="100%" border="0" id="pagination" cellspaci
                                                 </label></td>
                                             <td align="right" class="prevNext-container"><ul>
                                                     <li><font size="3">«</font> <a href="javascript:void(0)" id="btnFirst" style="color: rgb(51, 51, 51);">First</a></li>
-                                                    <li><font size="3">‹</font> <a href="javascript:void(0)" id="btnPrevious" style="color: rgb(51, 51, 51);"
+                                                    <li><font size="3">‹</font> <a href="javascript:void(0)" id="btnPrevious" style="color: rgb(51, 51, 51);">
 headers: ["S.\nNo.", "Tender/Proposal ID,\nReference No,\nPublic Status", "Procurement Nature,\nTitle", "Ministry,\nDivision,\nOrganization,\nPE", "Type,\nMethod", "Publishing Date and Time,\nClosing Date and Time"]
-first rows: [{"cells": ["1", "1326767,\nUHC/Shalikha/2026/1276,\nLive", "Goods,\n\n\nProcurement of Diet for admitted patients", "Ministry of Health and Family Welfare,\nHealth Services Division,\nDirectorate General of Health Services (DGHS),\nShalikha Upazila Health Complex, Magura", "NCT,\nOTM", "22-Nov-2026 17:10,\n06-Dec-2026 14:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1374739,\nPur-3.3338/2026-2027,\nLive", "Goods,\n\n\nProcurement of 10,000 MT +/- 5% Phosphoric Acid (P2O5: 52 - 54%)", "Ministry of Industries,\nBangladesh Chemical Industries Corporation (BCIC),\nPurchase Division", "ICT,\nOTM", "22-Nov-2026 17:00,\n05-Jan-2027 11:00"], "href": "javascript:void(0);"}]
+first rows: [{"cells": ["1", "1376331,\n22.01.0000.000.654.0001.01.26.6254,\nLive", "Goods,\n\n\n1. Nursery Material for 100 Hectre Long rotation Plantation And 2.Plantation Material for 150 Hectare Long rotation Plantation) 2026-27", "Ministry of Environment, Forest and Climate Change,\nForest Department,\nTangail Forest Division", "NCT,\nOTM", "22-Nov-2026 23:46,\n03-Dec-2026 13:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1376330,\n22.01.0000.000.654.0001.01.26.6253,\nLive", "Goods,\n\n\nSupply of nursery & plantation materials of 150 hectar Short rotation plantation for the year of 2026-27.", "Ministry of Environment, Forest and Climate Change,\nForest Department,\nTangail Forest Division", "NCT,\nOTM", "22-Nov-2026 23:45,\n03-Dec-2026 13:00"], "href": "javascript:void(0);"}]
 requests:
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
+GET https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
