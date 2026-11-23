@@ -28,26 +28,12 @@ pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellp
                                                     <li><font size="3">«</font> <a disabled="true" href="javascript:void(0)" id="btnFirst" style="color: gray;">First</a></li>
                                                     <li><font size="3">‹</font> <a disabled="true" href="javascript:void(0)" id="btnPrevious" style="colo
 page size set to: 0
-page 6 did not change; stopping
-page number text: [6, 64394]
-pager html after click: <table width="100%" border="0" id="pagination" cellspacing="0" cellpadding="0" class="pagging_1">
-                                        <tbody><tr>
-                                            <td align="left">Page <span id="pageNoTot">6</span> of <span id="pageTot">64394</span></td>
-                                            <td align="center"><input name="textfield3" type="text" id="dispPage" value="1" class="formTxtBox_1" style="width:20px;">
-                                                &nbsp;
-                                                <label class="formBtn_1 t-align-center">
-                                                    <input type="submit" name="button" id="btnGoto" value="Go To Page">
-                                                </label></td>
-                                            <td align="right" class="prevNext-container"><ul>
-                                                    <li><font size="3">«</font> <a href="javascript:void(0)" id="btnFirst" style="color: rgb(51, 51, 51);">First</a></li>
-                                                    <li><font size="3">‹</font> <a href="javascript:void(0)" id="btnPrevious" style="color: rgb(51, 51, 51);">
+page 2 fully known; stopping (incremental)
 headers: ["S.\nNo.", "Tender/Proposal ID,\nReference No,\nPublic Status", "Procurement Nature,\nTitle", "Ministry,\nDivision,\nOrganization,\nPE", "Type,\nMethod", "Publishing Date and Time,\nClosing Date and Time"]
 first rows: [{"cells": ["1", "1376331,\n22.01.0000.000.654.0001.01.26.6254,\nLive", "Goods,\n\n\n1. Nursery Material for 100 Hectre Long rotation Plantation And 2.Plantation Material for 150 Hectare Long rotation Plantation) 2026-27", "Ministry of Environment, Forest and Climate Change,\nForest Department,\nTangail Forest Division", "NCT,\nOTM", "22-Nov-2026 23:46,\n03-Dec-2026 13:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1376330,\n22.01.0000.000.654.0001.01.26.6253,\nLive", "Goods,\n\n\nSupply of nursery & plantation materials of 150 hectar Short rotation plantation for the year of 2026-27.", "Ministry of Environment, Forest and Climate Change,\nForest Department,\nTangail Forest Division", "NCT,\nOTM", "22-Nov-2026 23:45,\n03-Dec-2026 13:00"], "href": "javascript:void(0);"}]
 requests:
 GET https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
