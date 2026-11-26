@@ -11,14 +11,14 @@ INPUT name=password id=txtPassword type=password
 INPUT name=Login id=btnLogin type=submit
 INPUT name=button2 id=button2 type=button
 INPUT name=button3 id=button3 type=button
-INPUT name= id=totalPages type=hidden value=64525
+INPUT name= id=totalPages type=hidden value=64564
 INPUT name=textfield3 id=dispPage type=text
 INPUT name=button id=btnGoto type=submit
 INPUT name= id=pageNo type=hidden value=1
 INPUT name=size id=size type=hidden value=10
 pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellpadding="0" class="pagging_1">
                                         <tbody><tr>
-                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">64525</span></td>
+                                            <td align="left">Page <span id="pageNoTot">1</span> of <span id="pageTot">64564</span></td>
                                             <td align="center"><input name="textfield3" type="text" id="dispPage" value="1" class="formTxtBox_1" style="width:20px;">
                                                 &nbsp;
                                                 <label class="formBtn_1 t-align-center">
@@ -28,13 +28,32 @@ pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellp
                                                     <li><font size="3">«</font> <a disabled="true" href="javascript:void(0)" id="btnFirst" style="color: gray;">First</a></li>
                                                     <li><font size="3">‹</font> <a disabled="true" href="javascript:void(0)" id="btnPrevious" style="colo
 page size set to: 0
-page 3 fully known; stopping (incremental)
+page 40 fully known; stopping (incremental)
 headers: ["S.\nNo.", "Tender/Proposal ID,\nReference No,\nPublic Status", "Procurement Nature,\nTitle", "Ministry,\nDivision,\nOrganization,\nPE", "Type,\nMethod", "Publishing Date and Time,\nClosing Date and Time"]
-first rows: [{"cells": ["1", "1374617,\n31.03.0000.004.07.018.26-533,\nLive", "Goods,\n\n\nWood Free Bond Paper and Roll Paper", "Ministry of Land,\nDepartment of Land Record & Surveys,\nSurvey Wing, Department of Land Records & Surveys.", "NCT,\nOTM", "26-Nov-2026 09:30,\n07-Dec-2026 12:30"], "href": "javascript:void(0);"}, {"cells": ["2", "1374635,\n31.03.0000.004.07.018.26-533,\nLive", "Goods,\n\n\nChemical Item for Map Printing Press", "Ministry of Land,\nDepartment of Land Record & Surveys,\nSurvey Wing, Department of Land Records & Surveys.", "NCT,\nOTM", "26-Nov-2026 09:30,\n07-Dec-2026 12:30"], "href": "javascript:void(0);"}]
+first rows: [{"cells": ["1", "1380335,\n231328,\nLive", "Works,\n\n\ne-Tender/Paba/UDF/2026-27/28\n(1) Construction of BFS road at 08 no ward Valam Hazi Md.Kayes's House Mor-Ibrahim's House Road(2) Construction of CC road at Borgachi Kuthipara High School Road.(3) Construction of BFS road at 07 no ward Dadpur Os...", "Ministry of Local Government, Rural Development and Co-operatives,\nLocal Government Division,\nUpazila parishad Paba,\nOffice Of The Upazila Engineer, Paba, Rajshahi", "NCT,\nOTM", "26-Nov-2026 22:00,\n09-Dec-2026 17:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1380337,\n231328,\nLive", "Works,\n\n\ne-Tender/Paba/UDF/2026-27/30\n(1) Construction of Surface Drain at Tebaria Boromachan-Motin's House Near of Canal.(2) Construction of Boundary Wall at Motiabil High School Under Parila UP, Paba, Rajshahi.", "Ministry of Local Government, Rural Development and Co-operatives,\nLocal Government Division,\nUpazila parishad Paba,\nOffice Of The Upazila Engineer, Paba, Rajshahi", "NCT,\nOTM", "26-Nov-2026 22:00,\n09-Dec-2026 17:00"], "href": "javascript:void(0);"}]
 requests:
-GET https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
+POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
