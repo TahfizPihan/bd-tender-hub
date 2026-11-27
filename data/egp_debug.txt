@@ -28,14 +28,12 @@ pager html: <table width="100%" border="0" id="pagination" cellspacing="0" cellp
                                                     <li><font size="3">«</font> <a disabled="true" href="javascript:void(0)" id="btnFirst" style="color: gray;">First</a></li>
                                                     <li><font size="3">‹</font> <a disabled="true" href="javascript:void(0)" id="btnPrevious" style="colo
 page size set to: 0
-page 4 fully known; stopping (incremental)
+page 2 fully known; stopping (incremental)
 headers: ["S.\nNo.", "Tender/Proposal ID,\nReference No,\nPublic Status", "Procurement Nature,\nTitle", "Ministry,\nDivision,\nOrganization,\nPE", "Type,\nMethod", "Publishing Date and Time,\nClosing Date and Time"]
 first rows: [{"cells": ["1", "1374241,\ne-GP/01/Physical Service/EE/DRD/2026-2027,\nLive", "Physical Services,\n\n\nSecurity Services for Dhaka Road Division Office, Old Division Office, Dormatory-(1, 2 & 3), Officer's Quarter No-(4, 5, 6/B & 10/B) at Banani, Officer's Quarter No-(1, 2, 3, 4 & 5) at Mohakhali, Bailey Road Officer's Quarter, Kallyanp...", "Ministry of Road Transport and Bridges,\nRoad Transport and Highways Division,\nRoads & Highways Department (RHD),\nDhaka Road Division", "NCT,\nOTM", "26-Nov-2026 23:45,\n10-Dec-2026 13:00"], "href": "javascript:void(0);"}, {"cells": ["2", "1382893,\n21-eGP/EE/RHD/RANG/2026-2027,\nLive", "Works,\n\n\nRepair with SBST work at Ch 3+400 to Ch 5+600 km of Rangpur-Barobari-Kurigram Road (N-506) under Road Division, Rangpur during FY-2026-2027.", "Ministry of Road Transport and Bridges,\nRoad Transport and Highways Division,\nRoads & Highways Department (RHD),\nRangpur Road Division", "NCT,\nOTM", "26-Nov-2026 23:27,\n07-Dec-2026 11:00"], "href": "javascript:void(0);"}]
 requests:
 GET https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/resources/common/StdTenderSearch.jsp?h=t
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
-POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
 POST https://www.eprocure.gov.bd/TenderDetailsServlet
